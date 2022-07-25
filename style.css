@@ -1,0 +1,69 @@
+:root {
+  --clr-orange-100: rgba(235, 66, 36, 1);
+  --clr-blue-100: rgba(26, 212, 248, 1);
+  --clr-white: rgba(245, 245, 245, 1);
+  --clr-gray-light: rgba(187, 187, 187, 0.733);
+  --clr-gray-dark: #141414;
+  --clr-black: rgba(10, 10, 10, 1);
+  --ff-primary: "Rubik", sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fs--hero: 4.236rem;
+  --fs--title: 2.618rem;
+  --fs--subtitle: 1.618rem;
+  --fs--regular: 1rem;
+  --fs--small: 0.618rem;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs--regular);
+  color: var(--clr-white);
+  background-color: var(--clr-gray-dark);
+  background-image: url(./images/bg.png);
+}
+
+h1 {
+  letter-spacing: -5.618px;
+  font-size: var(--fs--hero);
+  font-weight: var(--fw-light);
+  color: var(--clr-orange-100);
+  line-height: 0.8;
+  max-width: 438px;
+}
+h1 span.white {
+  color: var(--clr-gray-light);
+  font-size: var(--fs--title);
+  letter-spacing: -1.618px;
+}
+h1 .line-2 {
+  margin-right: 65px;
+}
+h1 .line-3 {
+  margin-right: 195px;
+  margin-top: -2.4rem;
+}
+h1 .line-4 {
+  margin-right: 195px;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 2.618rem;
+  font-size: var(--fs--title);
+}
+
+h3 {
+  font-size: var(--fs--subtitle);
+}
+
+small, .text_small {
+  font-size: var(--fs--small);
+}/*# sourceMappingURL=style.css.map */
