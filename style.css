@@ -1,28 +1,28 @@
 :root {
   --clr-orange-100: hsl(9, 63%, 53%);
   --clr-blue-100: hsl(190, 63%, 54%);
-  --clr-white: rgba(245, 245, 245, 1);
-  --clr-gray-light: rgba(187, 187, 187, 0.733);
-  --clr-gray-dark: #141414;
-  --clr-black: rgba(10, 10, 10, 1);
+  --clr-white: hsl(0, 0%, 96%);
+  --clr-gray-light: hsla(0, 0%, 73%, 0.733);
+  --clr-gray-dark: hsl(0, 0%, 8%);
+  --clr-black: hsl(0, 0%, 4%);
   --ff-primary: "Rubik", sans-serif;
   --ff-body: var(--ff-primary);
   --ff-heading: var(--ff-primary);
   --fw-light: 300;
   --fw-regular: 400;
   --fw-bold: 600;
-  --fs--hero: 4.236rem;
-  --fs--title: 2.618rem;
-  --fs--subtitle: 1.618rem;
-  --fs--regular: 1rem;
-  --fs--small: 0.618rem;
+  --fs-hero: 4.236rem;
+  --fs-title: 2.618rem;
+  --fs-subtitle: 1.618rem;
+  --fs-regular: 1rem;
+  --fs-small: 0.618rem;
 }
 
 body {
   font-family: var(--ff-body);
-  font-size: var(--fs--regular);
+  font-size: var(--fs-regular);
   color: var(--clr-white);
-  background-color: var(--clr-gray-dark);
+  background-color: var(--clr-black);
   background-image: url(./images/bg.png);
 }
 
@@ -39,7 +39,7 @@ body {
 }
 .home-header h1 {
   letter-spacing: -5.618px;
-  font-size: var(--fs--hero);
+  font-size: var(--fs-hero);
   font-weight: var(--fw-light);
   color: var(--clr-orange-100);
   line-height: 0.8;
@@ -47,7 +47,7 @@ body {
 }
 .home-header h1 span.white {
   color: var(--clr-gray-light);
-  font-size: var(--fs--title);
+  font-size: var(--fs-title);
   letter-spacing: -1.618px;
 }
 .home-header h1 .line-2 {
@@ -97,13 +97,46 @@ body {
   padding-top: 6.618rem;
 }
 .home-main .home-main-content p {
-  font-size: var(--fs--subtitle);
+  font-size: var(--fs-subtitle);
   color: var(--clr-gray-light);
+}
+.home-main .home-main-content nav {
+  display: flex;
+  flex-direction: column;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-top: 3.618rem;
+  margin-right: 3.618rem;
+  gap: 0.618rem;
+  transform: skew(-16.618deg, 0deg);
+}
+.home-main .home-main-content nav a:link {
+  background-color: var(--clr-gray-dark);
+  color: var(--clr-blue-100);
+  text-align: center;
+  text-decoration: none;
+  font-size: var(--fs-subtitle);
+  line-height: 70px;
+  width: 240px;
+  height: 70px;
+  position: relative;
+}
+.home-main .home-main-content nav a:link::before {
+  position: absolute;
+  content: "";
+  width: 2%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-orange-100);
 }
 .home-main .home-main-image {
   margin-top: -5rem;
-  max-width: 546px;
-  max-height: 565px;
+  max-width: 516px;
+  max-height: 535px;
 }
 
 .normal {
