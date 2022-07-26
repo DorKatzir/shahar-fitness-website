@@ -52,7 +52,7 @@ body {
 
 // Home section
 .home-wrapper{
-  outline: 1px solid yellow;
+  //outline: 1px solid yellow;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -95,11 +95,12 @@ body {
   
   
   nav{
+    //outline: 1px solid yellow;
     display: flex;
-    outline: 1px solid yellow;
     width: fit-content;
     align-items: center;
     justify-content: center;
+    margin-left: 6.618rem;
     
     a:link{
       color: var(--clr-blue-100);
@@ -115,6 +116,28 @@ body {
     }
   }
   
+}
+
+.home-main{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  .home-main-content{
+    //outline: 1px solid magenta;
+    width: fit-content;
+    padding-top: 6.618rem;
+    p{
+      font-size: var(--fs--subtitle);
+      color: var(--clr-gray-light);
+    }
+  }
+  .home-main-image{
+      //outline: 1px solid magenta;
+      margin-top: -5rem;
+      max-width: 546px;
+      max-height: 565px;
+    }
 }
 
 

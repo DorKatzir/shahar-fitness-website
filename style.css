@@ -27,7 +27,6 @@ body {
 }
 
 .home-wrapper {
-  outline: 1px solid yellow;
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -67,12 +66,12 @@ body {
 }
 .home-header nav {
   display: flex;
-  outline: 1px solid yellow;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   justify-content: center;
+  margin-left: 6.618rem;
 }
 .home-header nav a:link {
   color: var(--clr-blue-100);
@@ -84,6 +83,27 @@ body {
   height: 16px;
   width: 1px;
   margin: 0.5rem;
+}
+
+.home-main {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.home-main .home-main-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 6.618rem;
+}
+.home-main .home-main-content p {
+  font-size: var(--fs--subtitle);
+  color: var(--clr-gray-light);
+}
+.home-main .home-main-image {
+  margin-top: -5rem;
+  max-width: 546px;
+  max-height: 565px;
 }
 
 .normal {
