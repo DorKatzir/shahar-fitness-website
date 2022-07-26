@@ -1,6 +1,6 @@
 :root {
-  --clr-orange-100: rgba(235, 66, 36, 1);
-  --clr-blue-100: rgba(26, 212, 248, 1);
+  --clr-orange-100: hsl(9, 63%, 53%);
+  --clr-blue-100: hsl(190, 63%, 54%);
   --clr-white: rgba(245, 245, 245, 1);
   --clr-gray-light: rgba(187, 187, 187, 0.733);
   --clr-gray-dark: #141414;
