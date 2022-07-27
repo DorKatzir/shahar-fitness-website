@@ -121,7 +121,7 @@ body {
   background-color: var(--clr-gray-dark);
   cursor: pointer;
   position: relative;
-  transition: 0.25s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 .home-main .home-main-content ul li a:link, .home-main .home-main-content ul li a:visited {
   color: var(--clr-blue-100);

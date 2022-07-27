@@ -151,8 +151,6 @@ body {
       row-gap: 7.618px;
       transform: skew(-16.618deg, 0deg);
       
-      
-      
       li{
           width: 200px;
           height: 60px;
@@ -162,7 +160,7 @@ body {
           background-color: var(--clr-gray-dark);
           cursor: pointer;
           position: relative;
-          transition:.25s ease-in-out;
+          transition:.15s ease-in-out;
 
           a:link, a:visited{
             color: var(--clr-blue-100);
