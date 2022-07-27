@@ -91,28 +91,28 @@ body {
   justify-content: space-between;
 }
 .home-main .home-main-content {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-top: 6.618rem;
+  flex-basis: 50%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 .home-main .home-main-content p {
   font-size: var(--fs-subtitle);
   color: var(--clr-gray-light);
+  padding-bottom: 1.618rem;
 }
-.home-main .home-main-content ul {
+.home-main .home-main-content nav {
+  align-self: center;
+  width: 50%;
+}
+.home-main .home-main-content nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: 1.618rem;
-  margin-right: 3.618rem;
   row-gap: 7.618px;
   transform: skew(-16.618deg, 0deg);
 }
-.home-main .home-main-content ul li {
+.home-main .home-main-content nav ul li {
   width: 200px;
   height: 60px;
   line-height: 60px;
@@ -123,37 +123,41 @@ body {
   position: relative;
   transition: 0.15s ease-in-out;
 }
-.home-main .home-main-content ul li a:link, .home-main .home-main-content ul li a:visited {
+.home-main .home-main-content nav ul li a:link, .home-main .home-main-content nav ul li a:visited {
   color: var(--clr-blue-100);
   font-size: var(--fs-subtitle);
   text-decoration: none;
   display: block;
   transition: 0.35s ease-in;
 }
-.home-main .home-main-content ul li a:hover {
+.home-main .home-main-content nav ul li a:hover {
   color: var(--clr-white);
 }
-.home-main .home-main-content ul li::before {
+.home-main .home-main-content nav ul li::before {
   content: "";
   position: absolute;
-  width: 2.618%;
+  width: 1.618%;
   height: 100%;
-  right: 0;
+  right: -10.618px;
   top: 0;
   left: 0;
   bottom: 0;
   background-color: var(--clr-orange-100);
-  transition: all 0.5s;
-  transform-origin: center right;
-  transform: translateX(12.618px);
+  transition: all 0.25s ease-in-out;
   z-index: -1;
 }
-.home-main .home-main-content ul li:hover::before {
-  transform: translateX(-206.618px);
+.home-main .home-main-content nav ul li:hover::before {
+  right: 206.618px;
   width: 61.618%;
   z-index: -1;
 }
 .home-main .home-main-image {
+  flex-basis: 50%;
+  height: 500px;
+  background-image: url(./images/home_hero.png);
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: -5rem;
   max-width: 516px;
   max-height: 535px;
