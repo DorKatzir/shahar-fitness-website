@@ -38,6 +38,7 @@ body {
   color: var(--clr-white);
   background-color: var(--clr-black);
   background-image: url(./images/bg.png);
+  
 }
 
 
@@ -109,7 +110,7 @@ body {
     justify-content: center;
     margin-left: 6.618rem;
     
-    a:link{
+    a:link, a:visited{
       color: var(--clr-blue-100);
       text-decoration: none;
       padding: .5rem;
@@ -139,38 +140,62 @@ body {
       color: var(--clr-gray-light);
     }
 
-    nav{
+    ul{
+      list-style-type: none;
       display: flex;
       flex-direction: column;
-      // outline: 1px solid yellow;
-      max-width: fit-content;
-      margin-top: 3.618rem;
-      margin-right: 3.618rem;;
-      gap: 0.618rem;
+      //outline: 1px solid yellow;
+      width: fit-content;
+      margin-top: 1.618rem;
+      margin-right: 3.618rem;
+      row-gap: 7.618px;
       transform: skew(-16.618deg, 0deg);
       
-      a:link {
-        background-color: var(--clr-gray-dark);
-        color: var(--clr-blue-100);
-        text-align: center;
-        text-decoration: none;
-        font-size: var(--fs-subtitle);
-        line-height: 70px;
-        width: 240px;
-        height: 70px;
-        position: relative;
+      
+      
+      li{
+          width: 200px;
+          height: 60px;
+          line-height: 60px;
+          text-align: center;
+          padding: 0 1.618rem;
+          background-color: var(--clr-gray-dark);
+          cursor: pointer;
+          position: relative;
+          transition:.25s ease-in-out;
+
+          a:link, a:visited{
+            color: var(--clr-blue-100);
+            font-size: var(--fs-subtitle);
+            text-decoration: none;
+            display: block;
+            transition:.35s ease-in;
+          }
+          a:hover{
+             color: var(--clr-white);
+          }
       }
-      a:link::before{
-        position: absolute;
+      li::before{
         content: '';
-        width: 2%;
+        position: absolute;
+        width: 2.618%;
         height: 100%;
+        right:0;
         top: 0;
         left: 0;
-        right: 0;
         bottom: 0;
         background-color: var(--clr-orange-100);
+        transition: all 0.5s ;
+        transform-origin: center right;
+        transform: translateX(12.618px);
+        z-index: -1;
       }
+      li:hover::before{
+        transform: translateX(-206.618px);
+        width: 61.618%;
+        z-index: -1;
+      }
+      
     }
     
   }
