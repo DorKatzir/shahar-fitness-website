@@ -106,21 +106,25 @@ body {
     //outline: 1px solid yellow;
     display: flex;
     width: fit-content;
-    align-items: center;
-    justify-content: center;
-    margin-left: 6.618rem;
+    flex-wrap: wrap;
+    //transform: skewX(-15deg);
+ 
+    //font-size: 1.2rem;
     
     a:link, a:visited{
+      //outline: 1px solid yellow;
       color: var(--clr-blue-100);
       text-decoration: none;
-      padding: .5rem;
+      padding: 0 .5rem;
     }
     
     .vl {
-      background-color: var(--clr-blue-100);
-      height: 16px;
-      width: 1px;
-      margin: .5rem;
+      background-color: var(--clr-orange-100);
+      opacity: .5;
+      align-self: center;
+      height: 1rem;
+      width: 2px;
+      margin: 0 .5rem;
     }
   }
   
@@ -133,20 +137,24 @@ body {
 
   .home-main-content{
     flex-basis: 50%;
-    align-self: center;
+    //align-self: center;
+    margin-top: 2.618rem;
     //outline: 1px solid magenta;
     display: flex;
     flex-direction: column;
+    place-items: flex-end;
 
     p{
       font-size: var(--fs-subtitle);
       color: var(--clr-gray-light);
-      padding-bottom: 1.618rem;
+      padding-bottom: 2.618rem;
+      font-weight: 300;
     }
 
     nav{
       //outline: 1px solid rgb(111, 0, 255);
       align-self: center;
+      margin-right: -3rem;
       width: 50%;
       
 
@@ -154,7 +162,7 @@ body {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        row-gap: 7.618px;
+        row-gap: .36rem;
         transform: skew(-16.618deg, 0deg);
         
         li{
@@ -194,7 +202,7 @@ body {
         }
         li:hover::before{
           right: 206.618px;
-          width: 61.618%;
+          width: 101.618%;
           z-index: -1;
         }
        
