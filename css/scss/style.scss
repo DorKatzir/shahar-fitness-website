@@ -3,7 +3,7 @@
     --clr-blue-100: hsl(190, 63%, 54%);
 
     --clr-white: hsl(0, 0%, 96%);
-    --clr-gray-light: hsla(0, 0%, 73%, 0.733);
+    --clr-gray-light: hsl(0, 0%, 73%);
     --clr-gray-dark: hsl(0, 0%, 8%);
     --clr-black: hsl(0, 0%, 4%);
 
@@ -37,7 +37,7 @@ body {
   font-size: var(--fs-regular);
   color: var(--clr-white);
   background-color: var(--clr-black);
-  background-image: url(./images/bg.png);
+  background-image: url(../../images/bg.png);
   
 }
 
@@ -215,7 +215,7 @@ body {
     flex-basis: 50%;
     height: 500px;
     //outline: 1px solid magenta;
-    background-image: url(./images/home_hero.png);
+    background-image: url(../images/home_hero.png);
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;
