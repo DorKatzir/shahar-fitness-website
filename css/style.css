@@ -23,7 +23,7 @@ body {
   font-size: var(--fs-regular);
   color: var(--clr-white);
   background-color: var(--clr-black);
-  background-image: url(../../images/bg.png);
+  background-image: url(../images/bg.png);
 }
 
 .home-wrapper {
