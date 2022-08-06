@@ -37,6 +37,10 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
+.home-header .slogan-box {
+  display: flex;
+  flex-direction: column;
+}
 .home-header h1 {
   letter-spacing: -5.618px;
   font-size: var(--fs-hero);
@@ -58,11 +62,15 @@ body {
   margin-top: -2.4rem;
 }
 .home-header h1 .line-4 {
-  margin-right: 195px;
+  align-self: flex-end;
+  color: var(--clr-blue-100);
+  margin-top: -54px;
+  margin-left: -140px;
 }
-.home-header .hero-box {
-  display: flex;
-  flex-direction: column;
+.home-header h1 .line-5 {
+  align-self: flex-end;
+  margin-left: -140px;
+  letter-spacing: -0.618px !important;
 }
 .home-header nav {
   display: flex;
