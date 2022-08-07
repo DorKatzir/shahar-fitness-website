@@ -19,6 +19,7 @@
     --fs-hero: 4.236rem;
     --fs-title: 2.618rem;
     --fs-subtitle: 1.618rem;
+    //--fs-subtitle: clamp(1.2rem, 2vw ,1.618rem);
     --fs-regular: 1rem;
     --fs-small: 0.618rem;
 }
@@ -33,6 +34,7 @@
 
 
 body {
+  padding: 1.618rem;
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);

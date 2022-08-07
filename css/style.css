@@ -19,6 +19,7 @@
 }
 
 body {
+  padding: 1.618rem;
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
@@ -27,17 +28,17 @@ body {
 }
 
 .home-wrapper {
-  max-width: 1140px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .home-header {
-  padding-top: 1.618rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 .home-header .slogan-box {
+  flex-basis: 70%;
   display: flex;
   flex-direction: column;
 }
@@ -64,19 +65,16 @@ body {
 .home-header h1 .line-4 {
   align-self: flex-end;
   color: var(--clr-blue-100);
-  margin-top: -54px;
-  margin-left: -140px;
+  margin-top: -53px;
+  margin-left: -5px;
 }
 .home-header h1 .line-5 {
   align-self: flex-end;
-  margin-left: -140px;
+  margin-left: -120px;
   letter-spacing: -0.618px !important;
 }
 .home-header nav {
   display: flex;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   flex-wrap: wrap;
 }
 .home-header nav a:link, .home-header nav a:visited {
@@ -95,15 +93,13 @@ body {
 
 .home-main {
   display: flex;
-  align-items: start;
-  justify-content: space-between;
 }
 .home-main .home-main-content {
   flex-basis: 50%;
   margin-top: 5.236rem;
   display: flex;
   flex-direction: column;
-  place-items: flex-end;
+  margin-right: 65px;
 }
 .home-main .home-main-content p {
   font-size: var(--fs-subtitle);
@@ -112,9 +108,7 @@ body {
   font-weight: 300;
 }
 .home-main .home-main-content nav {
-  align-self: center;
-  margin-right: -3rem;
-  width: 50%;
+  padding-right: 45px;
 }
 .home-main .home-main-content nav ul {
   list-style-type: none;
@@ -174,6 +168,41 @@ body {
   max-height: 535px;
 }
 
+@media (max-width: 60.625em) {
+  .home-header h1 {
+    font-size: calc(var(--fs-hero) * 0.9) !important;
+  }
+  .home-header h1 span.white {
+    font-size: calc(var(--fs-title) * 0.9) !important;
+  }
+  .home-header h1 .line-2 {
+    margin-right: 57px !important;
+  }
+  .home-header h1 .line-3 {
+    margin-right: 175px !important;
+    margin-top: -35px !important;
+  }
+  .home-header h1 .line-4 {
+    margin-top: -48px !important;
+    margin-left: 42px !important;
+  }
+  .home-header h1 .line-5 {
+    margin-left: 45px !important;
+  }
+  .home-header nav {
+    flex-direction: column;
+  }
+  .home-main-image {
+    margin-top: -6.618rem !important;
+  }
+  .home-main-content {
+    margin-top: 1.236rem !important;
+  }
+  .home-main-content p {
+    font-size: calc(var(--fs-subtitle) * 0.8) !important;
+    padding-bottom: 1.618rem !important;
+  }
+}
 .normal {
   mix-blend-mode: normal;
 }
