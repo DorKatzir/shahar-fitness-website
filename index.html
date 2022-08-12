@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+    <script src="./nav.js" defer></script>
     <title> שחר פיטנס | מאמן כושר אישי </title>
   </head>
   <body>
@@ -19,23 +19,46 @@
       <header class="home-header">
 
         <h1 class="slogan-box">
-          <span class="line-1">מתחילים</span>
+          <span class="white line-1">מתחילים</span>
           <span class="white line-2">מחר עם</span>
           <span class="line-3">שחר</span>
           <span class="line-4"> פיטנס </span>
           <span class="white line-5">מאמן כושר אישי</span>
         </h1>
-        
+
+        <button class="mobile-nav-toggle" 
+        aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">תפריט ניווט</span>
+        </button>
+
         <nav>
-          <a href="#">גברים ונשים</a>
-          <div class="vl"></div>
-          <a href="#">נוער וילדים</a>
-          <div class="vl"></div>
-          <a href="#">הגיל השלישי</a>
-          <div class="vl"></div>
-          <a href="#">אודותיי</a>
-          <div class="vl"></div>
-          <a href="#">צרו קשר</a>
+          <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
+            
+            <li>
+              <a href="#">
+                <!-- <span aria-hidden="true">|</span> -->
+               גלרייה
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <span aria-hidden="true">|</span> -->
+                אודותיי 
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <!-- <span aria-hidden="true">|</span> -->
+                צרו קשר
+              </a>
+            </li>
+            <li class="active">
+              <a href="#">
+                <!-- <span aria-hidden="true">|</span> -->
+                עמוד הבית
+              </a>
+            </li>
+          </ul>
         </nav>
 
       </header>
@@ -43,7 +66,7 @@
       <main class="home-main">
 
         <div class="home-main-content">
-          <p>תוכנית בהתאמה אישית לכל מתאמן, בחרו תוכנית:</p>
+          <p>תוכנית בהתאמה אישית לכל מתאמן/ת:</p>
           
           <nav>
             <ul>
