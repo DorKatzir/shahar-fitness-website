@@ -6,18 +6,12 @@
     align-items: flex-start;
     
     &--slogan{
-        width: 100%;
-        max-width: 500px;
+        width: fit-content;
         border: 1px solid yellow;
-        img, svg{
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-            display: block;
-        }
+        
     }
     &--menu{
+        width: fit-content;
         margin-right: auto;
         border: 1px solid yellow;
     }
