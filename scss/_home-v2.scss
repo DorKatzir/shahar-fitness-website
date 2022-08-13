@@ -7,11 +7,12 @@
     
     &--slogan{
         width: 100%;
-        // max-width: 500px;
+        max-width: 500px;
         border: 1px solid yellow;
-        img{
-            min-width: 100%;
-            height: 100%;
+        img, svg{
+            width: 100%;
+            max-width: 100%;
+            height: auto;
             object-fit: cover;
             display: block;
         }
