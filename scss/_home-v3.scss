@@ -2,13 +2,15 @@
     overflow-x: hidden;
     background-color: rgb(255 255 255 /.1);
     display: flex;
-    //flex-wrap: wrap;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    
     
     &--slogan{
-        border: 1px solid yellow;
+        //border: 1px solid yellow;
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
+        min-width: 250px;
+        padding-right: 1rem;
     }
     &--menu{
         width: fit-content;
