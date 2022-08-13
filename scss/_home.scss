@@ -9,9 +9,10 @@
     justify-content: space-between;
 
     .slogan-box{
+
       flex: 1;
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
     
     h1 {
@@ -73,11 +74,15 @@
     
     
     @media(max-width: 47.5em){
+
+      .slogan-box{
+        z-index: 10100 !important;
+      }
       
       .primary-navigation{
         background-color: var(--clr-gray-dark);
         position: fixed;
-        inset: 0 30% 0 0;
+        inset: 0;
         --gap: 1.618em;
         
         flex-direction: column;
@@ -95,6 +100,7 @@
         }
         padding: min(30vh, 10rem) 2em;
         z-index: 1000;
+        
         
         transform: translateX(-100%);
         transition: transform 350ms ease-out;

@@ -14,62 +14,69 @@
   </head>
   <body>
 
-    <section id="home" class="home-wrapper">
-
+    <section id="home" class="home">
+      
       <header class="home-header">
 
-        <h1 class="slogan-box">
-          <span class="white line-1">מתחילים</span>
-          <span class="white line-2">מחר עם</span>
-          <span class="line-3">שחר</span>
-          <span class="line-4"> פיטנס </span>
-          <span class="white line-5">מאמן כושר אישי</span>
-        </h1>
+         <div class="home-header--slogan">
+          <img src="./images/site-slogan.svg" width="100%" height="100%" alt="מתחילים מחר עם שחר פיטנס מאמן כושר אישי" srcset="">
+          <!-- <h1 class="slogan-box">
+            <span class="white line-1">מתחילים</span>
+            <span class="white line-2">מחר עם</span>
+            <span class="line-3">שחר</span>
+            <span class="line-4"> פיטנס </span>
+            <span class="white line-5">מאמן כושר אישי</span>
+          </h1> -->
+        </div>
 
-        <button class="mobile-nav-toggle" 
-        aria-controls="primary-navigation" aria-expanded="false">
-          <span class="sr-only">תפריט ניווט</span>
-        </button>
+        <div class="home-header--menu">
 
-        <nav>
-          <ul data-visible="false" id="primary-navigation" class="primary-navigation flex">
-            
-            <li>
-              <a href="#">
-                <!-- <span aria-hidden="true">|</span> -->
-               גלרייה
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- <span aria-hidden="true">|</span> -->
-                אודותיי 
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- <span aria-hidden="true">|</span> -->
-                צרו קשר
-              </a>
-            </li>
-            <li class="active">
-              <a href="#">
-                <!-- <span aria-hidden="true">|</span> -->
-                עמוד הבית
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <button class="mobile-nav-toggle" 
+          aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">תפריט ניווט</span>
+          </button>
+
+          <nav>
+            <ul role="list" data-visible="false" id="primary-navigation" class="primary-navigation flex">
+              
+              <li>
+                <a href="#">
+                  <!-- <span aria-hidden="true">|</span> -->
+                 גלרייה
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span aria-hidden="true">|</span> -->
+                  אודותיי 
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <span aria-hidden="true">|</span> -->
+                  צרו קשר
+                </a>
+              </li>
+              <li class="active">
+                <a href="#">
+                  <!-- <span aria-hidden="true">|</span> -->
+                  עמוד הבית
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
 
       </header>
 
-      <main class="home-main">
+      <main class="home-content">
 
-        <div class="home-main-content">
+        <div class="home-content-text">
           <p>תוכנית בהתאמה אישית לכל מתאמן/ת:</p>
           
           <nav>
-            <ul>
+            <ul role="list">
               <li><a href="#"> גברים ונשים </a></li>          
               <li><a href="#"> נוער וילדים </a></li>           
               <li><a href="#"> הגיל השלישי </a></li>
@@ -79,7 +86,7 @@
         </div>
 
 
-        <div class="home-main-image lighten">
+        <div class="home-content-image lighten">
           
         </div>
         <!-- <div class="home-main-image lighten">

@@ -17,9 +17,12 @@
     --fw-regular: 400;
     --fw-bold: 600;
 
-    --fs-hero: 4.236rem;
-    --fs-title: 2.618rem;
-    --fs-subtitle: 1.618rem;
+    // --fs-hero: 4.236rem;
+    // --fs-title: 2.618rem;
+    // --fs-subtitle:1.618rem;
+    // --fs-hero: clamp(2.618rem, 10vw, 4.236rem);
+    // --fs-title: clamp(1.618rem, 10vw, 2.618rem);
+    // --fs-subtitle: clamp(1rem, 10vw, 1.618rem);
     --fs-regular: 1rem;
     --fs-small: 0.618rem;
 
@@ -28,18 +31,21 @@
 
 
 body {
-  padding: 1.618rem;
+  padding: clamp(0.618rem, 3vw, 1.618rem);
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
   background-color: var(--clr-black);
   background-image: url(../images/bg.png);
   overflow-x: hidden;
+  min-width: 320px !important;
 }
 
 
-@import 'utilities';
-@import 'home';
+// @import 'utilities';
+// @import 'home';
+@import 'grid';
+@import 'home-v2';
 
 
 
