@@ -7,10 +7,12 @@
     
     &--slogan{
         //border: 1px solid yellow;
-        width: 100%;
-        max-width: 350px;
-        min-width: 250px;
+        img{
+            max-width: 350px;
+            min-width: 250px;
+        }
         padding-right: 1rem;
+        padding-left: 1rem;
     }
     &--menu{
         width: fit-content;
