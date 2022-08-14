@@ -1,20 +1,18 @@
 .home-header{
     
-    background-color: rgb(255 255 255 /.1);
+    //background-color: rgb(255 255 255 /.1);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     
     
     &--slogan{
-        border: 1px solid yellow;
-       
         padding-right: 1rem;
         padding-left: 1rem;
     }
     &--menu{
         width: fit-content;
         margin-right: auto;
-        border: 1px solid yellow;
+        //border: 1px solid yellow;
     }
 }
 
