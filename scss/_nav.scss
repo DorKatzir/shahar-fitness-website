@@ -2,8 +2,9 @@
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    gap: 1em;
 
 }
 
@@ -28,6 +29,7 @@ nav{
     outline: none;
     background: none;
     cursor: pointer;
+    padding-top: 1em;
 
     span{
         display: block;
@@ -40,6 +42,9 @@ nav{
         z-index: 1;
         transform-origin: 0 0; //* top left *//
         transition: 0.4s;
+        &:last-child{
+            margin-bottom: 0;
+        }
     }
     &:hover span:nth-child(3){
         transform: translateX(-10px);
