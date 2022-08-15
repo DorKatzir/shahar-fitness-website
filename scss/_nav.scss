@@ -1,23 +1,21 @@
+nav{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    right: 1em;
+    padding:1em;
+    background-color: var(--clr-gray-dark);
+    z-index: 99;
+}
+
 .container{
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
-    gap: 1em;
+    justify-content: space-between;   
 
-}
-
-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1em 2em;
-    border-bottom: 3px solid var(--clr-black);
-    background-color: var(--clr-gray-dark);
-    z-index: 99;
 }
 
 .hamburger{
@@ -30,7 +28,6 @@ nav{
     outline: none;
     background: none;
     cursor: pointer;
-    padding-top: 1em;
 
     span{
         display: block;
@@ -68,4 +65,13 @@ nav{
 
 .menu{
     display: none;
+}
+
+@media (min-width: 40.625em){
+    .hamburger{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
 }
