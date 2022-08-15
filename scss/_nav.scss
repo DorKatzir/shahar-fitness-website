@@ -1,9 +1,10 @@
 nav{
     position: fixed;
-    top: var(--padding);
-    left: var(--padding);
-    right: var(--padding);
-    padding: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--padding);
+    background-color: var(--clr-black-dark);
     z-index: 99;
 }
 

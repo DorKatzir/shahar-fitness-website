@@ -6,7 +6,8 @@
     --clr-gray-light: rgb(186, 186, 186);
     --clr-gray-medium: rgb(161, 161, 161);
     --clr-gray-dark: rgb(20, 20, 20);
-    --clr-black: rgb(10, 10, 10);
+    --clr-black-medium: rgb(10, 10, 10);
+    --clr-black-dark: hsl(0, 0%, 2%);
 
     --ff-primary: 'Rubik', sans-serif;
 
@@ -28,12 +29,12 @@
 
     //--gap: 1.618rem;
 
-    --padding: clamp(0.618rem, 3vw, 1.618rem);
+    --padding: clamp(1.618rem, 3vw, 1.618rem);
 }
 
 
 body {
-  padding: var(--padding);
+  // padding: var(--padding);
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
