@@ -1,20 +1,35 @@
 nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     padding: var(--padding);
     background-color: var(--clr-black-dark);
-    z-index: 99;
+    transition: transform 0.4s ease-in-out .5s;
+    //animation: nav-animate 1s forwards;
+
+    &.is-active::before{
+        content: '';
+        background: darkorchid;
+        inset: 0;
+        height: 100vh;
+        transform: translateY(0%);
+        transform-origin: top center;
+        position: absolute;
+        z-index: -1;
+        animation: nav-animate 1s forwards;
+    }
+    @keyframes nav-animate {
+        from{ opacity: 0; transform: translateY(-100%)}
+        to{ opacity: 1; transform: translateY(0%);}
+    }
+  
 }
+
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    //flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;   
+    justify-content: space-between; 
 }
 
 .brand-logo{
@@ -27,6 +42,7 @@ nav{
 }
 
 .hamburger{
+    pointer-events: auto;
     display: block;
     position: relative;
     z-index: 1;
@@ -86,10 +102,17 @@ nav{
         border-radius: 3px;
     }
 
-    a.is-active, a:hover, a:focus{
+    a.current, a:hover, a:focus{
         background-color: var(--clr-gray-dark);
         color: var(--clr-orange-100);
     }
+}
+
+.full-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: darkslateblue;
+    // z-index: 99999;
 }
 
 @media (min-width: 48em){
@@ -99,5 +122,8 @@ nav{
     }
     .menu{
         display: flex;
+    }
+    .full-bg{
+        display: none;
     }
 }
