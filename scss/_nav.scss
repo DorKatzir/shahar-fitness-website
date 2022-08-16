@@ -1,30 +1,11 @@
 nav{
     position: relative;
     padding: var(--padding);
-    background-color: var(--clr-black-dark);
-    transition: transform 0.4s ease-in-out .5s;
-    //animation: nav-animate 1s forwards;
-
-    &.is-active::before{
-        content: '';
-        background: darkorchid;
-        inset: 0;
-        height: 100vh;
-        transform: translateY(0%);
-        transform-origin: top center;
-        position: absolute;
-        z-index: -1;
-        animation: nav-animate 1s forwards;
-    }
-    @keyframes nav-animate {
-        from{ opacity: 0; transform: translateY(-100%)}
-        to{ opacity: 1; transform: translateY(0%);}
-    }
-  
+    //background-color: var(--clr-black-dark);
 }
 
-
 .container{
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -42,12 +23,10 @@ nav{
 }
 
 .hamburger{
-    pointer-events: auto;
     display: block;
     position: relative;
     z-index: 1;
     user-select: none;
-    // appearance: none;
     border: none;
     outline: none;
     background: none;
@@ -89,41 +68,78 @@ nav{
 
 .menu{
     display: none;
-    flex: 1 1 0%;
-    justify-content: flex-end;
-    margin: 0 -0.16rem;
-    transform: skewX(-15deg);
+}
+
+.menu-mobile{
+    background-color: rgb(0 0 0 / .9);
+    position: fixed;
+    inset: 0;
+    --gap: 1.618em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+
+    padding: min(30vh, 10rem) 2em;
+ 
+    transform: translateX(-100%);
+    animation: shit 0.5s forwards;
+    @keyframes shit {
+        from{ transform: translateX(-100%); }
+        to{ transform: translateX(0%); }   
+    }
+
+    //transform: skewX(-15deg);
+    
     a:link, a:visited{
         color: var(--clr-blue-100);
-        margin: 0 0.16rem;
+        margin: 0.16rem 0;
         text-decoration: none;
         transition: 0.4s;
         padding: 0.5rem 1rem;
         border-radius: 3px;
+        width: 50%;
     }
-
     a.current, a:hover, a:focus{
         background-color: var(--clr-gray-dark);
         color: var(--clr-orange-100);
     }
+
+
 }
 
-.full-page{
-    width: 100%;
-    min-height: 100vh;
-    background-color: darkslateblue;
-    // z-index: 99999;
-}
+
+
+
+
 
 @media (min-width: 48em){
 
     .hamburger{
-        display: none;
+        display: none !important;
     }
     .menu{
-        display: flex;
+        display: flex !important;
+        flex: 1 1 0%;
+        justify-content: flex-end;
+        margin: 0 -0.16rem;
+        transform: skewX(-15deg);
+        a:link, a:visited{
+            color: var(--clr-blue-100);
+            margin: 0 0.16rem;
+            text-decoration: none;
+            transition: 0.4s;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+        }
+        a.current, a:hover, a:focus{
+            background-color: var(--clr-gray-dark);
+            color: var(--clr-orange-100);
+        }
     }
-    .full-bg{
-        display: none;
+    .menu-mobile{
+        display: none !important;
     }
+  
 }

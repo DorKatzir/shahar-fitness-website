@@ -1,9 +1,11 @@
 const hamburger = document.querySelector('.hamburger')
-const nav = document.querySelector('.nav')
+// const nav = document.querySelector('.nav')
+const menu = document.querySelector('.menu')
 
 hamburger.addEventListener('pointerup', function(){
     this.classList.toggle('is-active')
-    nav.classList.toggle('is-active')
+    // nav.classList.toggle('is-active')
+    menu.classList.toggle('menu-mobile')
 })
 
 
