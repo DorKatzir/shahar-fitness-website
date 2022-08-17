@@ -38,8 +38,8 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
-  background-image: url(../images/pattern/pattern-large.png);
-  background-color: rgb(129, 129, 129);
+  background-image: url(../images/pattern/pattern-small.png);
+  background-color: rgb(20, 114, 151);
   background-blend-mode: multiply;
 
   overflow-x: hidden;
@@ -49,6 +49,14 @@ body {
 @import 'utilities';
 @import 'nav';
 
+@media (min-width: 48em){
+  body{
+    background-image: url(../images/pattern/pattern-large.png);
+    background-color: rgb(129, 129, 129);
+    background-blend-mode: multiply;
+  }
+
+}
 
 
 
