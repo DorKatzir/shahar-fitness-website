@@ -38,7 +38,7 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
-  background-image: url(../images/pattern/pattern-small.png);
+  background-image: url(../images/pattern/pattern-large.png);
   background-color: var(--clr-blue-100);
   background-blend-mode: multiply;
 
@@ -49,14 +49,7 @@ body {
 @import 'utilities';
 @import 'nav';
 
-@media (min-width: 48em){
-  body{
-    background-image: url(../images/pattern/pattern-large.png);
-    background-color: var(--clr-blue-100);
-    background-blend-mode: multiply;
-  }
 
-}
 
 
 
