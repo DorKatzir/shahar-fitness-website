@@ -1,13 +1,31 @@
 :root{
-    --clr-orange-100: hsl(9, 58%, 48%);
-    --clr-blue-100: #3095AA;
+    --orange-100: hsl(9 58% 48% / 1);
+    --orange-75: hsl(9 58% 48% / .75);
+    --orange-50: hsl(9 58% 48% / .5);
+    --orange-25: hsl(9 58% 48% / .25);
+    --orange-0: hsl(9 58% 48% / 0);
 
-    --clr-white: hsl(0, 0%, 96%);
-    --clr-gray-light: hsl(0, 0%, 51%);
-    --clr-gray-medium: rgb(161, 161, 161);
-    --clr-gray-dark: rgb(20, 20, 20);
-    --clr-black-medium: rgb(10, 10, 10);
-    --clr-black-dark: hsl(0, 0%, 2%);
+    --blue-100: hsl(190 56% 43% / 1);
+    --blue-75: hsl(190 56% 43% / .75);
+    --blue-50: hsl(190 56% 43% / .5);
+    --blue-25: hsl(190 56% 43% / .25);
+    --blue-0: hsl(190 56% 43% / 0);
+
+    --white-100: hsl(0 0% 100% / 1);
+    --white-75: hsl(0 0% 100% / .75);
+    --white-50: hsl(0 0% 100% / .5);
+    --white-25: hsl(0 0% 100% / .25);
+    --white-15: hsl(0 0% 100% / .15);
+    --white-10: hsl(0 0% 100% / .1);
+    --white-0: hsl(0 0% 100% / 0);
+
+    --black-100: hsl(0 0% 0% / 1);
+    --black-90: hsl(0 0% 0% / .9);
+    --black-75: hsl(0 0% 0% / .75);
+    --black-50: hsl(0 0% 0% / .5);
+    --black-25: hsl(0 0% 0% / .25);
+    --black-10: hsl(0 0% 0% / .1);
+    --black-0: hsl(0 0% 0% / 0);
 
     --ff-primary: 'Rubik', sans-serif;
 
@@ -26,6 +44,7 @@
     // --fs-subtitle: clamp(0.6rem, 3vw, 1.618rem);
     --fs-regular: 1rem;
     --fs-small: 0.618rem;
+    --fs--link: 1.2rem;
 
     //--gap: 1.618rem;
 
@@ -39,14 +58,16 @@ body {
   font-size: var(--fs-regular);
   color: var(--clr-white);
   background-image: url(../images/pattern/pattern-large.png);
-  background-color: var(--clr-blue-100);
+  background-color: var(--black-50);
   background-blend-mode: multiply;
+  padding: 1.68rem;
 
   overflow-x: hidden;
 }
 
 
 @import 'utilities';
+@import 'header';
 @import 'nav';
 
 

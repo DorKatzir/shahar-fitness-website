@@ -1,16 +1,12 @@
-const hamburger = document.querySelector('.hamburger')
-// const nav = document.querySelector('.nav')
-const menu = document.querySelector('.menu')
 
-hamburger.addEventListener('pointerup', function(){
-    this.classList.toggle('is-active')
-    // nav.classList.toggle('is-active')
-    menu.classList.toggle('menu-mobile')
+const toggleBox = document.querySelector('.box')
+const navList = document.querySelector('.nav-list')
+
+toggleBox.addEventListener('click', function() {
+    this.classList.toggle('x')
+    navList.classList.toggle('list-opened')
 })
-
-
-
-
+    
 
 
 
