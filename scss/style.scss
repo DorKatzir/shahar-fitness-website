@@ -26,7 +26,7 @@
     --black-25: hsl(0 0% 0% / .25);
     --black-10: hsl(0 0% 0% / .1);
     --black-0: hsl(0 0% 0% / 0);
-    --bg-dark: hsl(0 0% 10%);
+    --bg-dark: #191919;
 
     --ff-primary: 'Rubik', sans-serif;
 
@@ -55,9 +55,12 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   color: var(--clr-white);
-  //background-image: url(../images/pattern/pattern-large.png);
-  background-color: var(--bg-dark);
-  //background-blend-mode: multiply;
+  //background-color: var(--bg-dark);
+  background-image: 
+    // linear-gradient(var(--bg-dark), var(--blue-100)),
+    url(../images/pattern/pattern.png);
+  // background-blend-mode: soft-light;
+  
   padding: 1.68rem;
 
   overflow-x: hidden;
