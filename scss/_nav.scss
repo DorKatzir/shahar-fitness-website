@@ -22,9 +22,7 @@
 
 
 
-
-
-/** 768px **/
+/** 768px and below **/
 @media (max-width: 48em){
 
     .box{
@@ -145,18 +143,19 @@
         }
     }
 
-    header{
-        .nav{
-            flex: none;
-        }
-        .box{
-            flex-basis: min(50px, 100px);
-        }
+    // header{
+    //     flex-direction: row-reverse;
+    //     justify-content: space-between;
 
-
-
+    //     .nav{
+    //         flex: 0 0 0%;
+            
+    //     }
+    //     // .brand{
+    //     //     height: 150px;
  
-    }
+    //     // }
+    // }
 
   
 }
