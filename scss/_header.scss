@@ -38,6 +38,7 @@ header{
     
     header{
         flex-direction: row-reverse;
+        gap: .618rem;
 
         > * {
             flex-basis: auto;
