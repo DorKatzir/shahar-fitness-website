@@ -26,11 +26,8 @@
 @media (max-width: 48em){
 
     .box{
-        //background-color: var(--white-10);
         width: 40px;
-        min-width: 40px;
         height: 35px;
-        min-height: 35px;
         position: relative;
         cursor: pointer;
     }
@@ -81,40 +78,53 @@
     }
 
     .x {
+        width: 28px;
+        height: 28px;
+
+        
         .burger{
-            background-color: var(--orange-0);
+            width: 100%;
+            height: 100%;
+            //background-color: var(--orange-0);
+            top: 0px;
             &::before{
-                transform: translate(5px,calc(var(--burgerH)*-2.5)) rotate(45deg);
-                border-color: var(--orange-100);
+                transform: translate(0px, 12px) rotate(-45deg);
+                transform-origin: center !important;
+                border-color: var(--white-75);
             }
             &::after{
-                transform: translate(-10px,calc(var(--burgerH)*-2.5)) rotate(-45deg);
-                border-color: var(--orange-100);
+                transform: translate(0px, -12px) rotate(45deg);
+                transform-origin: center !important;
+                border-color: var(--white-75);
             }
         }
 
     }
 
     .nav-list.list-closed{
-        transform-origin: top center;
-        opacity: 0;
-        transform: translateY(-100%);
-        transition: transform, opacity .25s linear;
+        
+        transform: translateX(100%);
+        transition: transform ease-in-out;
+        animation-name: animateListClose;
+        animation-duration: 250ms;
+
         list-style: none;
         display: flex;
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        position: absolute;
-        background-color: var(--black-90);
+        position: fixed;
+        background-color: var(--blue-100);
         width: 100%;
         height: 100%;
         top:0;
         left: 0;
         .nav-item{
-            width: 250px;
+            margin-inline-start: 30vw;
+            width: 100%;
+            max-width: 200px;
             border-left: none;
-            border-bottom: 1px solid var(--orange-25);
+            border-bottom: 1px solid var(--black-25);
             &:last-child{
                 border-bottom: none;
             }
@@ -123,7 +133,7 @@
                 text-decoration: none;
                 text-align: center;
                 white-space: nowrap;
-                color: var(--blue-100);
+                color: var(--white-100);
                 font-size: calc( var(--fs-subtitle)/1.2 );
                 padding-inline: var(--fs-small);
                 padding-block: calc( var(--fs-small) );
@@ -131,12 +141,16 @@
         }
     }
     .nav-list.list-opened{
-        transform: translateY(0%);
-        opacity: 1;
-        transform-origin: top center;
+        transform: translateX(30%);
+        transition: transform ease-in-out;
+
+        animation-name: animateListOpen;
+        animation-duration: 250ms;
+        animation-timing-function: ease-in-out;
+
         .nav-item{
             animation-name: animateIn;
-            animation-duration: 500ms;
+            animation-duration: 300ms;
             animation-delay: calc(var(--animation-order) * 100ms);
             animation-fill-mode: both;
             animation-timing-function: ease-in-out;
@@ -167,10 +181,40 @@
 @keyframes animateIn {
   0% {
     opacity: 0;
-    transform: scale(0.6) translateY(-8px);
+    transform: translateX(-50%);
   }
   
   100% {
     opacity: 1;
+  }
+}
+
+
+@keyframes animateListClose {
+  0% {
+    opacity: 1;
+    transform: translateX(30%);
+    
+}
+
+100% {
+    opacity: 0;
+    transform: translateX(100%);
+    
+  }
+}
+
+
+@keyframes animateListOpen {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+    
+}
+
+100% {
+    opacity: 1;
+    transform: translateX(30%);
+    
   }
 }
