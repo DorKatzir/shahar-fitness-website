@@ -133,8 +133,9 @@
 
         list-style: none;
         display: flex;
+        
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         position: fixed;
         background-color: var(--blue-100);
@@ -142,18 +143,25 @@
         height: 100%;
         top:0;
         left: 0;
+        right: 0;
+        bottom: 0;
         .nav-item{
             margin-inline-start: 30vw;
             width: 100%;
-            max-width: 200px;
+            max-width: 150px;
             border-left: none;
             border-bottom: 1px solid var(--black-25);
             &:last-child, &:first-child{
                 border-bottom: none;
+                flex-basis: 25%;
             }
             &:first-child{
-                flex-basis: 40%;
+                max-width: 150px;
             }
+            &:last-child{
+                padding-block-start: 2.618rem;
+            }
+
             &:nth-child(4){
                 border-bottom: none;
             }
@@ -168,11 +176,16 @@
                 padding-block: calc( var(--fs-small) );
             }
             .icons{
+                
+                background-color: var(--black-10);
+                border-radius: 1.618rem;
                 width: 100%;
-                max-width: 200px;
-                height: 120px;
-                max-height: 120px;
+                max-width: 150px;
+                height: 50px;
+                
                 justify-content: center !important;
+
+                gap: 1.618rem;
                 svg{
                     fill: var(--white-100);
                     display: block;
@@ -181,15 +194,10 @@
                     aspect-ratio: 1 !important;
                 }
             }
-            // .avatar{
-            //     width: 90px;
-            //     height: 106px;
-            //     background-color: #fff;
-            // }
-            
             
         }
     }
+
 
     .nav-list.list-opened{
         transform: translateX(30%);
@@ -202,34 +210,21 @@
 
         .nav-item{
             animation-name: animateIn;
-            animation-duration: 300ms;
+            animation-duration: 500ms;
             animation-delay: calc(var(--animation-order) * 100ms);
             animation-fill-mode: both;
-            animation-timing-function: ease-in-out;
+            animation-timing-function: ease;
         }
         .avatar{
-            width: 90px;
-            height: 106px;
+            justify-self: flex-start !important;
+            width: 100%;
+            max-height: 150px;
             background-image: url(../images/nav/shahar_90X106.png);
             background-repeat: no-repeat;
-            background-position-y: 60%;
+            background-size: auto;
+            background-position: 50% 50%;
         }
 
-        .icons{
-            width: 100%;
-            max-width: 200px;
-            height: 120px;
-            max-height: 120px;
-            justify-content: center !important;
-
-            svg{
-                fill: var(--white-100);
-                display: block;
-                width: 100%;
-                max-width: 20px;
-                aspect-ratio: 1 !important;
-            }
-        }
     }
 
 }
