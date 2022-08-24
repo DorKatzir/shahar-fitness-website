@@ -3,9 +3,10 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
     .nav-item{
         border-left: 2px solid var(--orange-25);
-        &:last-child{
+        &:last-child, &:first-child{
             border-left: none;
         }
         .nav-link{
@@ -16,6 +17,28 @@
             color: var(--blue-100);
             font-size: calc( var(--fs-subtitle)/1.2 );
             padding-inline: var(--fs-small);
+        }
+
+        .icons{
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            place-items: center;
+            gap: 0.618rem; 
+            padding-inline: var(--fs-small);
+            margin-block-start: 0.161rem;  
+
+            > * {
+                flex-basis: 1;
+                flex-shrink: 0;
+                flex-grow: 0;  
+            }
+            svg{
+                fill: var(--orange-100);
+                display: block;
+                width: 100%;
+                max-width: 20px;
+            }
         }
     }
 }
@@ -131,6 +154,9 @@
             &:first-child{
                 flex-basis: 40%;
             }
+            &:nth-child(4){
+                border-bottom: none;
+            }
             .nav-link{
                 display: block;
                 text-decoration: none;
@@ -170,6 +196,17 @@
             background-image: url(../images/nav/shahar_90X106.png);
             background-repeat: no-repeat;
             background-position-y: 60%;
+        }
+        .icons{
+            width: 100%;
+            max-width: 200px;
+            height: 120px;
+            max-height: 120px;
+            justify-content: center !important;
+
+            svg{
+                fill: var(--white-100);
+            }
         }
     }
 
