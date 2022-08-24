@@ -206,6 +206,10 @@
 
             svg{
                 fill: var(--white-100);
+                display: block;
+                width: 100%;
+                max-width: 20px;
+                aspect-ratio: 1 !important;
             }
         }
     }
