@@ -16,7 +16,7 @@
             white-space: nowrap;
             color: var(--blue-100);
             font-size: calc( var(--fs-subtitle)/1.2 );
-            padding-inline: var(--fs-small);
+            padding-inline: 1rem;
         }
 
         .icons{
@@ -24,8 +24,8 @@
             display: flex;
             flex-direction: row;
             place-items: center;
-            gap: 0.618rem; 
-            padding-inline: var(--fs-small);
+            gap: 1rem; 
+            padding-inline-start: 1rem;
             margin-block-start: 0.161rem;  
 
             > * {
@@ -127,13 +127,10 @@
     .nav-list.list-closed{
         
         transform: translateX(100%);
-        transition: transform ease-in-out;
-        animation-name: animateListClose;
-        animation-duration: 300ms;
+        transition: transform 150ms ease-in-out;
 
         list-style: none;
-        display: flex;
-        
+        display: flex;        
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -156,8 +153,6 @@
 
             &:first-child{
                 border-bottom: none;
-                //height: 25%;
-                
                 width: 100% !important;
                 max-width: 150px;
             }
@@ -187,7 +182,9 @@
                 height: 100%;
                 min-height: 36px;
                 max-height: 36px;
+                padding-inline: 1rem;
                 margin-block-start: clamp(0.16rem, 8vh, 3.618rem);
+                
 
 
                 svg{
@@ -201,25 +198,7 @@
             }
             
         }
-    }
 
-
-    .nav-list.list-opened{
-        transform: translateX(30%);
-        transition: transform ease-in-out;
-
-        animation-name: animateListOpen;
-        animation-duration: 100ms;
-        animation-timing-function: ease-in-out;
-        
-
-        .nav-item{
-            animation-name: animateIn;
-            animation-duration: 250ms;
-            animation-delay: calc(var(--animation-order) * 150ms);
-            animation-fill-mode: both;
-            animation-timing-function: ease-in-out;
-        }
         .avatar{
             justify-self: flex-start !important;
             width: 100%;
@@ -231,6 +210,20 @@
             background-size: auto;
             background-position: 50% 0%;
         }
+    }
+
+
+    .nav-list.list-opened{
+        transform: translateX(30%);
+
+        .nav-item{
+            animation-name: animateIn;
+            animation-duration: 250ms;
+            animation-delay: calc(var(--animation-order) * 150ms);
+            animation-fill-mode: both;
+            animation-timing-function: ease-in-out;
+        }
+        
 
     }
 
@@ -248,35 +241,5 @@
   
   100% {
     opacity: 1;
-  }
-}
-
-
-@keyframes animateListClose {
-  0% {
-    opacity: 1;
-    transform: translateX(30%);
-    
-}
-
-100% {
-    opacity: 0;
-    transform: translateX(100%);
-    
-  }
-}
-
-
-@keyframes animateListOpen {
-  0% {
-    opacity: 0;
-    transform: translateX(100%);
-    
-}
-
-100% {
-    opacity: 1;
-    transform: translateX(30%);
-    
   }
 }
