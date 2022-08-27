@@ -129,7 +129,7 @@
         transform: translateX(100%);
         transition: transform ease-in-out;
         animation-name: animateListClose;
-        animation-duration: 250ms;
+        animation-duration: 300ms;
 
         list-style: none;
         display: flex;
@@ -145,26 +145,27 @@
         left: 0;
         right: 0;
         bottom: 0;
+        margin: auto;
+
         .nav-item{
             margin-inline-start: 30vw;
             width: 100%;
             max-width: 150px;
             border-left: none;
             border-bottom: 1px solid var(--black-25);
-            &:last-child, &:first-child{
-                border-bottom: none;
-                flex-basis: 25%;
-            }
+
             &:first-child{
+                border-bottom: none;
+                //height: 25%;
+                
+                width: 100% !important;
                 max-width: 150px;
             }
-            &:last-child{
-                padding-block-start: 2.618rem;
-            }
-
-            &:nth-child(4){
+            
+            &:nth-child(4), &:nth-child(5){
                 border-bottom: none;
             }
+
             .nav-link{
                 display: block;
                 text-decoration: none;
@@ -175,22 +176,26 @@
                 padding-inline: var(--fs-small);
                 padding-block: calc( var(--fs-small) );
             }
-            .icons{
-                
+            &:last-child .icons{
+    
                 background-color: var(--black-10);
                 border-radius: 1.618rem;
-                width: 100%;
-                max-width: 150px;
-                height: 50px;
+    
+                justify-content: space-between; 
                 
-                justify-content: center !important;
+                width: 100%;
+                height: 100%;
+                min-height: 36px;
+                max-height: 36px;
+                margin-block-start: clamp(0.16rem, 8vh, 3.618rem);
 
-                gap: 1.618rem;
+
                 svg{
                     fill: var(--white-100);
                     display: block;
                     width: 100%;
                     max-width: 20px;
+                    max-height: 20px;
                     aspect-ratio: 1 !important;
                 }
             }
@@ -204,25 +209,27 @@
         transition: transform ease-in-out;
 
         animation-name: animateListOpen;
-        animation-duration: 250ms;
+        animation-duration: 100ms;
         animation-timing-function: ease-in-out;
         
 
         .nav-item{
             animation-name: animateIn;
-            animation-duration: 500ms;
-            animation-delay: calc(var(--animation-order) * 100ms);
+            animation-duration: 250ms;
+            animation-delay: calc(var(--animation-order) * 150ms);
             animation-fill-mode: both;
-            animation-timing-function: ease;
+            animation-timing-function: ease-in-out;
         }
         .avatar{
             justify-self: flex-start !important;
             width: 100%;
-            max-height: 150px;
-            background-image: url(../images/nav/shahar_90X106.png);
+            height: 100%;
+            max-height: 168px;
+            min-height: 114px;
+            background-image: url(../images/nav/avatar106X114.png);
             background-repeat: no-repeat;
             background-size: auto;
-            background-position: 50% 50%;
+            background-position: 50% 0%;
         }
 
     }
@@ -236,7 +243,7 @@
 @keyframes animateIn {
   0% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateX(-30%);
   }
   
   100% {
