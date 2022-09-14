@@ -1,6 +1,8 @@
 .nav-list{
+    //z-index: 2;
     list-style: none;
     display: flex;
+    
     flex-direction: row;
     justify-content: flex-end;
 
@@ -22,10 +24,11 @@
         .icons{
             width: fit-content;
             display: flex;
+            // flex-wrap: wrap;
             flex-direction: row;
             place-items: center;
             gap: 1.2rem; 
-            padding-inline-start: 1.2rem;
+            padding-inline: 1.2rem;
             margin-block-start: 0.161rem;  
 
             > * {
@@ -45,8 +48,11 @@
 
 
 
-/** 873px and below **/
-@media (max-width: 54em){
+
+@media (max-width: 870px){
+    nav, .x{
+        z-index: 2;
+    }
 
     .box{
         width: 40px;
