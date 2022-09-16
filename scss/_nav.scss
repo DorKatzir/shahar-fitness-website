@@ -17,7 +17,7 @@
             text-align: center;
             white-space: nowrap;
             color: var(--blue-100);
-            font-size: calc( var(--fs-subtitle)/1.2 );
+            font-size: var(--fs-regular);
             padding-inline: 1rem;
         }
 
@@ -175,7 +175,7 @@
                 text-align: center;
                 white-space: nowrap;
                 color: var(--white-100);
-                font-size: calc( var(--fs-subtitle)/1.2 );
+                font-size: var(--fs-regular);
                 padding-inline: var(--fs-small);
                 padding-block: calc( var(--fs-small) );
             }
@@ -190,9 +190,10 @@
                 height: 100%;
                 min-height: 36px;
                 max-height: 36px;
-                padding-inline-start: 0;
+                padding-inline: 0 !important;
                // padding: 1rem;
                 margin-block-start: clamp(0.16rem, 8vh, 3.618rem);
+                gap: 0 !important;
                 
 
 
