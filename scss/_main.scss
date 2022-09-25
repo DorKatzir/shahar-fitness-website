@@ -1,20 +1,23 @@
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(340px, 50%) 1fr;
     
 }
 
 .content{
 
-    justify-self: center;
+    justify-self: end;
     margin-block-start: 3rem;
+    
 
     color: var(--white-75);
     font-size: var(--fs-subtitle);     
     font-weight: var(--fw-light); 
+    width: 100%;
 
     h2{
         color: rgb(130,130,130);
+        text-align: left;
     }
 
 
@@ -42,17 +45,13 @@ main{
 }
 
 .image{
-    
-    img{
-        width: 100%;
-        max-height: auto;
-        
-    }
+    justify-self: end;
     object-fit: cover;
     margin-block-start: -50px; 
+    max-width: 445px;
 }
 
-@media (max-width: 480px){
+@media (max-width: 639px){
 
     main{
         grid-template-columns: 1fr;
