@@ -9,27 +9,23 @@
     video {
         position: absolute;
         inset: 0;
-        // top: -10%;
         object-fit: cover;
         object-position: center;
         width: 100%;
         height: 100%;
         filter: contrast(110%) grayscale(10%);
-        mask-image: linear-gradient(transparent, black,rgba(25, 25, 25, .25), transparent);
-        
-        //mask-size: 100px 200px;
-        
+        mask-image: linear-gradient(transparent 12%, black,rgba(25, 25, 25, .25), transparent);  
 
     } 
-    // .overlap{
-    //     position: absolute;
-    //     display: block;
-    //     inset: 0;
-    //     height: 50%;
-    //     width: 100%;
-    //     background-image: 
-    //         linear-gradient(rgba(25, 25, 25, .5),rgba(25, 25, 25, 0));
-    //     mix-blend-mode: darken; 
-    // }
+    .overlap{
+        position: absolute;
+        display: block;
+        inset: 0;
+        height: 50%;
+        width: 100%;
+        background-image: 
+            linear-gradient(rgba(25, 25, 25, .5),rgba(25, 25, 25, 0));
+        mix-blend-mode: multiply; 
+    }
      
 }
