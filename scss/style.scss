@@ -51,6 +51,7 @@
 
 body, html{
   height: 100%;
+
 }
 
 
@@ -60,7 +61,8 @@ body {
   font-size: var(--fs-regular);
   color: var(--clr-white);
   background-image: url(../images/pattern/pattern.png);
-  padding: 1.68rem;
+      
+  padding: 0 1.618rem;
   overflow-x: hidden;
   width: 100%;
   max-width: 1088px;
@@ -68,11 +70,14 @@ body {
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: min-content auto 80px;
+  grid-template-rows: min-content 80vh 80px;
+  // position: relative;
 }
 
+
 // header{
-//   background-color: rgba(255, 192, 203, 0.296);
+//   // background-color: rgba(255, 192, 203, 0.296);
+
 // }
 
 
