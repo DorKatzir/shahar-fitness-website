@@ -31,7 +31,9 @@
 }
 
 .content{
-    background-color: rgba(0 0 0 / .25);
+    
+    max-width: 600px;
+    background-color: rgba(0 0 0 / .15);
     border-radius: 8px;
     padding-inline: 1rem;
     padding-block: 1.2rem;
@@ -45,26 +47,61 @@
         font-weight: 300;
 
     }
-    .cards{
-        .card{
-            width: 200px;
-            height: 50px;
-            color: var(--blue-100);
-            background-color: rgba(0 0 0 / .5);
-            border-radius: 3px;
-            padding: .5rem;
-            display: flex;
-            align-items: center;
-            // justify-content:space-evenly;
-            gap: .5rem;
-            margin-block-end: .5rem;
-            p{
-                flex: 1;
-                text-align: center;
+
+    .accordion{
+        z-index: 0 !important;
+        max-width: 400px;
+        width: 100%;
+        //background: rgba(0 0 0 / .25);
+        background-color: var(--blue-75);
+        border-radius: 5px;
+        overflow: hidden;
+
+        &__input{
+            display: none;
+        }
+        
+        &__content{
+            background-color: whitesmoke;
+            line-height: 1.2;
+            transition: max-height .25s ease, opacity .35s ease;
+            opacity: 0;
+            max-height: 0;
+        }
+        &__label{
+            padding: 14px 20px;
+            color: white;
+            display: block;
+            cursor: pointer;
+            position: relative;
+            transition: background .15s;
+            &:hover{
+                background: rgba(0 0 0 / .5);
             }
-            .triangle{
-                margin-inline-start: .5rem;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                width: 20px;
+                height: 10px;
+                border-radius: 3px;
+                background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+                background-size: contain;
+                transition: transform .4s;
             }
+        }
+
+        &__input:checked ~ .accordion__content{
+            padding: 14px 20px;
+            height: max-content;
+            max-height: 200px;
+            opacity: 1;
+        }
+
+        &__input:checked ~ .accordion__label::after{
+            transform: translateY(-50%) rotate(0.5turn);
         }
     }
 }
