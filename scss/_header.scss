@@ -3,7 +3,7 @@ header{
     inset: 0;
     padding-block-start: 1.618rem;
     position: sticky;
-
+    z-index: 99 !important;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
