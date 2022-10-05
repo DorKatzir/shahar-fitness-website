@@ -33,3 +33,8 @@
 .scroll{
 	height: 500px;
 }
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
