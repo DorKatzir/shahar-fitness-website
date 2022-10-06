@@ -66,11 +66,39 @@
             outline: none;
             border-radius: 5px;
             transition: 0.4s;
+            position: relative;
+            
         }
 
         .active, .accordion:hover {
             background-color: rgba(0, 0, 0, 1);
+            
         }
+        .active {
+            transform-origin: center !important;
+        }
+
+        .accordion::after {
+            content: '';
+            color: var(--orange-100);
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            width: 15px;
+            height: 10px;
+            background-image: url('../images/home/triangle.svg');
+            background-size: contain;
+            transition: transform 0.4s;
+            
+        }
+
+        .active::after {
+            transform: translateY(-50%) rotate(0.5turn);
+            transform-origin: center center;
+        }
+
 
         .panel {
             p{
