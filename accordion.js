@@ -4,7 +4,6 @@ const panelOne = document.getElementsByClassName('one')
 const panelTwo = document.getElementsByClassName('two')
 const panelThree = document.getElementsByClassName('three')
 
-console.log(acc)
 let i
 
 for (i = 0; i < acc.length; i++) {
@@ -20,7 +19,7 @@ for (i = 0; i < acc.length; i++) {
             panelTwo[1].style.maxHeight = null
             panelThree[0].classList.remove('active')
             panelThree[1].style.maxHeight = null
-            togglePanel()
+            togglePanel(this)
         }
 
         if (this.classList.contains('two') && panel.classList.contains('two')) {
@@ -30,7 +29,7 @@ for (i = 0; i < acc.length; i++) {
             panelThree[0].classList.remove('active')
             panelOne[1].style.maxHeight = null
             panelThree[1].style.maxHeight = null
-            togglePanel()
+            togglePanel(this)
         }
 
         if (this.classList.contains('three') && panel.classList.contains('three')) {
@@ -40,11 +39,11 @@ for (i = 0; i < acc.length; i++) {
             panelTwo[0].classList.remove('active')
             panelOne[1].style.maxHeight = null
             panelTwo[1].style.maxHeight = null
-            togglePanel()
+            togglePanel(this)
         }
         
 
-        function togglePanel(){
+        function togglePanel(x){
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null
             } else {
