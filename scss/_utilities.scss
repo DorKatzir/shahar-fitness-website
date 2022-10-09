@@ -35,3 +35,11 @@
     height: 100%;
     overflow: hidden;
 }
+
+@mixin section-mobile {
+	max-width: 600px;
+    background-color: rgba(0 0 0 / .25);
+    border-radius: 8px;
+    padding-inline: 1rem;
+    padding-block: 1.2rem;
+}

@@ -1,0 +1,37 @@
+
+section{
+    margin-block: 1.3rem;
+}
+.quote{
+    @include section-mobile;
+}
+blockquote{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: fit-content;
+    
+    p{
+        color: var(--orange-100);
+        //font-size: 1rem;
+        text-align: center;
+    }
+}
+
+cite{
+    margin-block-start: 1rem;
+    font-size: 1rem;
+    color: var(--orange-100);
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    display: block;
+    span{
+        color: var(--blue-100);
+    }
+
+}
+
