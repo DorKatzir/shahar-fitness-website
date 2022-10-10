@@ -15,9 +15,11 @@ blockquote{
     width: fit-content;
     
     p{
-        color: var(--orange-100);
+        //color: var(--orange-50);
+        color: rgba(255 255 255 / .4);
         //font-size: 1rem;
         text-align: center;
+        font-weight: 300;
     }
 }
 
