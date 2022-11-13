@@ -1,0 +1,29 @@
+
+.gallery{
+    @include section-mobile;
+    height: fit-content;
+
+    .section-main-title{
+
+        @include section-title;
+        display: flex;
+        flex-direction: column;
+        max-width: max-content;
+        margin: auto;
+        
+        p{
+            margin-bottom: 1rem;
+        }
+    
+        hr{
+            align-self: center;
+            width: 50%;
+            border: 0;
+            border-top: 2px solid var(--orange-75);
+            border-radius: 3px;
+            
+        }
+    }
+
+    
+}

@@ -81,9 +81,13 @@ body {
 // }
 
 
-// footer{
-//   background-color: rgb(191, 143, 151);
-// }
+footer{
+  //background-color: rgba(191, 143, 151, 0.192);
+  margin-top: 3rem;
+  h2 ,p{
+    color: transparent;
+  }
+}
 
 
 
@@ -93,6 +97,7 @@ body {
 // @import 'main';
 @import 'home';
 @import 'quote';
+@import 'gallery';
 
 
 

@@ -43,3 +43,10 @@
     padding-inline: 1rem;
     padding-block: 1.2rem;
 }
+
+@mixin section-title {
+    
+    color: rgba(255 255 255 / .4);
+    text-align: center;
+    font-weight: 300;
+}
