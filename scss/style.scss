@@ -51,7 +51,6 @@
 
 body, html{
   height: 100%;
-
 }
 
 
@@ -70,7 +69,10 @@ body {
   margin: 0 auto;
 
   display: grid;
-  grid-template-rows: min-content 80vh 1fr 80px;
+  grid-template-rows: min-content 75vh;
+  grid-auto-rows: max-content;
+  
+  height: 5000px;
   // position: relative;
 }
 
