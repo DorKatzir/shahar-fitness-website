@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dror src files
+vids/gallery/adults/src
+vids/hp/src
