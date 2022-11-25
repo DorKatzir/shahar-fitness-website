@@ -29,7 +29,7 @@
         width: inherit;
         //padding: 1.2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr)); 
         gap: 0.6rem;
         
       
@@ -42,7 +42,17 @@
             }
             video{
                 width: 100%;
-                aspect-ratio: 4/3;
+                // max-width: 100px;
+                // min-width: 150px;
+                aspect-ratio: 9/16;
+            }
+            
+            video::-webkit-media-controls-volume-slider {
+                display: none;
+            }
+
+            video::-webkit-media-controls-mute-button {
+                display: none;
             }
             
         }
