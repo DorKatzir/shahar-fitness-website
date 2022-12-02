@@ -119,7 +119,7 @@
 .video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder,
 .video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder,
 .video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder, .video-js .vjs-subtitles-button .vjs-icon-placeholder {
+.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal;
@@ -128,27 +128,27 @@
 .video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder:before,
 .video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder:before,
 .video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js .vjs-subtitles-button .vjs-icon-placeholder:before {
+.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder:before {
   content: "\f10c";
 }
 
 .vjs-icon-captions, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder,
-.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder, .video-js .vjs-captions-button .vjs-icon-placeholder {
+.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal;
 }
 .vjs-icon-captions:before, .video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder:before,
-.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js .vjs-captions-button .vjs-icon-placeholder:before {
+.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before {
   content: "\f10d";
 }
 
-.vjs-icon-chapters, .video-js .vjs-chapters-button .vjs-icon-placeholder {
+.vjs-icon-chapters {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal;
 }
-.vjs-icon-chapters:before, .video-js .vjs-chapters-button .vjs-icon-placeholder:before {
+.vjs-icon-chapters:before {
   content: "\f10e";
 }
 
@@ -278,12 +278,12 @@
   content: "\f11c";
 }
 
-.vjs-icon-audio-description, .video-js .vjs-descriptions-button .vjs-icon-placeholder {
+.vjs-icon-audio-description {
   font-family: VideoJS;
   font-weight: normal;
   font-style: normal;
 }
-.vjs-icon-audio-description:before, .video-js .vjs-descriptions-button .vjs-icon-placeholder:before {
+.vjs-icon-audio-description:before {
   content: "\f11d";
 }
 
@@ -334,10 +334,9 @@
 
 .video-js {
   display: block;
-  vertical-align: top;
   box-sizing: border-box;
   color: hsl(190deg, 56%, 43%);
-  background-color: #000;
+  background-color: transparent;
   position: relative;
   padding: 0;
   font-size: 10px;
@@ -900,7 +899,7 @@ body.vjs-full-window {
 }
 
 .video-js .vjs-play-progress {
-  background-color: hsl(190deg, 56%, 43%);
+  background-color: hsl(9deg, 58%, 48%);
 }
 .video-js .vjs-play-progress:before {
   font-size: 0.9em;
@@ -1568,18 +1567,6 @@ video::-webkit-media-text-track-display {
     border-top-color: rgba(84, 84, 84, 0.8);
   }
 }
-.video-js.vjs-audio-only-mode .vjs-captions-button {
-  display: none;
-}
-
-.vjs-chapters-button .vjs-menu ul {
-  width: 24em;
-}
-
-.video-js.vjs-audio-only-mode .vjs-descriptions-button {
-  display: none;
-}
-
 .video-js .vjs-subs-caps-button + .vjs-menu .vjs-captions-menu-item .vjs-menu-item-text .vjs-icon-placeholder {
   vertical-align: middle;
   display: inline-block;
@@ -1631,114 +1618,6 @@ video::-webkit-media-text-track-display {
 .video-js.vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal:hover, .video-js.vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal:active, .video-js.vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active, .video-js.vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover, .video-js.vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal:hover, .video-js.vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal:active, .video-js.vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active, .video-js.vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover, .video-js.vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal:hover, .video-js.vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal:active, .video-js.vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active, .video-js.vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover {
   width: auto;
   width: initial;
-}
-.video-js.vjs-layout-x-small .vjs-custom-control-spacer {
-  flex: auto;
-  display: block;
-}
-.video-js.vjs-layout-x-small.vjs-no-flex .vjs-custom-control-spacer {
-  width: auto;
-}
-
-.vjs-modal-dialog.vjs-text-track-settings {
-  background-color: rgba(0, 0, 0, 0.8);
-  background-color: rgba(0, 0, 0, 0.75);
-  color: hsl(190deg, 56%, 43%);
-  height: 70%;
-}
-
-.vjs-text-track-settings .vjs-modal-dialog-content {
-  display: table;
-}
-
-.vjs-text-track-settings .vjs-track-settings-colors,
-.vjs-text-track-settings .vjs-track-settings-font,
-.vjs-text-track-settings .vjs-track-settings-controls {
-  display: table-cell;
-}
-
-.vjs-text-track-settings .vjs-track-settings-controls {
-  text-align: right;
-  vertical-align: bottom;
-}
-
-@supports (display: grid) {
-  .vjs-text-track-settings .vjs-modal-dialog-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 20px 24px 0px 24px;
-  }
-  .vjs-track-settings-controls .vjs-default-button {
-    margin-bottom: 20px;
-  }
-  .vjs-text-track-settings .vjs-track-settings-controls {
-    grid-column: 1/-1;
-  }
-  .vjs-layout-small .vjs-text-track-settings .vjs-modal-dialog-content,
-.vjs-layout-x-small .vjs-text-track-settings .vjs-modal-dialog-content,
-.vjs-layout-tiny .vjs-text-track-settings .vjs-modal-dialog-content {
-    grid-template-columns: 1fr;
-  }
-}
-.vjs-track-setting > select {
-  margin-right: 1em;
-  margin-bottom: 0.5em;
-}
-
-.vjs-text-track-settings fieldset {
-  margin: 5px;
-  padding: 3px;
-  border: none;
-}
-
-.vjs-text-track-settings fieldset span {
-  display: inline-block;
-}
-
-.vjs-text-track-settings fieldset span > select {
-  max-width: 7.3em;
-}
-
-.vjs-text-track-settings legend {
-  color: hsl(190deg, 56%, 43%);
-  margin: 0 0 5px 0;
-}
-
-.vjs-text-track-settings .vjs-label {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  display: block;
-  margin: 0 0 5px 0;
-  padding: 0;
-  border: 0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.vjs-track-settings-controls button:focus,
-.vjs-track-settings-controls button:active {
-  outline-style: solid;
-  outline-width: medium;
-  background-image: linear-gradient(0deg, hsl(190deg, 56%, 43%) 88%, rgba(84, 84, 84, 0.8) 100%);
-}
-
-.vjs-track-settings-controls button:hover {
-  color: rgba(43, 51, 63, 0.75);
-}
-
-.vjs-track-settings-controls button {
-  background-color: hsl(190deg, 56%, 43%);
-  background-image: linear-gradient(-180deg, hsl(190deg, 56%, 43%) 88%, rgba(84, 84, 84, 0.8) 100%);
-  color: #2B333F;
-  cursor: pointer;
-  border-radius: 2px;
-}
-
-.vjs-track-settings-controls .vjs-default-button {
-  margin-right: 1em;
 }
 
 @media print {

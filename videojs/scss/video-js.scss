@@ -33,14 +33,16 @@
 @import "components/playback-rate";
 @import "components/error";
 @import "components/loading";
-@import "components/captions";
-@import "components/chapters";
-@import "components/descriptions";
-@import "components/subtitles";
+//@import "components/captions";
+//@import "components/chapters";
+//@import "components/descriptions";
+//@import "components/subtitles";
 @import "components/subs-caps";
 @import "components/audio";
 @import "components/adaptive";
-@import "components/captions-settings";
+//@import "components/captions-settings";
+
+
 
 @import "print";
 
@@ -52,6 +54,7 @@
   height: 100%;
   border: none;
   z-index: -1000;
+  
 }
 
 // The rule is needed for :focus-visible polyfill
@@ -62,3 +65,5 @@
 .video-js *:focus:not(:focus-visible) {
   outline: none;
 }
+
+//@import "components/dror-styles";

@@ -582,18 +582,18 @@ cite span {
 .gallery .gallery-items {
   width: inherit;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
   gap: 0.6rem;
 }
 .gallery .gallery-items .vid-card video {
-  border-radius: 5px;
+  border-radius: 5px !important;
   width: 100%;
 }
 .gallery .gallery-items .vid-card video::-webkit-media-controls-volume-slider {
-  display: none;
+  display: none !important;
 }
 .gallery .gallery-items .vid-card video::-webkit-media-controls-mute-button {
-  display: none;
+  display: none !important;
 }
 
 .normal {

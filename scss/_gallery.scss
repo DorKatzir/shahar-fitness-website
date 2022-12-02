@@ -32,23 +32,22 @@
         width: inherit;
         //padding: 1.2rem;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr)); 
-        gap: 0.6rem;  
+        grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr)); 
+        gap: 0.6rem; 
 
-        .vid-card{
-
+        .vid-card {
             video {
-                border-radius: 5px;
+                border-radius: 5px !important;
                 width: 100%;
                 //aspect-ratio: 9/16 !important;
             }
             
             video::-webkit-media-controls-volume-slider {
-                display: none;
+                display: none !important;
             }
 
             video::-webkit-media-controls-mute-button {
-                display: none;
+                display: none !important;
             }
            
         }
@@ -56,6 +55,3 @@
 
     
 }
-
-
-

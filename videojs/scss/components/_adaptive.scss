@@ -61,15 +61,15 @@
 
   // At x-small, the buttons alone leave a large gap on the right. Fill it with
   // the spacer element.
-  &.vjs-layout-x-small {
+  // &.vjs-layout-x-small {
 
-    .vjs-custom-control-spacer {
-      @include flex(auto);
-      display: block;
-    }
+  //   .vjs-custom-control-spacer {
+  //     @include flex(auto);
+  //     display: block;
+  //   }
 
-    &.vjs-no-flex .vjs-custom-control-spacer {
-      width: auto;
-    }
-  }
+  //   &.vjs-no-flex .vjs-custom-control-spacer {
+  //     width: auto;
+  //   }
+  // }
 }
