@@ -1,4 +1,7 @@
 
+
+
+
 .gallery{
     @include section-mobile;
 
@@ -30,21 +33,14 @@
         //padding: 1.2rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr)); 
-        gap: 0.6rem;
-        
-      
-        
+        gap: 0.6rem;  
 
         .vid-card{
 
-            > * {
+            video {
                 border-radius: 5px;
-            }
-            video{
                 width: 100%;
-                // max-width: 100px;
-                // min-width: 150px;
-                aspect-ratio: 9/16;
+                //aspect-ratio: 9/16 !important;
             }
             
             video::-webkit-media-controls-volume-slider {
@@ -54,9 +50,12 @@
             video::-webkit-media-controls-mute-button {
                 display: none;
             }
-            
+           
         }
     }
 
     
 }
+
+
+

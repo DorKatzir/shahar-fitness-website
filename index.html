@@ -8,10 +8,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
+
+    <link rel="stylesheet" href="./css/video-js.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./nav.js" defer></script>
-    <script src="./accordion.js" defer></script>
-    <script src="./bgvid.js" defer></script>
+    
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/accordion.js" defer></script>
+    <script src="./js/bgvid.js" defer></script>
+
+    
+    
     <title> שחר פיטנס | מאמן כושר אישי </title>
   </head>
   <body>
@@ -81,7 +87,7 @@
     <section class="home">
  
       <div class="showcase">
-              <video id="bgvid" loop muted playsinline>
+              <video id="bgvid" loop muted="true" playsinline>
                 <source src="./vids/hp/hp.mov" type="video/mp4">
               </video>
       </div>
@@ -175,46 +181,62 @@
       <div class="gallery-items">
 
         <div class="vid-card">
-          <video controls preload="none" poster="./vids/gallery/adults/adults_01.png">
+          <video id="myshit" class="video-js vjs-fluid" controls preload="none" poster="./vids/gallery/adults/adults_01.png" data-setup='{ 
+            "aspectRatio": "9:16",
+            "responsive": true,
+            "controlBar":{ 
+                "volumePanel": false,
+                "remainingTimeDisplay": false,
+                "durationDisplay": false,
+                "currentTimeDisplay": false,
+                "timeDivider": false
+            }
+          }'>
             <source src="./vids/gallery/adults/adults_01.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
-          <video controls preload="none" poster="./vids/gallery/adults/adults_02.png">
+          <video controls preload="none" controlslist="nodownload noremoteplayback noplaybackrate" poster="./vids/gallery/adults/adults_02.png">
             <source src="./vids/gallery/adults/adults_02.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_03.png">
             <source src="./vids/gallery/adults/adults_03.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_04.png">
             <source src="./vids/gallery/adults/adults_04.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_05.png">
             <source src="./vids/gallery/adults/adults_05.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_06.png">
             <source src="./vids/gallery/adults/adults_06.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_07.png">
             <source src="./vids/gallery/adults/adults_07.mp4" type="video/mp4">
           </video> 
         </div>
+
         <div class="vid-card">
           <video controls preload="none" poster="./vids/gallery/adults/adults_08.png">
             <source src="./vids/gallery/adults/adults_08.mp4" type="video/mp4">
           </video> 
         </div>
- 
 
       </div>
 
@@ -237,5 +259,8 @@
 
     <!-- <div id="app">שלום</div> -->
     <!-- <script type="module" src="/main.js"></script> -->
+    <script type="module" src="./videojs/js/video.js"></script>
+  
+
   </body>
 </html>
