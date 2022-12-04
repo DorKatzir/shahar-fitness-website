@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="./css/video-js.css">
     <link rel="stylesheet" href="./css/style.css">
-    
+
+    <script src="./videojs/js/video.min.js" defer></script>
     <script src="./js/nav.js" defer></script>
     <script src="./js/accordion.js" defer></script>
     <script src="./js/bgvid.js" defer></script>
@@ -181,7 +182,7 @@
       <div class="gallery-items">
 
         <div class="vid-card">
-          <video id="myshit" class="video-js vjs-fluid" controls controlslist="nodownload noremoteplayback noplaybackrate" preload="metadata"  data-setup='{ 
+          <video class="video-js vjs-default-skin vjs-show-big-play-button-on-pause vjs-fluid" controls controlslist="nodownload noremoteplayback noplaybackrate" preload="metadata" data-setup='{ 
             "aspectRatio": "9:16",
             "responsive": true,
             "controlBar":{ 
@@ -259,7 +260,7 @@
 
     <!-- <div id="app">שלום</div> -->
     <!-- <script type="module" src="/main.js"></script> -->
-    <script type="module" src="./videojs/js/video.js"></script>
+    
   
 
   </body>
