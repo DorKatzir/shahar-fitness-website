@@ -32,6 +32,7 @@
   --fw-bold: 600;
   --fs-subtitle:clamp(1.2rem, 1.895168374816984vw, 1.618rem);
   --fs-regular: 1.3rem;
+  --fs-text: 1rem;
   --fs-small: 0.618rem;
   --fs--link: 1.2rem;
   --padding: clamp(1.618rem, 3vw, 2.618rem);
@@ -578,6 +579,20 @@ cite span {
   border-top: 2px solid var(--orange-75);
   border-radius: 3px;
   margin-bottom: 1.6rem;
+}
+
+.text p {
+  color: var(--white-50);
+  font-size: var(--fs-text);
+  font-weight: 300;
+  padding: 0.618rem;
+}
+
+.about > .content {
+  background-color: transparent;
+}
+.about > .content img {
+  max-width: 220px;
 }
 
 .gallery {

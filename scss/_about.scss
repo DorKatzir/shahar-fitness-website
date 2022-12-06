@@ -24,3 +24,19 @@
         }
     }
 }
+
+.text p {
+    color: var(--white-50);
+    font-size: var(--fs-text);
+    font-weight: 300;
+    padding: 0.618rem;
+}
+
+.about > .content{
+    background-color: transparent;
+
+    & img{
+        max-width: 220px;
+    }
+
+}
