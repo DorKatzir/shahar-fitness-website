@@ -29,17 +29,11 @@
     color: var(--white-50);
     font-size: var(--fs-text);
     font-weight: 300;
-    padding: 0.618rem;
 }
 
 .about > .content{
-    
-    //max-width: 600px;
     background-color: rgba(0, 0, 0, 0);
-    //border-radius: 8px;
-    //padding-inline: 1rem;
     padding-block: 0;
-    //display: grid;
     justify-items: center;
     align-items: flex-end;
     gap: 1rem;
@@ -50,6 +44,26 @@
 
 }
 
+
+.card_about{
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-inline: 1rem;
+    padding-block: 1.2rem;
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%; 
+}
+
 .img-about{
     border-radius: 5px;
+}
+.details-about{
+    color: var(--white-50);
+    font-size: var(--fs-text);
+    font-weight: 300;
+    align-self: flex-end;
 }
