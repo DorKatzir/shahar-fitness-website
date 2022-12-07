@@ -50,20 +50,28 @@
     border-radius: 8px;
     padding-inline: 1rem;
     padding-block: 1.2rem;
-
     display: flex;
+    // flex-direction: column;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 100%; 
+    width: 100%;
+
+
 }
 
 .img-about{
-    border-radius: 5px;
+    border-radius: 5px; 
+    width: 100%;
+    max-width: 300px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    
 }
 .details-about{
     color: var(--white-50);
     font-size: var(--fs-text);
     font-weight: 300;
     align-self: flex-end;
+    
 }

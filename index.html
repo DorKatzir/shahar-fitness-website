@@ -180,7 +180,16 @@
       <div class="content">
 
         <div class="card_about">
-          <img class="img-about" src="./images/about/profile_pic2@0,1x.png" alt="Shahar Hamami profile picture" width="150px">
+          <picture>
+          
+          <source media="(max-width:150px)" srcset="./images/about/profile_pic2@0,1x.png">
+          <source media="(max-width:350px)" srcset="./images/about/profile_pic2@0,25x.png">
+          
+          <img class="img-about" src="./images/about/profile_pic2@0,5x.png" alt="Shahar Hamami profile picture">
+          
+        </picture>
+
+
           <div class="details-about">
             <p>
               שחר חממי

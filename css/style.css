@@ -609,6 +609,10 @@ cite span {
 
 .img-about {
   border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 1;
+  flex-grow: 0;
 }
 
 .details-about {
