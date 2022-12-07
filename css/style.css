@@ -339,7 +339,7 @@ header .grad {
     height: 100%;
     max-height: 100px;
     min-height: 100px;
-    background-image: url(../images/nav/profile_pic100X100.png);
+    background-image: url(../images/nav/profile_pic100X100_b.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 50% 0%;
@@ -589,10 +589,15 @@ cite span {
 }
 
 .about > .content {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  padding-block: 0;
+  justify-items: center;
+  align-items: flex-end;
+  gap: 1rem;
 }
-.about > .content img {
-  max-width: 220px;
+
+.img-about {
+  border-radius: 5px;
 }
 
 .gallery {

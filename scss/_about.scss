@@ -33,10 +33,23 @@
 }
 
 .about > .content{
-    background-color: transparent;
+    
+    //max-width: 600px;
+    background-color: rgba(0, 0, 0, 0);
+    //border-radius: 8px;
+    //padding-inline: 1rem;
+    padding-block: 0;
+    //display: grid;
+    justify-items: center;
+    align-items: flex-end;
+    gap: 1rem;
 
-    & img{
-        max-width: 220px;
-    }
+    // & img{
+    //     max-width: 220px;
+    // }
 
+}
+
+.img-about{
+    border-radius: 5px;
 }
