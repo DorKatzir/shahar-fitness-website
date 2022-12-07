@@ -248,6 +248,7 @@ header .grad {
   .x {
     width: 28px;
     height: 28px;
+    position: fixed;
   }
   .x .burger {
     width: 100%;
