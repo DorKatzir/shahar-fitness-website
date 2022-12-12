@@ -665,6 +665,67 @@ cite span {
   display: none !important;
 }
 
+.contact {
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding-inline: 1rem;
+  padding-block: 1.2rem;
+}
+.contact .section-main-title {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: auto;
+}
+.contact .section-main-title p {
+  margin-bottom: 1rem;
+}
+.contact .section-main-title hr {
+  align-self: center;
+  width: 50%;
+  border: 0;
+  border-top: 2px solid var(--orange-75);
+  border-radius: 3px;
+  margin-bottom: 1.6rem;
+}
+
+.contact > .content {
+  grid-auto-flow: column;
+  align-items: start;
+}
+
+.contact > .content > .text > * {
+  color: var(--white-50);
+  font-size: var(--fs-text);
+  font-weight: 300;
+}
+
+.text ul li {
+  list-style: none;
+}
+
+.map img {
+  border-radius: 5px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 420px) {
+  .contact > .content {
+    grid-auto-flow: row;
+  }
+  .contact > .content .map {
+    order: 2;
+    width: 100%;
+  }
+}
 .normal {
   mix-blend-mode: normal;
 }
