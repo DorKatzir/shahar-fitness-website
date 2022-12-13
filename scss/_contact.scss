@@ -43,12 +43,23 @@
 .map img{
     border-radius: 5px;
     width: 100%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
 
 
-@media (max-width: 420px){
+@media (max-width: 580px) {
+    .map img{
+        aspect-ratio: 1 / 2;
+    
+    }
+    
+}
+
+
+
+@media (max-width: 480px){
 
     .contact > .content {
         grid-auto-flow: row;
@@ -56,6 +67,10 @@
         .map{
             order: 2;
             width: 100%;
+
+            img{
+                aspect-ratio: 2 / 1;
+            }
         }
 }
 

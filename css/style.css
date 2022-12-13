@@ -713,17 +713,26 @@ cite span {
 .map img {
   border-radius: 5px;
   width: 100%;
+  aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 580px) {
+  .map img {
+    aspect-ratio: 1/2;
+  }
+}
+@media (max-width: 480px) {
   .contact > .content {
     grid-auto-flow: row;
   }
   .contact > .content .map {
     order: 2;
     width: 100%;
+  }
+  .contact > .content .map img {
+    aspect-ratio: 2/1;
   }
 }
 .normal {
