@@ -597,28 +597,31 @@ cite span {
   border-radius: 8px;
   padding-inline: 1rem;
   padding-block: 1.2rem;
-  display: flex;
+  display: grid;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  grid-auto-flow: column;
   width: 100%;
 }
 
 .img-about {
   border-radius: 5px;
   width: 100%;
-  max-width: 300px;
-  flex-shrink: 1;
-  flex-grow: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .details-about {
   color: var(--white-50);
   font-size: var(--fs-text);
   font-weight: 300;
-  align-self: flex-end;
 }
 
+@media (max-width: 390px) {
+  .card_about {
+    grid-auto-flow: row !important;
+    grid-template-rows: auto !important;
+  }
+}
 .gallery {
   max-width: 600px;
   background-color: rgba(0, 0, 0, 0.25);
