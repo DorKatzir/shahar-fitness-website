@@ -45,7 +45,6 @@
         text-align: center;
         color: rgba(255 255 255 / .5);
         font-weight: 300;
-
     }
 
     .accordions{
@@ -80,15 +79,17 @@
 
         .accordion::after {
             content: '';
-            color: var(--orange-100);
+            //color: var(--orange-100);
             position: absolute;
             display: block;
             top: 50%;
+            // inset: 0;
             transform: translateY(-50%);
             left: 20px;
             width: 15px;
-            height: 10px;
+            height: 8px;
             background-image: url('../images/home/triangle.svg');
+            background-repeat: no-repeat;
             background-size: contain;
             transition: transform 0.4s;
             transition-delay: .2s;
@@ -98,6 +99,7 @@
         .active::after {
             transform: translateY(-50%) rotate(0.5turn);
             transform-origin: center center;
+            background-image: url('../images/home/triangle_hover.svg');  
         }
 
 

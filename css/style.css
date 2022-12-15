@@ -446,15 +446,15 @@ header .grad {
 }
 .content .accordions .accordion::after {
   content: "";
-  color: var(--orange-100);
   position: absolute;
   display: block;
   top: 50%;
   transform: translateY(-50%);
   left: 20px;
   width: 15px;
-  height: 10px;
+  height: 8px;
   background-image: url("../images/home/triangle.svg");
+  background-repeat: no-repeat;
   background-size: contain;
   transition: transform 0.4s;
   transition-delay: 0.2s;
@@ -462,6 +462,7 @@ header .grad {
 .content .accordions .active::after {
   transform: translateY(-50%) rotate(0.5turn);
   transform-origin: center center;
+  background-image: url("../images/home/triangle_hover.svg");
 }
 .content .accordions .panel {
   padding: 0 0.618rem;
