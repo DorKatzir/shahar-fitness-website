@@ -496,11 +496,6 @@ header .grad {
   padding: 0.25rem 0.5rem;
   margin-bottom: 1rem;
 }
-.content .accordions .panel .videoLink svg {
-  fill: var(--orange-100);
-  width: 18px;
-  height: 18px;
-}
 .content .accordions .panel .videoLink a:link, .content .accordions .panel .videoLink a:visited {
   font-size: 1rem;
   color: inherit;
