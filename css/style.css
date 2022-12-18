@@ -633,6 +633,10 @@ cite span {
   aspect-ratio: 1/1;
 }
 
+.webArtImg {
+  max-width: 150px;
+}
+
 .gallery {
   max-width: 600px;
   background-color: rgba(0, 0, 0, 0.25);
