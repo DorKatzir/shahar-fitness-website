@@ -195,6 +195,9 @@ header .grad {
   width: 100%;
   max-width: 20px;
 }
+.nav-list .avatar {
+  display: none;
+}
 
 @media (max-width: 870px) {
   nav, .x {
@@ -335,6 +338,7 @@ header .grad {
     aspect-ratio: 1 !important;
   }
   .nav-list.list-closed .avatar {
+    display: block;
     width: 100%;
     aspect-ratio: 1/1;
   }

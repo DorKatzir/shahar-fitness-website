@@ -6,7 +6,13 @@
     flex-direction: row;
     justify-content: flex-end;
 
+    // .avatar{
+    //     width: 0;
+    //     height: 0;
+    // }
+
     .nav-item{
+        //max-height: 28px;
         border-left: 2px solid var(--orange-25);
         &:last-child, &:first-child{
             border-left: none;
@@ -43,6 +49,11 @@
                 max-width: 20px;
             }
         }
+    }
+
+    .avatar{
+        display: none;
+
     }
 }
 
@@ -152,6 +163,7 @@
         bottom: 0;
         margin: auto;
 
+
         .nav-item{
             margin-inline-start: 30vw;
             width: 100%;
@@ -211,6 +223,7 @@
         }
 
         .avatar{
+            display: block;
             width: 100%;
             aspect-ratio: 1/1;
             img{
