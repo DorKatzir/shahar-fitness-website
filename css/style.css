@@ -585,11 +585,6 @@ cite span {
 
 .card_about {
   justify-self: start;
-  isolation: isolate;
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 8px;
-  padding-inline: 1rem;
-  padding-block: 1.2rem;
   width: 100%;
   max-width: 500px;
   display: grid;
