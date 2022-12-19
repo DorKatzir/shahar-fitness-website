@@ -406,7 +406,6 @@ header .grad {
 
 .content {
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-inline: 1rem;
   padding-block: 1.2rem;
@@ -583,21 +582,21 @@ cite span {
 .about > .content {
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
-  justify-items: center;
-  align-items: flex-end;
   gap: 1rem;
 }
 
 .card_about {
+  justify-self: start;
   isolation: isolate;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   padding-inline: 1rem;
   padding-block: 1.2rem;
+  width: 100%;
+  max-width: 500px;
   display: grid;
   gap: 1rem;
-  grid-template-columns: minmax(auto-fit, 1fr);
-  justify-items: center;
+  justify-content: start;
   grid-auto-flow: column;
 }
 
@@ -609,15 +608,14 @@ cite span {
 }
 
 .details-about {
+  width: 100%;
   height: 100%;
   color: var(--white-50);
   font-size: var(--fs-small);
   font-weight: var(--fw-thin);
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .diploma-wrapper {
