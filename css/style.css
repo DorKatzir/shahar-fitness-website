@@ -106,14 +106,14 @@ footer h2, footer p {
 
 header {
   inset: 0;
-  -webkit-padding-before: 1.618rem;
-          padding-block-start: 1.618rem;
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
   position: -webkit-sticky;
   position: sticky;
   z-index: 99 !important;
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   top: 0;
 }
 header > nav {
