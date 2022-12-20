@@ -388,14 +388,14 @@ header .grad {
 }
 
 .showcase {
+  display: block;
   isolation: isolate;
   inset: 0;
   z-index: -1;
   width: 100%;
-  max-width: 870px !important;
+  max-width: 870px;
 }
 .showcase video {
-  display: block;
   position: absolute;
   inset: 0;
   -o-object-fit: cover;
@@ -403,6 +403,10 @@ header .grad {
   width: 100%;
   height: 100%;
   filter: contrast(110%) grayscale(10%);
+}
+
+.hero-img {
+  display: none;
 }
 
 .content {
@@ -501,8 +505,21 @@ header .grad {
 }
 
 @media (min-width: 871px) {
-  .showcase video {
+  .home {
+    align-self: start;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .showcase {
     display: none;
+  }
+  .hero-img {
+    display: block;
+    justify-self: end;
+  }
+  .content {
+    align-self: center;
   }
 }
 section {
