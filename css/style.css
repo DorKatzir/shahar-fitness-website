@@ -505,21 +505,109 @@ header .grad {
 }
 
 @media (min-width: 871px) {
-  .home {
-    align-self: start;
-    margin: 0 auto;
-    display: grid;
-    grid-auto-flow: column;
-  }
-  .showcase {
+  header .grad {
     display: none;
   }
-  .hero-img {
+  .home {
+    align-self: start;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-auto-flow: column;
+  }
+  .home .content {
+    display: none;
+  }
+  .home .showcase {
+    display: none;
+  }
+  .home .hero-img {
     display: block;
     justify-self: end;
   }
-  .content {
+  .home .content-home {
     align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 0.6rem;
+         column-gap: 0.6rem;
+    row-gap: 2rem;
+    justify-items: center;
+  }
+  .home .feature {
+    background-color: var(--black-25);
+    border-radius: 8px;
+    padding-inline: 1rem;
+    -webkit-padding-after: 1rem;
+            padding-block-end: 1rem;
+    -webkit-padding-before: 0;
+            padding-block-start: 0;
+    display: grid;
+    grid-template-rows: 50px 35px auto;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: stretch;
+  }
+  .home .feature .icon-wrapper {
+    -webkit-margin-before: -1rem;
+            margin-block-start: -1rem;
+    position: relative;
+    isolation: isolate;
+    width: 60px;
+    height: 60px;
+    border-radius: 0 0 100vw 100vw;
+    overflow: hidden;
+  }
+  .home .feature .icon-wrapper .icon-img {
+    position: absolute;
+    inset: 0;
+    max-width: 60px;
+    filter: grayscale(60%);
+  }
+  .home .feature .icon-wrapper .icon-img img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .home .feature .icon-wrapper .icon-circle {
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--blue-100);
+    z-index: -1;
+  }
+  .home .feature h3 {
+    align-self: center;
+    color: var(--blue-100);
+  }
+  .home .action-home {
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .home .action-home h2 {
+    color: var(--white-50);
+  }
+  .home .action-home .vid-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .home .action-home .vid-link svg {
+    width: 25px;
+  }
+  .home .action-home .vid-link a:link,
+.home .action-home .vid-link a:visited {
+    background-color: var(--blue-100);
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--white-100);
+    padding-block: 0.2rem;
+    padding-inline: 1rem;
   }
 }
 section {
