@@ -37,3 +37,9 @@ cite{
 
 }
 
+@media (min-width: 871px){
+    .quote{
+        @include section-desktop;
+    }
+    
+}

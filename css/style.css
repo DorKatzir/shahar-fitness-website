@@ -657,6 +657,15 @@ cite span {
   color: var(--blue-100);
 }
 
+@media (min-width: 871px) {
+  .quote {
+    max-width: 1088px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding-inline: 1rem;
+    padding-block: 1.2rem;
+  }
+}
 .about {
   max-width: 600px;
   background-color: rgba(0, 0, 0, 0.25);
