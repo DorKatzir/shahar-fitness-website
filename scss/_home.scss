@@ -201,22 +201,25 @@
     ;
 
             .icon-wrapper{
-                margin-block-start: -1rem;
+                margin-block-start: -2.3rem;
 
                 position: relative;
                 isolation: isolate;
-                width: 60px;
-                height: 60px;
+                width: 70px;
+                height: 80px;
                 border-radius: 0 0 100vw 100vw;
                 overflow: hidden;
+                //background-color: #fff;
 
                 .icon-img {
                     position: absolute;
-                    inset: 0;
-                    max-width: 60px;
+                    max-width: 70px;
                     filter: grayscale(60%);
-                    
-                    // opacity: .5;
+                    top: 70%;
+                    left: 0;
+                    right: -15px;
+                    margin: auto;
+                    transform: translateY(-50%);
                     
                     
                     img{
@@ -234,7 +237,6 @@
                     border-radius: 50%;
                     background-color: var(--blue-100);
                     z-index: -1;
-                    // border:1px solid var(--blue-100);
                 }
             }
 

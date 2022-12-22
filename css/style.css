@@ -550,20 +550,24 @@ header .grad {
     align-items: stretch;
   }
   .home .feature .icon-wrapper {
-    -webkit-margin-before: -1rem;
-            margin-block-start: -1rem;
+    -webkit-margin-before: -2.3rem;
+            margin-block-start: -2.3rem;
     position: relative;
     isolation: isolate;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 80px;
     border-radius: 0 0 100vw 100vw;
     overflow: hidden;
   }
   .home .feature .icon-wrapper .icon-img {
     position: absolute;
-    inset: 0;
-    max-width: 60px;
+    max-width: 70px;
     filter: grayscale(60%);
+    top: 70%;
+    left: 0;
+    right: -15px;
+    margin: auto;
+    transform: translateY(-50%);
   }
   .home .feature .icon-wrapper .icon-img img {
     width: 100%;
