@@ -600,18 +600,25 @@ header .grad {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    background-color: var(--blue-100);
+    border-radius: 5px;
+    padding-block: 0.2rem;
+    padding-inline: 1rem;
   }
   .home .action-home .vid-link svg {
-    width: 25px;
+    width: 20px;
+    fill: white;
   }
   .home .action-home .vid-link a:link,
 .home .action-home .vid-link a:visited {
-    background-color: var(--blue-100);
-    text-decoration: none;
-    border-radius: 5px;
     color: var(--white-100);
-    padding-block: 0.2rem;
-    padding-inline: 1rem;
+    text-decoration: none;
+  }
+  .home .action-home .vid-link .vl {
+    background-color: var(--black-50);
+    width: 2px;
+    height: 20px;
+    border-radius: 2px;
   }
 }
 section {
