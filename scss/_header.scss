@@ -13,29 +13,29 @@ header{
     > nav {
     grid-column: 2 / 4;
     grid-row: 1 / -1;
-   }
+    }
+
     > .brand {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     //max-width: 600px;
-   }
+    }
     .grad {
-    grid-column: 1;
-    grid-row: 1 / -1;
-    z-index: -1;
-    background-image: 
+        grid-column: 1;
+        grid-row: 1 / -1;
+        z-index: -1;
+        background-image: 
         linear-gradient(rgba(25 25 25 / 1),rgba(25 25 25 / .8), transparent 90%);
-    
-    width: 100%;
-    height: 35vh;
-    position: fixed;
-    inset: 0;
-   }
+        width: 100%;
+        height: 35vh;
+        position: fixed;
+        inset: 0;
+    }
 
 
 }
 
-@media (max-width: 870px){
+@media (max-width: 871px){
 
     header{
        
@@ -52,4 +52,18 @@ header{
 
     }
 
+}
+
+.header-section{
+   transition: all 150ms ease-out; 
+}
+
+.full-bleed{
+    // grid-template-columns: 1fr 3fr;
+    --bgheaderColor: #242424;
+    padding-inline-start: 1.2rem;
+    padding-block-end: .618rem;
+    background-color: var(--bgheaderColor);
+    box-shadow: 0 0 0 100vmax var(--bgheaderColor);
+    clip-path: inset(0 -100vmax);
 }

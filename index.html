@@ -16,6 +16,7 @@
     <script src="./js/nav.js" defer></script>
     <script src="./js/accordion.js" defer></script>
     <script src="./js/bgvid.js" defer></script>
+    <script src="./js/scrollchange.js" defer></script>
 
     
     
@@ -24,7 +25,7 @@
   <body>
 
     
-    <header>
+    <header class="header-section">
       <div class="grad"></div>
       
       <div class="brand">
@@ -33,9 +34,9 @@
         <picture>
           
           <source media="(max-width:480px)" srcset="./images/slogan/small_324X99.svg">
-          <source media="(max-width:768px)" srcset="./images/slogan/med_322X123.svg">
+          <!-- <source media="(max-width:768px)" srcset="./images/slogan/med_322X123.svg"> -->
           
-          <img src="./images/slogan/large_409X123.svg" alt="מתחילים מחר עם שחר-פיטנס מאמן כושר אישי">
+          <img id="brandImage" src="./images/slogan/large_409X123.svg" alt="מתחילים מחר עם שחר-פיטנס מאמן כושר אישי">
         </picture>
               
       </div>

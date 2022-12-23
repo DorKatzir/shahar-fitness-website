@@ -135,7 +135,7 @@ header .grad {
   inset: 0;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 871px) {
   header {
     grid-template-columns: minmax(-webkit-min-content, 50px) 1fr;
     grid-template-columns: minmax(min-content, 50px) 1fr;
@@ -150,6 +150,22 @@ header .grad {
     grid-row: 1/-1;
   }
 }
+.header-section {
+  transition: all 150ms ease-out;
+}
+
+.full-bleed {
+  --bgheaderColor: #242424;
+  -webkit-padding-start: 1.2rem;
+          padding-inline-start: 1.2rem;
+  -webkit-padding-after: 0.618rem;
+          padding-block-end: 0.618rem;
+  background-color: var(--bgheaderColor);
+  box-shadow: 0 0 0 100vmax var(--bgheaderColor);
+  -webkit-clip-path: inset(0 -100vmax);
+          clip-path: inset(0 -100vmax);
+}
+
 .nav-list {
   z-index: 999 !important;
   list-style: none;
@@ -410,6 +426,7 @@ header .grad {
 }
 
 .content {
+  display: block;
   max-width: 600px;
   border-radius: 8px;
   display: grid;
@@ -502,6 +519,10 @@ header .grad {
   font-size: 1rem;
   color: inherit;
   text-decoration: none;
+}
+
+.content-home {
+  display: none;
 }
 
 @media (min-width: 871px) {
@@ -620,7 +641,7 @@ section {
 }
 
 .quote {
-  max-width: 600px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-inline: 1rem;
@@ -667,7 +688,7 @@ cite span {
   }
 }
 .about {
-  max-width: 600px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-inline: 1rem;
@@ -754,7 +775,7 @@ cite span {
 }
 
 .gallery {
-  max-width: 600px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-inline: 1rem;
@@ -800,7 +821,7 @@ cite span {
 }
 
 .contact {
-  max-width: 600px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding-inline: 1rem;

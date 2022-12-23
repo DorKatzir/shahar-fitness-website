@@ -2,8 +2,7 @@
 .home{
     display: grid;
     grid-template-rows: min-content;
-    align-content: end;
-    
+    align-content: end;   
 }
 
 
@@ -30,6 +29,7 @@
 }
 
 .content{
+    display:block;
     max-width: 600px;
     border-radius: 8px;
     display: grid;
@@ -145,6 +145,10 @@
     }
 }
 
+.content-home{
+    display: none;
+}
+
 @media (min-width: 871px){
 
     header{
@@ -176,7 +180,6 @@
         }
         .content-home{
             align-self: center;
-            
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             column-gap: 0.6rem;
