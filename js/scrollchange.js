@@ -5,7 +5,7 @@ const logo = document.getElementById('brandImage')
 
 const homeOptions = {
     root: null,
-    rootMargin: '0px 0px 0px 0px',
+    rootMargin: '-20px 0px 0px 0px',
     threshold: 1,
 }
 
