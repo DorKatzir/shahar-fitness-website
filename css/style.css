@@ -533,12 +533,11 @@ header .grad {
     display: none;
   }
   .home {
-    align-self: start;
     width: 100%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-auto-flow: column;
+    align-items: end;
   }
   .home .content {
     display: none;
@@ -548,16 +547,15 @@ header .grad {
   }
   .home .hero-img {
     display: block;
-    justify-self: end;
   }
   .home .content-home {
-    align-self: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 0.6rem;
          column-gap: 0.6rem;
-    row-gap: 2rem;
-    justify-items: center;
+    row-gap: 5rem;
+    -webkit-padding-after: 3rem;
+            padding-block-end: 3rem;
   }
   .home .feature {
     background-color: var(--black-25);
@@ -612,10 +610,12 @@ header .grad {
   }
   .home .action-home {
     grid-column: 1/-1;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+    padding-inline: 1rem;
   }
   .home .action-home h2 {
     color: var(--white-50);
