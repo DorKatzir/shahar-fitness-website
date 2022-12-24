@@ -11,6 +11,12 @@ header{
 
     width: 100%;
     max-width: 1055px;
+
+    img{
+        transition: all 250ms ease-in-out; 
+    }
+
+    
    
 
     .grad {
@@ -47,9 +53,7 @@ header{
 
 }
 
-.header-section{
-   transition: all 150ms ease-out; 
-}
+
 
 .full-bleed{
 
@@ -65,5 +69,7 @@ header{
 
     -webkit-backdrop-filter: blur(var(--blur));
     backdrop-filter: blur(var(--blur));
+
+    transition: all 250ms ease-in-out; 
 
 }

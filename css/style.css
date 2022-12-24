@@ -110,6 +110,9 @@ header {
   width: 100%;
   max-width: 1055px;
 }
+header img {
+  transition: all 250ms ease-in-out;
+}
 header .grad {
   grid-column: 1;
   grid-row: 1/-1;
@@ -136,10 +139,6 @@ header .grad {
     grid-row: 1/-1;
   }
 }
-.header-section {
-  transition: all 150ms ease-out;
-}
-
 .full-bleed {
   --bgheaderColor: rgba(36, 36, 36, 0.9);
   --blur: 10px;
@@ -151,6 +150,7 @@ header .grad {
           clip-path: inset(0 -100vmax);
   -webkit-backdrop-filter: blur(var(--blur));
   backdrop-filter: blur(var(--blur));
+  transition: all 250ms ease-in-out;
 }
 
 .nav-list {
@@ -519,6 +519,8 @@ header .grad {
     display: none;
   }
   .home {
+    -webkit-margin-before: 5rem;
+            margin-block-start: 5rem;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -539,9 +541,9 @@ header .grad {
     grid-template-columns: repeat(3, 1fr);
     -moz-column-gap: 0.6rem;
          column-gap: 0.6rem;
-    row-gap: 5rem;
-    -webkit-padding-after: 3rem;
-            padding-block-end: 3rem;
+    row-gap: 4rem;
+    -webkit-padding-after: 2rem;
+            padding-block-end: 2rem;
   }
   .home .feature {
     background-color: var(--black-25);
