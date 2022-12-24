@@ -22,10 +22,16 @@ function mqLargrHandler(e) {
         entries.forEach(entry => {
             if (!entry.isIntersecting && e.matches) {
                 sectionHeader.classList.add('full-bleed')
-                logo.src = './images/slogan/horizontal_logo.svg'
+                logo.src = './images/slogan/horizontal_logo.svg'           
+                logo.classList.remove('slide-in-img')
+                logo.classList.add('fade-in-img')
+                
             } else {
                 sectionHeader.classList.remove('full-bleed')
                 logo.src = './images/slogan/large_409X123.svg'
+                logo.classList.remove('fade-in-img')
+                logo.classList.add('slide-in-img')
+
             }
         })
     }, homeOptions)

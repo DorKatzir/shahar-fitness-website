@@ -110,9 +110,6 @@ header {
   width: 100%;
   max-width: 1055px;
 }
-header img {
-  transition: all 250ms ease-in-out;
-}
 header .grad {
   grid-column: 1;
   grid-row: 1/-1;
@@ -140,6 +137,7 @@ header .grad {
   }
 }
 .full-bleed {
+  transition: background-color box-shadow 0.15s ease;
   --bgheaderColor: rgba(36, 36, 36, 0.9);
   --blur: 10px;
   -webkit-padding-after: 0.618rem;
@@ -150,9 +148,75 @@ header .grad {
           clip-path: inset(0 -100vmax);
   -webkit-backdrop-filter: blur(var(--blur));
   backdrop-filter: blur(var(--blur));
-  transition: all 250ms ease-in-out;
 }
 
+.fade-in-img {
+  opacity: 0;
+  transform: translateY(1rem);
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.35s;
+          animation-duration: 0.35s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.slide-in-img {
+  opacity: 0;
+  transform: translateY(-1rem);
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+  -webkit-animation-duration: 0.35s;
+          animation-duration: 0.35s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .nav-list {
   z-index: 999 !important;
   list-style: none;
