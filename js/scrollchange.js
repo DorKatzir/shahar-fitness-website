@@ -22,10 +22,10 @@ function mqLargrHandler(e) {
         entries.forEach(entry => {
             if (!entry.isIntersecting && e.matches) {
                 sectionHeader.classList.add('full-bleed')
-                logo.src = '../images/slogan/horizontal_logo.svg'
+                logo.src = './images/slogan/horizontal_logo.svg'
             } else {
                 sectionHeader.classList.remove('full-bleed')
-                logo.src = '../images/slogan/large_409X123.svg'
+                logo.src = './images/slogan/large_409X123.svg'
             }
         })
     }, homeOptions)
