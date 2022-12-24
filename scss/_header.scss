@@ -1,25 +1,18 @@
 header{
-
-    inset: 0;
     padding-block-start: 1rem;
-    position: sticky;
+    position: fixed;
+    top: 0;
     z-index: 99 !important;
+
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: 1fr 2fr;
-    top:0;
+    grid-auto-flow: column;
+    justify-content: space-between;
 
+    width: 100%;
+    max-width: 1055px;
+   
 
-    > nav {
-    grid-column: 2 / 4;
-    grid-row: 1 / -1;
-    }
-
-    > .brand {
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
-    //max-width: 600px;
-    }
     .grad {
         grid-column: 1;
         grid-row: 1 / -1;
@@ -63,7 +56,6 @@ header{
     --bgheaderColor: rgba(36, 36, 36, 0.9);
     --blur: 10px;
 
-    padding-inline-start: 1.2rem;
     padding-block-end: .618rem;
 
     background-color: var(--bgheaderColor);
