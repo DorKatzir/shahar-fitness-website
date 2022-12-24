@@ -49,16 +49,9 @@ body {
   background-image: url(../images/pattern/pattern.png);
   padding: 0 1rem;
   overflow-x: hidden;
-  width: 100%;
   max-width: 1088px;
   min-width: 300px;
   margin: 0 auto;
-  display: grid;
-  grid-template-rows: -webkit-min-content 75vh;
-  grid-template-rows: min-content 75vh;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
-  height: 5000px;
 }
 
 footer {
