@@ -473,6 +473,18 @@ header .grad {
   height: 100%;
   filter: contrast(110%) grayscale(10%);
 }
+.showcase::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(transparent, black);
+  filter: opacity(80%);
+  z-index: 1;
+}
 
 .hero-img {
   display: none;
@@ -689,6 +701,13 @@ header .grad {
 .home .action-home .vid-link a:visited {
     color: var(--white-100);
     text-decoration: none;
+  }
+}
+@media (max-width: 870px) {
+  .home {
+    min-height: 90vh;
+    -webkit-margin-after: 4rem;
+            margin-block-end: 4rem;
   }
 }
 section {
