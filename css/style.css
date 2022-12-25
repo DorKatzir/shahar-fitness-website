@@ -708,9 +708,9 @@ header .grad {
 }
 @media (max-width: 870px) {
   .home {
-    min-height: 90vh;
-    -webkit-margin-after: 4rem;
-            margin-block-end: 4rem;
+    min-height: 90dvh;
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
   }
 }
 section {
