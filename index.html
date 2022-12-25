@@ -11,12 +11,12 @@
 
     <link rel="stylesheet" href="./css/video-js.css">
     <link rel="stylesheet" href="./css/style.css">
-
-    <script src="./videojs/js/video.min.js" defer></script>
-    <script src="./js/nav.js" defer></script>
-    <script src="./js/accordion.js" defer></script>
+    
     <script src="./js/bgvid.js" defer></script>
     <script src="./js/scrollchange.js" defer></script>
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/accordion.js" defer></script>
+    <script src="./videojs/js/video.min.js" defer></script>
 
     
     
@@ -332,8 +332,12 @@
                 "remainingTimeDisplay": false,
                 "durationDisplay": false,
                 "currentTimeDisplay": false,
-                "timeDivider": false
-            }
+                "timeDivider": false,
+                "fullscreenToggle": false
+              },
+              "userActions":{
+                  "doubleClick": false
+              }
           }'>
             <source src="./vids/gallery/adults/adults_01.mp4#t=0.1" type="video/mp4">
           </video> 
