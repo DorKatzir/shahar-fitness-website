@@ -2,15 +2,14 @@ header{
     padding-block-start: 1rem;
     position: fixed;
     top: 0;
+    width: 100%;
     z-index: 99 !important;
 
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-auto-flow: column;
-    justify-content: space-between;
 
-    width: 100%;
-    max-width: 1055px;
+    max-width: inherit;
 
     .grad {
         grid-column: 1;
