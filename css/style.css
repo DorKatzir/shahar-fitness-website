@@ -57,6 +57,9 @@ body {
   padding-inline: 1rem;
   -webkit-padding-before: 1rem;
           padding-block-start: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 footer {
