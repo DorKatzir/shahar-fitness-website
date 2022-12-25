@@ -51,6 +51,12 @@ body {
   max-width: 1088px;
   min-width: 300px;
   margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+  padding-inline: 1rem;
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
 }
 
 footer {
@@ -97,16 +103,18 @@ footer h2, footer p {
 }
 
 header {
-  -webkit-padding-before: 1rem;
-          padding-block-start: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99 !important;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: column;
   max-width: inherit;
+  min-width: inherit;
+  padding-inline: inherit;
+  -webkit-padding-before: inherit;
+          padding-block-start: inherit;
 }
 header .grad {
   grid-column: 1;
@@ -138,8 +146,6 @@ header .grad {
   transition: background-color box-shadow 0.15s ease;
   --bgheaderColor: rgba(36, 36, 36, 0.9);
   --blur: 10px;
-  -webkit-padding-after: 0.618rem;
-          padding-block-end: 0.618rem;
   background-color: var(--bgheaderColor);
   box-shadow: 0 0 0 100vmax var(--bgheaderColor);
   -webkit-clip-path: inset(0 -100vmax);
@@ -216,7 +222,6 @@ header .grad {
   }
 }
 .nav-list {
-  z-index: 999 !important;
   list-style: none;
   display: flex;
   flex-direction: row;
