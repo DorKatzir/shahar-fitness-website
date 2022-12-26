@@ -18,12 +18,11 @@ header{
         grid-column: 1;
         grid-row: 1 / -1;
         z-index: -1;
-        background-image: 
-        linear-gradient(rgba(25 25 25 / 1),rgba(25 25 25 / .8), transparent 90%);
-        width: 100%;
-        height: 35vh;
         position: fixed;
         inset: 0;
+        max-height: 35dvh;
+        background-color: #191919;
+        mask-image: linear-gradient(to bottom, black, transparent);
     }
 
 
