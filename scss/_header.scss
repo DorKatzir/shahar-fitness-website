@@ -57,7 +57,7 @@ header{
     --bgheaderColor: rgba(36, 36, 36, 0.9);
     --blur: 10px;
 
-    // padding-block-end: .618rem;
+    padding-block-end: 0.618rem;
 
     background-color: var(--bgheaderColor);
     box-shadow: 0 0 0 100vmax var(--bgheaderColor);
@@ -71,6 +71,7 @@ header{
 }
 
 .fade-in-img{
+    max-width: 60%;
     opacity: 0;
     transform: translateY(1rem);
 

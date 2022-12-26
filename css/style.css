@@ -149,6 +149,8 @@ header .grad {
   transition: background-color box-shadow 0.15s ease;
   --bgheaderColor: rgba(36, 36, 36, 0.9);
   --blur: 10px;
+  -webkit-padding-after: 0.618rem;
+          padding-block-end: 0.618rem;
   background-color: var(--bgheaderColor);
   box-shadow: 0 0 0 100vmax var(--bgheaderColor);
   -webkit-clip-path: inset(0 -100vmax);
@@ -158,6 +160,7 @@ header .grad {
 }
 
 .fade-in-img {
+  max-width: 60%;
   opacity: 0;
   transform: translateY(1rem);
   -webkit-animation-name: fadeIn;
@@ -478,18 +481,8 @@ header .grad {
   width: 100%;
   height: 100%;
   filter: contrast(110%) grayscale(10%);
-}
-.showcase::before {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(transparent, black);
-  filter: opacity(80%);
-  z-index: 1;
+  -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+          mask-image: linear-gradient(to bottom, black, transparent);
 }
 
 .hero-img {
@@ -712,8 +705,8 @@ header .grad {
 @media (max-width: 870px) {
   .home {
     min-height: 90dvh;
-    -webkit-margin-after: 2rem;
-            margin-block-end: 2rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
   }
 }
 section {
