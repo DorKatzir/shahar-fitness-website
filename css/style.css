@@ -617,8 +617,6 @@ header .grad {
     -moz-column-gap: 0.6rem;
          column-gap: 0.6rem;
     row-gap: 4rem;
-    -webkit-padding-after: 2rem;
-            padding-block-end: 2rem;
   }
   .home .feature {
     background-color: var(--black-25);
@@ -705,8 +703,8 @@ header .grad {
 @media (max-width: 870px) {
   .home {
     min-height: 90dvh;
-    -webkit-margin-after: 0rem;
-            margin-block-end: 0rem;
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
   }
 }
 section {
