@@ -1,7 +1,8 @@
 
 const sectionHeader = document.querySelector('.header-section')
 const sectionHome = document.querySelector('.home')
-const logo = document.getElementById('brandImage')
+const brandImage = document.getElementById('brandImage')
+
 
 const homeOptions = {
     root: null,
@@ -22,15 +23,15 @@ function mqLargrHandler(e) {
         entries.forEach(entry => {
             if (!entry.isIntersecting && e.matches) {
                 sectionHeader.classList.add('full-bleed')
-                logo.src = './images/slogan/horizontal_logo.svg'           
-                logo.classList.remove('slide-in-img')
-                logo.classList.add('fade-in-img')
+
+                brandImage.classList.remove('slide-in-img')
+                brandImage.classList.add('fade-in-img')
                 
             } else {
                 sectionHeader.classList.remove('full-bleed')
-                logo.src = './images/slogan/large_409X123.svg'
-                logo.classList.remove('fade-in-img')
-                logo.classList.add('slide-in-img')
+                
+                brandImage.classList.remove('fade-in-img')
+                brandImage.classList.add('slide-in-img')
 
             }
         })
