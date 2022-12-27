@@ -134,7 +134,7 @@ header .box {
   display: none;
 }
 header .brand {
-  min-width: 300px;
+  min-width: 230px;
 }
 
 @media (max-width: 871px) {
@@ -245,6 +245,14 @@ header .brand {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (max-width: 480px) {
+  .slide-in-img {
+    width: 100%;
+    aspect-ratio: 36/11;
+    background-image: url("../images/slogan/small_324X99.svg");
+    background-size: contain;
   }
 }
 .nav-list {
