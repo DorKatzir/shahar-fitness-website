@@ -55,8 +55,8 @@ body {
   grid-auto-flow: row;
   justify-items: center;
   padding-inline: 1rem;
-  -webkit-padding-before: 1rem;
-          padding-block-start: 1rem;
+  -webkit-padding-before: 2rem;
+          padding-block-start: 2rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -109,7 +109,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   z-index: 99 !important;
   display: grid;
   grid-auto-flow: column;
@@ -135,7 +135,6 @@ header .box {
 }
 header .brand {
   min-width: 300px;
-  max-width: 300px;
 }
 
 @media (max-width: 871px) {
@@ -169,7 +168,7 @@ header .brand {
 }
 
 .fade-in-img {
-  width: 100%;
+  width: 70%;
   aspect-ratio: 43/4;
   background-image: url("../images/slogan/horizontal_logo.svg");
   background-size: contain;
