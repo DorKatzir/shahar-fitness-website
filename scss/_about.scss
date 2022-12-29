@@ -43,9 +43,6 @@
 .card_about{
     justify-self: start;
 
-    width: 100%;
-    max-width: 500px;
-
     display: grid;
     gap: 1rem;
     justify-content: start;
@@ -53,9 +50,6 @@
     
 }
 
-// .img-about{
-//     object-fit: cover;
-// }
 
 .img-wrapper{
     position: relative;
@@ -69,9 +63,8 @@
     width: 100%;
     height: 100%;
 
-    color: var(--white-50);
-    font-size: var(--fs-small);
-    font-weight: var(--fw-thin);
+    color: var(--blue-100);
+    font-size: var(--fs-text);
 
     display: flex;
     flex-direction: column;
