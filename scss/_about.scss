@@ -96,3 +96,9 @@
 .webArtImg{
     max-width: 150px;
 }
+
+@media (min-width: 540px){
+    .webArtImg{
+        display: none;
+    }
+}

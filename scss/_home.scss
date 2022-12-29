@@ -34,7 +34,7 @@
 
 .content{
     display:block;
-    max-width: 600px;
+    // max-width: 600px;
     border-radius: 8px;
     display: grid;
     justify-items: center;
@@ -298,4 +298,27 @@
         margin-block-end: 2rem;
     }
 
+}
+
+@media (min-width: 540px){
+    .showcase {
+    
+        video {
+            position: absolute;
+            inset: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: contrast(110%) grayscale(10%);  
+            -webkit-mask-image: url(../images/home/brshStroke1.png);
+            mask-image: url(../images/home/brshStroke1.png);
+            -webkit-mask-size: cover;
+            mask-size: cover;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            mask-position: 50%;
+            // mask-mode: luminance;
+        }  
+
+    }
 }

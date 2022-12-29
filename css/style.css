@@ -519,7 +519,6 @@ header .brand {
 
 .content {
   display: block;
-  max-width: 600px;
   border-radius: 8px;
   display: grid;
   justify-items: center;
@@ -735,6 +734,25 @@ header .brand {
             margin-block-end: 2rem;
   }
 }
+@media (min-width: 540px) {
+  .showcase video {
+    position: absolute;
+    inset: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: contrast(110%) grayscale(10%);
+    -webkit-mask-image: url(../images/home/brshStroke1.png);
+    mask-image: url(../images/home/brshStroke1.png);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: 50%;
+            mask-position: 50%;
+  }
+}
 section {
   margin-block: 1.3rem;
 }
@@ -873,6 +891,11 @@ cite span {
   max-width: 150px;
 }
 
+@media (min-width: 540px) {
+  .webArtImg {
+    display: none;
+  }
+}
 .gallery {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);
