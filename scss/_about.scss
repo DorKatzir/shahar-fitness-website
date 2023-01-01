@@ -65,25 +65,34 @@
         color: var(--blue-100);
         font-size: var(--fs-text);
 
-        // .card-info-text{
-
-        // }
-
         .card-info-diploma{
-            display: flex;
-            span{
-                color: var(--blue-100);
-                align-self: flex-end;
-            }
             svg{
                 width: 100%;
                 max-width: 35px;
                 aspect-ratio: 1 / 1;
+                padding-block-end: .3rem;
+            }
+            .btn-link{
+                background-color: var(--blue-100);
+                border-radius: 5px;
+                padding-block: 0.2rem;
+                padding-inline: 0.8rem;
+                text-align: center;
+                
+                a:link,
+                a:visited{   
+                    display: block;
+                    color: var(--white-100);
+                    text-decoration: none;
+                }
+
             }
         }
     }
 
 }
+
+
 
 @media (min-width: 540px){
 
