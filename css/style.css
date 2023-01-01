@@ -846,53 +846,38 @@ cite span {
   gap: 1rem;
 }
 
-.card_about {
+.card {
   justify-self: start;
   display: grid;
   gap: 1rem;
   justify-content: start;
   grid-auto-flow: column;
 }
-
-.img-wrapper {
-  position: relative;
-}
-.img-wrapper img {
+.card .card-img img {
   border-radius: 5px;
 }
-
-.details-about {
+.card .card-info {
   width: 100%;
   height: 100%;
-  color: var(--blue-100);
-  font-size: var(--fs-text);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: var(--blue-100);
+  font-size: var(--fs-text);
 }
-
-.diploma-wrapper {
+.card .card-info .card-info-diploma {
   display: flex;
 }
-.diploma-wrapper span {
+.card .card-info .card-info-diploma span {
   color: var(--blue-100);
   align-self: flex-end;
 }
-.diploma-wrapper svg {
+.card .card-info .card-info-diploma svg {
   width: 100%;
   max-width: 35px;
   aspect-ratio: 1/1;
 }
 
-.webArtImg {
-  max-width: 150px;
-}
-
-@media (min-width: 540px) {
-  .webArtImg {
-    display: none;
-  }
-}
 .gallery {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.25);

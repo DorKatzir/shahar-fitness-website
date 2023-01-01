@@ -40,7 +40,7 @@
 }
 
 
-.card_about{
+.card{
     justify-self: start;
 
     display: grid;
@@ -48,50 +48,47 @@
     justify-content: start;
     grid-auto-flow: column;
     
-}
-
-
-.img-wrapper{
-    position: relative;
-    img{
-        border-radius: 5px;
+    .card-img{
+        img{
+            border-radius: 5px;
+        }
     }
-}
 
-
-.details-about{
-    width: 100%;
-    height: 100%;
-
-    color: var(--blue-100);
-    font-size: var(--fs-text);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.diploma-wrapper{
-    display: flex;
-
-    span{
-        color: var(--blue-100);
-        align-self: flex-end;
-    }
-    svg{
+    .card-info{
         width: 100%;
-        max-width: 35px;
-        aspect-ratio: 1 / 1;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        color: var(--blue-100);
+        font-size: var(--fs-text);
+
+        // .card-info-text{
+
+        // }
+
+        .card-info-diploma{
+            display: flex;
+            span{
+                color: var(--blue-100);
+                align-self: flex-end;
+            }
+            svg{
+                width: 100%;
+                max-width: 35px;
+                aspect-ratio: 1 / 1;
+            }
+        }
     }
+
 }
 
-.webArtImg{
-    max-width: 150px;
-}
 
-@media (min-width: 540px){
-    .webArtImg{
-        display: none;
-    }
-}
+
+
+
+
+
+
