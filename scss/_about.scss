@@ -85,6 +85,33 @@
 
 }
 
+@media (min-width: 540px){
+
+    .card{
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: minmax(125px, 200px) auto;
+        
+        .card-img{
+            img{
+                border-radius: 5px;
+            }
+        }
+
+    }
+
+}
+
+@media (min-width: 780px){
+    .about > .content{
+        grid-auto-flow: column;
+        align-items: start;
+    }
+    .text-flex-cols{
+       display: flex;
+       flex-direction: column;
+    }
+}
 
 
 
