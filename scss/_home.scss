@@ -11,8 +11,8 @@
     isolation: isolate;
     inset: 0;
     z-index: -1; 
-    width: 100%;
-    max-width: 870px;
+    // width: 100%;
+    // max-width: 870px;
     // position: relative;
     
     video {
@@ -163,7 +163,8 @@
     }
 
     .home{ 
-        margin-block-start: 5rem;
+        // margin-block-start: 5rem;
+        min-height: 85dvh; 
         
         width: 100%;
         display: grid;
@@ -171,14 +172,34 @@
         grid-auto-flow: column;
         align-items: end;
         
+         .showcase {
+                video {
+                position: absolute;
+                inset: 0;
+                margin: 8dvh auto;
+                object-fit: cover;
+                object-position: center;
+                max-width: 90%;
+                max-height: auto;
+                -webkit-mask-image: url(../images/home/brshStroke1.png);
+                mask-image: url(../images/home/brshStroke1.png);
+                -webkit-mask-size: contain;
+                mask-size: contain;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                // -webkit-mask-origin: bottom center;
+                // mask-origin: bottom center;
+                // mask-mode: luminance;
+                filter: contrast(110%) grayscale(100%) opacity(55%);  
+            }  
+         }
+        
         .content{
             display: none;
         }
-        .showcase{
-            display: none;
-        }
+
         .hero-img{
-            display: block;
+            display: none;
    
         }
         .content-home{
@@ -189,7 +210,7 @@
         }
         .feature{
 
-            background-color: var(--black-25);
+            background-color: var(--black-90);
             border-radius: 8px;
             padding-inline: 1rem;
             padding-block-end: 1rem;
@@ -256,7 +277,7 @@
 
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             gap: 1rem;
             padding-inline: 1rem;
 
