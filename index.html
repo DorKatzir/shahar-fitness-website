@@ -15,7 +15,6 @@
     
     <script src="./js/bgvid.js" defer></script>
     <script src="./js/nav.js" defer></script>
-    <script src="./js/accordion.js" defer></script>
     <script src="./js/scrollchange.js" defer></script>
 
     
@@ -29,8 +28,7 @@
       
       <div class="brand">
         <h1 class="sr-only">מתחילים מחר עם שחר-פיטנס מאמן כושר אישי</h1>
-        <div id="brandImage" class="slide-in-img"></div>
-              
+        <div id="brandImage" class="slide-in-img"></div>       
       </div>
     
       <nav class="nav">
@@ -81,39 +79,52 @@
 
     </header>
 
-    <section class="home">
- 
-      <video class="home-bgvid" id="bgvid" loop muted="true" playsinline>
+    <div class="sitebg-wrapper">
+      <video class="sitebg-vid" id="bgvid" loop muted="true" playsinline>
           <source src="./vids/hp/hp.mov" type="video/mp4">
-      </video>      
+      </video> 
+    </div>
 
-      <div class="home-content">
+    <section class="home">
+      <div class="home-title">
 
-        <div class="home-feature text">
+        <h2> תוכנית בהתאמה אישית לכל מתאמן/ת:
+          <!-- <span>בחרו תוכנית:</span> -->
+        </h2>
+
+        <div class="vid-link">
+        <a href="#" class="noSelect">סרטוני הדגמה</a>
+        </div>
+
+      </div>
+
+      <div class="home-features">
+
+        <div class="home-feature-item text">
           <div class="icon-wrapper">
             <img class="icon-img" src="./images/home/icon1.png" alt="feature image">
             <div class="icon-circle"></div>
           </div>
-
+          
           <h3>גברים ונשים</h3>
           <p>
             גמישות, יציבות, הרזיה, קואורדינציה, סיבולת לב ריאה, לגוף צעיר יותר ולשיפור איכות החיים
           </p>
         </div>
-
-        <div class="home-feature text">
+        
+        <div class="home-feature-item text">
           <div class="icon-wrapper">
             <img class="icon-img" src="./images/home/icon2.png" alt="feature image">
             <div class="icon-circle"></div>
           </div>
           <h3>נוער וילדים</h3>
-           <p>
+          <p>
             (הסמכה מיוחדת לילדים)
             הכנה ליחידות קרביות, הרזיה, גמישות וכוח, שיפור הכושר וסיבולת, פיתוח גוף, הקניית הרגלים, ביטחון עצמי.
           </p>
         </div>
-
-        <div class="home-feature text">
+        
+        <div class="home-feature-item text">
           <div class="icon-wrapper">
             <img class="icon-img" src="./images/home/icon3.png" alt="feature image">
             <div class="icon-circle"></div>
@@ -123,22 +134,9 @@
             גמישות, יציבות, הרזיה, קואורדינציה, סיבולת לב ריאה, לגוף צעיר יותר ולשיפור איכות החיים
           </p>
         </div>
-
-       
-        <div class="home-title">
-          <h2> תוכנית בהתאמה אישית לכל מתאמן/ת:
-           <!-- <span>בחרו תוכנית:</span> -->
-         </h2>
-         <div class="vid-link">
-          <a href="#" class="noSelect">סרטוני הדגמה</a>
-         </div>
-        </div>
-
+        
       </div>
-
-
     </section>
-
 
     <section class="quote">
 

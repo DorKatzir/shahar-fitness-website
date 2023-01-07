@@ -1,0 +1,29 @@
+.sitebg-wrapper{
+    width: 100%;
+    // background-color: #fff;
+    position: relative;
+    z-index: -1;
+    
+    .sitebg-vid{
+        position: absolute;
+        inset: 0;
+        
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        
+        -webkit-mask-image: url(../images/home/brshStroke1.png);
+        mask-image: url(../images/home/brshStroke1.png);
+        
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        
+        -webkit-mask-size: cover;
+        mask-size: cover;
+        
+        -webkit-mask-position: top center;
+        mask-position: top center;
+        
+        filter: contrast(110%) grayscale(100%) opacity(55%);
+    }
+}

@@ -6,47 +6,29 @@ const brandImage = document.getElementById('brandImage')
 
 const homeOptions = {
     root: null,
-    rootMargin: '-20px 0px 0px 0px',
+    rootMargin: '-24px 0px 0px 0px',
     threshold: 1,
 }
 
-const mqLarge = window.matchMedia('(min-width: 870px)')
-mqLarge.addEventListener('change', mqLargrHandler)
+const homeObserver = new IntersectionObserver(function (entries, homeObserver) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            sectionHeader.classList.add('full-bleed')
 
+            brandImage.classList.remove('slide-in-img')
+            brandImage.classList.add('fade-in-img')
+            
+        } else {
+            sectionHeader.classList.remove('full-bleed')
+            
+            brandImage.classList.remove('fade-in-img')
+            brandImage.classList.add('slide-in-img')
 
+        }
+    })
+}, homeOptions)
 
-// media query handler function
-function mqLargrHandler(e) {
-    // console.log(e.matches ? 'large' : 'not large')
-
-    const homeObserver = new IntersectionObserver(function (entries, homeObserver) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting && e.matches) {
-                sectionHeader.classList.add('full-bleed')
-
-                brandImage.classList.remove('slide-in-img')
-                brandImage.classList.add('fade-in-img')
-                
-            } else {
-                sectionHeader.classList.remove('full-bleed')
-                
-                brandImage.classList.remove('fade-in-img')
-                brandImage.classList.add('slide-in-img')
-
-            }
-        })
-    }, homeOptions)
-
-    homeObserver.observe(sectionHome)
-
-    if (!e.matches) {
-        console.log('not large')
-        homeObserver.unobserve(sectionHome)
-    }
-
-}
-// initial state
-mqLargrHandler(mqLarge);
+homeObserver.observe(sectionHome)
 
 
 
