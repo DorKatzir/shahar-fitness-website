@@ -1,12 +1,12 @@
 
 const sectionHeader = document.querySelector('.header-section')
-const sectionHome = document.querySelector('.home')
+const sectionHome = document.querySelector('.home-title')
 const brandImage = document.getElementById('brandImage')
 
 
 const homeOptions = {
     root: null,
-    rootMargin: '-24px 0px 0px 0px',
+    rootMargin: '0px 0px 0px 0px',
     threshold: 1,
 }
 

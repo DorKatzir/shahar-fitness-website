@@ -3,39 +3,32 @@ header{
     top: 0;
     width: 100%;
     min-height: 80px;
-    z-index: 99 !important;
+    z-index: 9;
 
     display: grid;
     grid-auto-flow: column;
+    align-items: start;
 
     max-width: inherit;
     min-width: inherit;
     padding-inline: inherit;
     padding-block-start: inherit;
 
-    .box{
-        display: none;
-    }
     .brand{
         min-width: 230px;
+        max-width: 540px;
     }
 
 
 }
 
-@media (max-width: 871px){
+@media (max-width: 790px){
 
     header{
        
         grid-template-columns: minmax(min-content, 50px) 1fr;
         > .brand {
             grid-column: 2 / 2 ;
-            grid-row: 1 / -1;
-            max-width: 409px;
-        }
-        > .box {
-            display: block;
-            grid-column: 1 / 1 ;
             grid-row: 1 / -1;
         }
 
@@ -66,7 +59,7 @@ header{
 }
 
 .fade-in-img{
-    width: 70%;
+    width: 50%;
     aspect-ratio: 43 / 4;
     background-image: url('../images/slogan/horizontal_logo.svg');
     background-size: contain;
@@ -114,11 +107,14 @@ header{
 
 @media (max-width: 480px){
     .slide-in-img{
-
-        width: 95%;
+        width: 100%;
         aspect-ratio: 36 / 11;
         background-image: url('../images/slogan/small_324X99.svg'); 
         background-size: contain;  
+    }
+
+    .fade-in-img{
+            width: 100%;
     }
 
 
