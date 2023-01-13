@@ -287,7 +287,7 @@ nav {
   }
   .nav-list.list-closed .nav-item .icons {
     margin: 0 auto;
-    background-color: var(--black-10);
+    background-color: var(--black-50);
     border-radius: 1.618rem;
     justify-content: space-around;
     width: 90%;
