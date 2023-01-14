@@ -109,15 +109,77 @@
 
 }
 
-// @media (max-width: 550px){
+@media (max-width: 480px){
 
-//     .home-content{
-//         display: grid;
-//         grid-auto-flow: row;
-//     }
+   
 
+    .home-features{
+        justify-self: center;
+        max-width: 300px;
+        grid-template-columns: none !important;
+        // // column-gap: 0.6rem;
+        gap: 1rem !important;
+        
+        // .home-feature-item{
+        //     background-color: var(--black-75);
+        //     border-radius: 8px;
+        //     padding-inline: 1rem;
+        //     padding-block-end: 1rem;
+        //     padding-block-start: 0;
+            
+        //     display: grid;
+        //     grid-template-rows: 50px 35px auto;
+        //     grid-auto-flow: row;
+        //     justify-items: center;
+        //     align-items: stretch;
+            
+        //     .icon-wrapper{
+        //         margin-block-start: -2.3rem;
+                
+        //         position: relative;
+        //         isolation: isolate;
+        //         width: 70px;
+        //         height: 80px;
+        //         border-radius: 0 0 100vw 100vw;
+        //         overflow: hidden;
+        //         //background-color: #fff;
+                
+        //         .icon-img {
+        //             position: absolute;
+        //             max-width: 70px;
+        //             filter: grayscale(60%);
+        //             top: 70%;
+        //             left: 0;
+        //             right: -15px;
+        //             margin: auto;
+        //             transform: translateY(-50%);
+                    
+        //             img{
+        //                 width: 100%;
+        //                 aspect-ratio: 1 / 1;
+        //             }
+        //         }
+                
+        //         .icon-circle{
+        //             position: absolute;
+        //             bottom: 0;
+        //             width: inherit;
+        //             aspect-ratio: 1 / 1;
+                    
+        //             border-radius: 50%;
+        //             background-color: var(--blue-100);
+        //             z-index: -1;
+        //         }
+        //     }
+            
+        //     h3{
+        //         align-self: center;
+        //         color: var(--blue-100);
+        //     }
+        // } 
+    }
 
-// }
+}
 
 // @media (min-width: 540px){
 //     .showcase {

@@ -119,6 +119,7 @@ footer h2, footer p {
   .box {
     display: block;
     cursor: pointer;
+    position: fixed;
   }
   .burger {
     --burgerH: 4px;
@@ -602,6 +603,14 @@ header .brand {
   color: var(--blue-100);
 }
 
+@media (max-width: 480px) {
+  .home-features {
+    justify-self: center;
+    max-width: 300px;
+    grid-template-columns: none !important;
+    gap: 1rem !important;
+  }
+}
 section {
   margin-block: 1.3rem;
 }
