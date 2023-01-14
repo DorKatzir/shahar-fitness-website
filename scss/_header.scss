@@ -1,22 +1,17 @@
 header{
+    justify-self: start;
     position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 80px;
     z-index: 9;
+    width: 50%;
 
-    display: grid;
-    grid-auto-flow: column;
-    align-items: start;
-
-    max-width: inherit;
-    min-width: inherit;
-    padding-inline: inherit;
-    padding-block-start: inherit;
+    // max-width: inherit;
+    // min-width: inherit;
+    //padding-inline: inherit;
+    // padding-block-start: inherit;
 
     .brand{
-        min-width: 230px;
-        max-width: 540px;
+        width: 100%;
+        max-width: 500px;
     }
 
 
@@ -25,14 +20,16 @@ header{
 @media (max-width: 790px){
 
     header{
-       
-        grid-template-columns: minmax(min-content, 50px) 1fr;
-        > .brand {
-            grid-column: 2 / 2 ;
-            grid-row: 1 / -1;
-        }
-
+        width: 90%;
+        .brand{
+            padding-inline-start: 50px;
+        } 
     }
+
+    .full-bleed{
+        padding-block-start: 1rem !important;  
+    }
+    
 
 }
 
@@ -40,12 +37,16 @@ header{
 
 .full-bleed{
 
+    top: 0;
+
     transition: background-color box-shadow .25s ease-in-out; 
 
     --bgheaderColor: rgba(0,0,0, .75);
     --blur: 10px;
 
-    padding-block-end: 0.618rem;
+    padding-block-start: 2rem;
+    padding-block-end: 1rem;
+    
 
     background-color: var(--bgheaderColor);
     box-shadow: 0 0 0 100vmax var(--bgheaderColor);
@@ -59,10 +60,11 @@ header{
 }
 
 .fade-in-img{
-    width: 50%;
+    width: 100%;
+    max-width: 300px;
     aspect-ratio: 43 / 4;
     background-image: url('../images/slogan/horizontal_logo.svg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: right;
 
@@ -113,9 +115,9 @@ header{
         background-size: contain;  
     }
 
-    .fade-in-img{
-            width: 100%;
-    }
+    // .fade-in-img{
+    //     background-size: contain;
+    // }
 
 
 }

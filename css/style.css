@@ -48,9 +48,10 @@ body {
   color: var(--clr-white);
   background-image: url(../images/pattern/pattern.png);
   overflow-x: hidden;
-  width: 100dvw;
+  width: 100%;
   max-width: 1088px;
   min-width: 320px;
+  margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
@@ -353,41 +354,38 @@ nav {
   }
 }
 header {
+  justify-self: start;
   position: fixed;
-  top: 0;
-  width: 100%;
-  min-height: 80px;
   z-index: 9;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: start;
-  max-width: inherit;
-  min-width: inherit;
-  padding-inline: inherit;
-  -webkit-padding-before: inherit;
-          padding-block-start: inherit;
+  width: 50%;
 }
 header .brand {
-  min-width: 230px;
-  max-width: 540px;
+  width: 100%;
+  max-width: 500px;
 }
 
 @media (max-width: 790px) {
   header {
-    grid-template-columns: minmax(-webkit-min-content, 50px) 1fr;
-    grid-template-columns: minmax(min-content, 50px) 1fr;
+    width: 90%;
   }
-  header > .brand {
-    grid-column: 2/2;
-    grid-row: 1/-1;
+  header .brand {
+    -webkit-padding-start: 50px;
+            padding-inline-start: 50px;
+  }
+  .full-bleed {
+    -webkit-padding-before: 1rem !important;
+            padding-block-start: 1rem !important;
   }
 }
 .full-bleed {
+  top: 0;
   transition: background-color box-shadow 0.25s ease-in-out;
   --bgheaderColor: rgba(0,0,0, .75);
   --blur: 10px;
-  -webkit-padding-after: 0.618rem;
-          padding-block-end: 0.618rem;
+  -webkit-padding-before: 2rem;
+          padding-block-start: 2rem;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
   background-color: var(--bgheaderColor);
   box-shadow: 0 0 0 100vmax var(--bgheaderColor);
   -webkit-clip-path: inset(0 -100vmax);
@@ -397,10 +395,11 @@ header .brand {
 }
 
 .fade-in-img {
-  width: 50%;
+  width: 100%;
+  max-width: 300px;
   aspect-ratio: 43/4;
   background-image: url("../images/slogan/horizontal_logo.svg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-x: right;
   opacity: 0;
@@ -482,9 +481,6 @@ header .brand {
     aspect-ratio: 36/11;
     background-image: url("../images/slogan/small_324X99.svg");
     background-size: contain;
-  }
-  .fade-in-img {
-    width: 100%;
   }
 }
 .sitebg-wrapper {
@@ -873,6 +869,12 @@ cite span {
   }
   .contact > .content .map img {
     aspect-ratio: 2/1;
+  }
+}
+@media (max-width: 790px) {
+  body {
+    -webkit-padding-before: 1rem;
+            padding-block-start: 1rem;
   }
 }
 .normal {
