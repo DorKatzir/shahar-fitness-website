@@ -113,7 +113,8 @@
 @media (max-width: 480px){
 
     .home{
-        margin-block-start: 22rem;
+        margin-block-start: 25rem;
+        gap: 3rem !important;
     }
     .home-title{
         gap: 0.25rem !important;
@@ -124,7 +125,7 @@
         max-width: 300px;
         grid-template-columns: none !important;
         // // column-gap: 0.6rem;
-        gap: 1rem !important;
+        gap: 3rem !important;
         
         // .home-feature-item{
         //     background-color: var(--black-75);

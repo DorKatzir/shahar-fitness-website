@@ -610,8 +610,9 @@ header .brand {
 
 @media (max-width: 480px) {
   .home {
-    -webkit-margin-before: 22rem;
-            margin-block-start: 22rem;
+    -webkit-margin-before: 25rem;
+            margin-block-start: 25rem;
+    gap: 3rem !important;
   }
   .home-title {
     gap: 0.25rem !important;
@@ -620,7 +621,7 @@ header .brand {
     justify-self: center;
     max-width: 300px;
     grid-template-columns: none !important;
-    gap: 1rem !important;
+    gap: 3rem !important;
   }
 }
 section {
