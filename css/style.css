@@ -721,6 +721,8 @@ cite span {
   gap: 1rem;
   justify-content: start;
   grid-auto-flow: column;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 .card .card-img img {
   border-radius: 5px;
