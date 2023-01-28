@@ -609,8 +609,8 @@ header .brand {
 
 @media (max-width: 480px) {
   .home {
-    -webkit-margin-before: 30rem;
-            margin-block-start: 30rem;
+    -webkit-margin-before: 23rem;
+            margin-block-start: 23rem;
     gap: 3rem !important;
   }
   .home-title {
