@@ -55,9 +55,10 @@ body {
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
-  padding-inline: 1rem;
+  justify-content: center;
   -webkit-padding-before: 2rem;
           padding-block-start: 2rem;
+  padding-inline: 1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -104,6 +105,20 @@ footer h2, footer p {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.padding-x {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
+}
+
+.margin-x {
+  -webkit-margin-start: 1rem;
+          margin-inline-start: 1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
 }
 
 .box {
@@ -483,38 +498,59 @@ header .brand {
     background-size: contain;
   }
 }
-.sitebg-wrapper {
-  width: 100%;
-  max-width: 960px;
-  z-index: -1;
-}
-.sitebg-wrapper .sitebg-vid {
-  min-height: 100vh;
-  min-height: 100dvh;
-  position: absolute;
-  inset: 0;
+.sitebg-video {
+  grid-column: 1/-1;
+  grid-row: 1/-1;
   width: 100%;
   max-width: inherit;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin: 0 auto;
+  justify-self: center;
+  display: grid;
+  place-content: start;
   -webkit-mask-image: url(../images/home/brshStroke1.png);
   mask-image: url(../images/home/brshStroke1.png);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+  -webkit-mask-size: contain;
+  mask-size: contain;
   -webkit-mask-position: top center;
   mask-position: top center;
+  z-index: -1;
+}
+.sitebg-video .sitebg-vid {
+  height: inherit;
+  width: 100vw;
+  max-width: inherit;
+  min-height: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
   filter: contrast(110%) grayscale(70%) opacity(55%);
 }
 
+@media (max-width: 960px) {
+  .sitebg-video {
+    min-width: 100vw;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+  .sitebg-vid {
+    position: absolute;
+  }
+}
+@media (max-width: 480px) {
+  .sitebg-video {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .sitebg-vid {
+    -webkit-mask-image: linear-gradient(transparent, black, transparent);
+    mask-image: linear-gradient(transparent, black, transparent);
+  }
+}
 .home {
-  -webkit-margin-before: 3rem;
-          margin-block-start: 3rem;
-  min-height: 85vh;
-  min-height: 85dvh;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  justify-self: center;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: end;
@@ -607,10 +643,17 @@ header .brand {
   color: var(--blue-100);
 }
 
+@media (max-width: 960px) {
+  .home {
+    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+}
 @media (max-width: 480px) {
   .home {
-    -webkit-margin-before: 23rem;
-            margin-block-start: 23rem;
+    height: calc(100vh + 30rem);
+    height: calc(100dvh + 30rem);
   }
   .home-title {
     gap: 0.25rem !important;

@@ -1,34 +1,60 @@
-.sitebg-wrapper{
+.sitebg-video{
+    grid-column: 1 / -1;
+    grid-row: 1 / -1 ;
     width: 100%;
-    max-width: 960px;
-    // background-color: #fff;
-    // position: relative;
-    z-index: -1;
+    max-width: inherit;
+    justify-self: center;
+
+    display: grid;
+    place-content: start;
     
+    
+
+    -webkit-mask-image: url(../images/home/brshStroke1.png);
+    mask-image: url(../images/home/brshStroke1.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: top center;
+    mask-position: top center;
+
+    z-index: -1;
+
     .sitebg-vid{
-        min-height: 100vh;
-        min-height: 100dvh;
-        position: absolute;
-        inset: 0;
-        
-        width: 100%;
+        height: inherit;
+        width: 100vw;
         max-width: inherit;
+        min-height: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
-        margin: 0 auto;
-        
-        -webkit-mask-image: url(../images/home/brshStroke1.png);
-        mask-image: url(../images/home/brshStroke1.png);
-        
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        
-        -webkit-mask-size: cover;
-        mask-size: cover;
-        
-        -webkit-mask-position: top center;
-        mask-position: top center;
         
         filter: contrast(110%) grayscale(70%) opacity(55%);
     }
+}
+
+@media (max-width: 960px){
+    .sitebg-video{
+        min-width: 100vw;
+        -webkit-mask-size: cover;
+        mask-size: cover;
+
+    }
+    .sitebg-vid{
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 480px){
+    .sitebg-video{
+        -webkit-mask-image: none;
+        mask-image:none;
+    }
+
+      .sitebg-vid{
+            -webkit-mask-image: linear-gradient(transparent, black, transparent);
+             mask-image: linear-gradient(transparent, black,transparent);
+    }
+
 }
