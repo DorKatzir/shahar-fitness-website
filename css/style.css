@@ -868,6 +868,11 @@ cite span {
   list-style: none;
 }
 
+.map {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
 .map img {
   border-radius: 5px;
   width: 100%;
