@@ -855,6 +855,8 @@ cite span {
 }
 
 .contact > .content {
+  display: grid;
+  gap: 1rem;
   grid-auto-flow: column;
   align-items: start;
 }
@@ -869,20 +871,20 @@ cite span {
   list-style: none;
 }
 
-.map {
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
-}
-
 .map img {
   border-radius: 5px;
   width: 100%;
-  aspect-ratio: 1/1;
+  aspect-ratio: 2/1;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 820px) {
+  .map img {
+    aspect-ratio: 1/1;
+  }
+}
+@media (max-width: 600px) {
   .map img {
     aspect-ratio: 1/2;
   }
@@ -892,7 +894,6 @@ cite span {
     grid-auto-flow: row;
   }
   .contact > .content .map {
-    order: 2;
     width: 100%;
   }
   .contact > .content .map img {
