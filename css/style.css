@@ -710,19 +710,21 @@ cite span {
 }
 
 .about > .content {
+  display: grid;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
   gap: 1rem;
 }
 
 .card {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   justify-self: start;
   display: grid;
   gap: 1rem;
   justify-content: start;
   grid-auto-flow: column;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
 }
 .card .card-img img {
   border-radius: 5px;
@@ -759,7 +761,6 @@ cite span {
 
 @media (min-width: 540px) {
   .card {
-    min-width: 100%;
     display: grid;
     grid-template-columns: minmax(125px, 200px) auto;
   }
