@@ -1,16 +1,21 @@
 .sitebg-wrapper{
     width: 100%;
+    max-width: 960px;
     // background-color: #fff;
-    position: relative;
+    // position: relative;
     z-index: -1;
     
     .sitebg-vid{
+        min-height: 100vh;
+        min-height: 100dvh;
         position: absolute;
         inset: 0;
         
         width: 100%;
+        max-width: inherit;
         aspect-ratio: 16 / 9;
         object-fit: cover;
+        margin: 0 auto;
         
         -webkit-mask-image: url(../images/home/brshStroke1.png);
         mask-image: url(../images/home/brshStroke1.png);

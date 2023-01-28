@@ -486,16 +486,20 @@ header .brand {
 }
 .sitebg-wrapper {
   width: 100%;
-  position: relative;
+  max-width: 960px;
   z-index: -1;
 }
 .sitebg-wrapper .sitebg-vid {
+  min-height: 100vh;
+  min-height: 100dvh;
   position: absolute;
   inset: 0;
   width: 100%;
+  max-width: inherit;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 0 auto;
   -webkit-mask-image: url(../images/home/brshStroke1.png);
   mask-image: url(../images/home/brshStroke1.png);
   -webkit-mask-repeat: no-repeat;
@@ -510,7 +514,8 @@ header .brand {
 .home {
   -webkit-margin-before: 3rem;
           margin-block-start: 3rem;
-  min-height: 550px;
+  min-height: 85vh;
+  min-height: 85dvh;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: end;
