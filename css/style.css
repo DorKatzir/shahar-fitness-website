@@ -611,7 +611,6 @@ header .brand {
   .home {
     -webkit-margin-before: 23rem;
             margin-block-start: 23rem;
-    gap: 3rem !important;
   }
   .home-title {
     gap: 0.25rem !important;
