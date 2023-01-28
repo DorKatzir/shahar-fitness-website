@@ -609,6 +609,13 @@ header .brand {
 }
 
 @media (max-width: 480px) {
+  .home {
+    -webkit-margin-before: 22rem;
+            margin-block-start: 22rem;
+  }
+  .home-title {
+    gap: 0.25rem !important;
+  }
   .home-features {
     justify-self: center;
     max-width: 300px;

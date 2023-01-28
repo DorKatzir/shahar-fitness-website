@@ -112,7 +112,12 @@
 
 @media (max-width: 480px){
 
-   
+    .home{
+        margin-block-start: 22rem;
+    }
+    .home-title{
+        gap: 0.25rem !important;
+    }
 
     .home-features{
         justify-self: center;
