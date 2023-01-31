@@ -1,6 +1,9 @@
 
-.about{
-    @include section-mobile;
+section.about{
+    padding-block: 2rem !important;
+    margin: 1rem !important;
+    background-color: rgba(0,0,0,.25);
+    border-radius: 8px;
 
     .section-main-title{
 
@@ -34,7 +37,7 @@
 .about > .content{
     display: grid;
     background-color: rgba(0, 0, 0, 0);
-    padding: 0;
+    padding-inline: 2rem;
     // justify-items: center;
     // align-items: flex-end;
     gap: 1rem;

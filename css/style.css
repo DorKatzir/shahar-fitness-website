@@ -55,10 +55,6 @@ body {
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
-  justify-content: center;
-  -webkit-padding-before: 2rem;
-          padding-block-start: 2rem;
-  padding-inline: 1rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -108,17 +104,11 @@ footer h2, footer p {
 }
 
 .padding-x {
-  -webkit-padding-start: 1rem;
-          padding-inline-start: 1rem;
-  -webkit-padding-end: 1rem;
-          padding-inline-end: 1rem;
+  padding-inline: 1rem !important;
 }
 
 .margin-x {
-  -webkit-margin-start: 1rem;
-          margin-inline-start: 1rem;
-  -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
+  margin-inline: 1rem;
 }
 
 .box {
@@ -548,6 +538,7 @@ header .brand {
   }
 }
 .home {
+  margin: 1rem !important;
   grid-column: 1/-1;
   grid-row: 1/-1;
   justify-self: center;
@@ -647,13 +638,11 @@ header .brand {
   .home {
     height: 100vh;
     min-height: 100vh;
-    min-height: 100dvh;
   }
 }
 @media (max-width: 480px) {
   .home {
     height: calc(100vh + 30rem);
-    height: calc(100dvh + 30rem);
   }
   .home-title {
     gap: 0.25rem !important;
@@ -718,14 +707,13 @@ cite span {
     background-color: rgba(0, 0, 0, 0) !important;
   }
 }
-.about {
-  width: 100%;
+section.about {
+  padding-block: 2rem !important;
+  margin: 1rem !important;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding-inline: 1rem;
-  padding-block: 1.2rem;
 }
-.about .section-main-title {
+section.about .section-main-title {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-weight: 300;
@@ -736,10 +724,10 @@ cite span {
   max-width: max-content;
   margin: auto;
 }
-.about .section-main-title p {
+section.about .section-main-title p {
   margin-bottom: 1rem;
 }
-.about .section-main-title hr {
+section.about .section-main-title hr {
   align-self: center;
   width: 50%;
   border: 0;
@@ -757,7 +745,7 @@ cite span {
 .about > .content {
   display: grid;
   background-color: rgba(0, 0, 0, 0);
-  padding: 0;
+  padding-inline: 2rem;
   gap: 1rem;
 }
 
