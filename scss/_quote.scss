@@ -4,6 +4,7 @@ section{
 }
 .quote{
     @include section-mobile;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 blockquote{
     display: flex;
@@ -40,6 +41,7 @@ cite{
 @media (min-width: 871px){
     .quote{
         @include section-desktop;
+        background-color: rgba(0, 0, 0, 0) !important;
     }
     
 }

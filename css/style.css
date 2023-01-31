@@ -675,6 +675,7 @@ section {
   border-radius: 8px;
   padding-inline: 1rem;
   padding-block: 1.2rem;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 blockquote {
@@ -714,6 +715,7 @@ cite span {
     border-radius: 8px;
     padding-inline: 1rem;
     padding-block: 1.2rem;
+    background-color: rgba(0, 0, 0, 0) !important;
   }
 }
 .about {
