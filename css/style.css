@@ -853,7 +853,7 @@ cite span {
 .gallery .gallery-items {
   width: inherit;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(130px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr));
   gap: 0.6rem;
 }
 .gallery .gallery-items .vid-card video {
