@@ -1,9 +1,10 @@
-
-
-
-
-.gallery{
-    @include section-mobile;
+section.gallery{
+    width: 94vw;
+    max-width: 1050px;
+    background-color: rgba(0 0 0 / .25);
+    border-radius: 8px;
+    padding-block: 2rem !important;
+    // margin: 1rem !important;
 
 
     .section-main-title{
@@ -29,10 +30,10 @@
     }
 
     .gallery-items{
-        width: inherit;
-        //padding: 1.2rem;
+        padding-inline: 2rem !important;
+        
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); 
+        grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr)); 
         gap: 0.6rem; 
 
         .vid-card {
