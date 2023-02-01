@@ -3,7 +3,7 @@
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 
-    // justify-self: center;
+    justify-self: center;
 
     display: grid;
     grid-template-rows: 1fr auto;
@@ -113,12 +113,11 @@
 
 }
 
-@media (max-width: 960px){
+@media (max-width: 768px){
 
-    // .home{
-    //     height: 100vh;
-    //     min-height: 100vh;
-    // }
+    .home{
+        padding-top: 15rem !important;
+    }
 
 }
 

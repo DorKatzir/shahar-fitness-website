@@ -54,7 +54,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: minmax(90vh, 100vh) 1fr !important;
+  grid-template-rows: minmax(80vh, 100vh) 1fr !important;
   justify-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -562,6 +562,7 @@ header .brand {
   margin: 1rem !important;
   grid-column: 1/-1;
   grid-row: 1/-1;
+  justify-self: center;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: end;
@@ -654,6 +655,11 @@ header .brand {
   color: var(--blue-100);
 }
 
+@media (max-width: 768px) {
+  .home {
+    padding-top: 15rem !important;
+  }
+}
 @media (max-width: 480px) {
   .home-features {
     justify-self: center;
