@@ -120,6 +120,8 @@ footer h2, footer p {
 .box {
   -webkit-padding-start: 1rem;
           padding-inline-start: 1rem;
+  -webkit-padding-before: 2rem;
+          padding-block-start: 2rem;
   display: none;
   width: 40px;
   height: 35px;
@@ -496,6 +498,9 @@ header .brand {
   }
 }
 @media (max-width: 480px) {
+  header {
+    top: 1rem;
+  }
   .slide-in-img {
     width: 100%;
     aspect-ratio: 36/11;

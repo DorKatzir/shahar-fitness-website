@@ -110,16 +110,16 @@ header{
 }
 
 @media (max-width: 480px){
+    header{
+        top: 1rem;  
+    }
+
     .slide-in-img{
         width: 100%;
         aspect-ratio: 36 / 11;
         background-image: url('../images/slogan/small_324X99.svg'); 
         background-size: contain;  
     }
-
-    // .fade-in-img{
-    //     background-size: contain;
-    // }
 
 
 }
