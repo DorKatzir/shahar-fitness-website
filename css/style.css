@@ -187,6 +187,9 @@ footer h2, footer p {
   }
 }
 nav {
+  top: 1.6rem;
+  -webkit-padding-end: 1rem;
+          padding-inline-end: 1rem;
   justify-self: end;
   position: fixed;
   z-index: 99;
