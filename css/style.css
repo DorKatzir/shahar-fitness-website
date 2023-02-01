@@ -54,12 +54,18 @@ body {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
+  grid-template-rows: minmax(90vh, 100vh) 1fr !important;
   justify-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
+@media (max-width: 480px) {
+  body {
+    grid-template-rows: repeat(2, 100vh) 1fr !important;
+  }
+}
 footer {
   margin-top: 3rem;
 }
@@ -644,19 +650,7 @@ header .brand {
   color: var(--blue-100);
 }
 
-@media (max-width: 960px) {
-  .home {
-    height: 100vh;
-    min-height: 100vh;
-  }
-}
 @media (max-width: 480px) {
-  .home {
-    height: calc(100vh + 30rem);
-  }
-  .home-title {
-    gap: 0.25rem !important;
-  }
   .home-features {
     justify-self: center;
     max-width: 300px;

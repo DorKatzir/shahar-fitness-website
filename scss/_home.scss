@@ -115,22 +115,14 @@
 
 @media (max-width: 960px){
 
-    .home{
-        height: 100vh;
-        min-height: 100vh;
-    }
+    // .home{
+    //     height: 100vh;
+    //     min-height: 100vh;
+    // }
 
 }
 
 @media (max-width: 480px){
-    .home{
-      height: calc(100vh + 30rem); 
-    }
-
-
-    .home-title{
-        gap: 0.25rem !important;
-    }
 
     .home-features{
         justify-self: center;
