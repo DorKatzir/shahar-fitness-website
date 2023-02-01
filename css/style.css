@@ -562,7 +562,6 @@ header .brand {
   margin: 1rem !important;
   grid-column: 1/-1;
   grid-row: 1/-1;
-  justify-self: center;
   display: grid;
   grid-template-rows: 1fr auto;
   align-items: end;
