@@ -542,6 +542,7 @@ header .brand {
     mask-image: none;
   }
   .sitebg-vid {
+    filter: contrast(110%) grayscale(10%) !important;
     -webkit-mask-image: linear-gradient(transparent, black, transparent);
     mask-image: linear-gradient(transparent, black, transparent);
   }

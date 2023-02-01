@@ -30,6 +30,7 @@
         object-fit: cover;
         
         filter: contrast(110%) grayscale(70%) opacity(55%);
+        //filter: contrast(110%) grayscale(10%);
     }
 }
 
@@ -52,9 +53,10 @@
         mask-image:none;
     }
 
-      .sitebg-vid{
-            -webkit-mask-image: linear-gradient(transparent, black, transparent);
-             mask-image: linear-gradient(transparent, black,transparent);
+    .sitebg-vid{
+        filter: contrast(110%) grayscale(10%) !important;
+        -webkit-mask-image: linear-gradient(transparent, black, transparent);
+        mask-image: linear-gradient(transparent, black,transparent);
     }
 
 }
