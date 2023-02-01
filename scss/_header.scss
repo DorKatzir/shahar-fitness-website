@@ -1,4 +1,6 @@
 header{
+    top: 1.6rem;
+    padding-inline-start: 1rem;
     justify-self: start;
     position: fixed;
     z-index: 9;
@@ -21,9 +23,9 @@ header{
 
     header{
         width: 90%;
-        .brand{
-            padding-inline-start: 50px;
-        } 
+        top: .6rem;
+        padding-inline-start: 4rem;
+ 
     }
 
     .full-bleed{

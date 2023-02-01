@@ -112,6 +112,8 @@ footer h2, footer p {
 }
 
 .box {
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
   display: none;
   width: 40px;
   height: 35px;
@@ -122,6 +124,8 @@ footer h2, footer p {
 
 @media (max-width: 790px) {
   .box {
+    -webkit-padding-start: 1rem;
+            padding-inline-start: 1rem;
     display: block;
     cursor: pointer;
     position: fixed;
@@ -362,6 +366,9 @@ nav {
   }
 }
 header {
+  top: 1.6rem;
+  -webkit-padding-start: 1rem;
+          padding-inline-start: 1rem;
   justify-self: start;
   position: fixed;
   z-index: 9;
@@ -375,10 +382,9 @@ header .brand {
 @media (max-width: 790px) {
   header {
     width: 90%;
-  }
-  header .brand {
-    -webkit-padding-start: 50px;
-            padding-inline-start: 50px;
+    top: 0.6rem;
+    -webkit-padding-start: 4rem;
+            padding-inline-start: 4rem;
   }
   .full-bleed {
     -webkit-padding-before: 1rem !important;

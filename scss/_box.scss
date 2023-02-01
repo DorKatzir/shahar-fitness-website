@@ -1,5 +1,6 @@
 
 .box{
+    padding-inline-start: 1rem;
     display: none;
     width: 40px;
     height: 35px;
@@ -12,6 +13,7 @@
 @media (max-width: 790px){
 
     .box{
+        padding-inline-start: 1rem;
         display: block;
         cursor: pointer;
         position: fixed;
