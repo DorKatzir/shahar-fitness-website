@@ -54,18 +54,13 @@ body {
   margin: 0 auto;
   display: grid;
   grid-auto-flow: row;
-  grid-template-rows: minmax(80vh, 100vh) 1fr !important;
+  grid-template-rows: 100vh 1fr !important;
   justify-items: center;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-@media (max-width: 480px) {
-  body {
-    grid-template-rows: repeat(2, 100vh) 1fr !important;
-  }
-}
 footer {
   margin-top: 3rem;
 }
@@ -510,7 +505,7 @@ header .brand {
 }
 .sitebg-video {
   grid-column: 1/-1;
-  grid-row: 1/-1;
+  grid-row: 1/span 2;
   width: 100%;
   max-width: inherit;
   justify-self: center;
@@ -561,7 +556,7 @@ header .brand {
 .home {
   margin: 1rem !important;
   grid-column: 1/-1;
-  grid-row: 1/-1;
+  grid-row: 1/span 2;
   justify-self: center;
   display: grid;
   grid-template-rows: 1fr auto;
@@ -655,9 +650,9 @@ header .brand {
   color: var(--blue-100);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .home {
-    padding-top: 15rem !important;
+    padding-top: 22rem !important;
   }
 }
 @media (max-width: 480px) {

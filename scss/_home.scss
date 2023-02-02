@@ -1,7 +1,7 @@
 .home{ 
     margin: 1rem !important;
     grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-row: 1 / span 2;
 
     justify-self: center;
 
@@ -113,10 +113,10 @@
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 650px){
 
     .home{
-        padding-top: 15rem !important;
+        padding-top: 22rem !important;
     }
 
 }
