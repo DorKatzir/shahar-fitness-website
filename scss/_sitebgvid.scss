@@ -7,6 +7,7 @@
 
     display: grid;
     place-content: start;
+    margin-block-start: -1rem;
     
     
 
@@ -29,16 +30,17 @@
         aspect-ratio: 16 / 9;
         object-fit: cover;
         
-        filter: contrast(110%) grayscale(70%) opacity(55%);
+        filter: contrast(110%) grayscale(100%) opacity(55%);
         //filter: contrast(110%) grayscale(10%);
     }
 }
 
 @media (max-width: 960px){
+
     .sitebg-video{
         min-width: 100vw;
         -webkit-mask-size: cover;
-        mask-size: cover;
+        mask-size: cover;      
 
     }
     .sitebg-vid{
@@ -51,12 +53,14 @@
     .sitebg-video{
         -webkit-mask-image: none;
         mask-image:none;
+        margin-block-start: -7rem !important;
     }
 
     .sitebg-vid{
         filter: contrast(110%) grayscale(10%) !important;
-        -webkit-mask-image: linear-gradient(to bottom, transparent,rgba(0,0,0, .75) 40%,transparent 90%);
-        mask-image: linear-gradient(to bottom, transparent,rgba(0,0,0, .75) 40%,transparent 90%);
+        
+        -webkit-mask-image: linear-gradient(to top, transparent 15%,black 70%);
+        mask-image: linear-gradient(to top, transparent 15%,black 70%);
        
     }
 

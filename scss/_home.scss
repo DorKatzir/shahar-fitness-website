@@ -20,6 +20,7 @@
         
         h2{
             color: var(--white-50);
+            text-align: center;
         }
         .vid-link{
             display: flex;
@@ -116,12 +117,15 @@
 @media (max-width: 650px){
 
     .home{
-        padding-top: 22rem !important;
+        margin-block-start: 55vh !important;
     }
 
 }
 
 @media (max-width: 480px){
+    // .home{
+    //     gap: 5rem;
+    // }
 
     .home-features{
         justify-self: center;
