@@ -81,19 +81,42 @@ section.about{
                 padding-block-end: .3rem;
             }
             .btn-link{
-                background-color: var(--blue-100);
+                background-color: rgba(0,0,0,.5);
+                border: 2px solid var(--blue-100);
                 border-radius: 5px;
-                padding-block: 0.2rem;
-                padding-inline: 0.8rem;
+                padding-block: 0.3rem;
+                // padding-inline: 0.6rem;
                 text-align: center;
+                
+                transition: all .25s ease;
+                color: var(--blue-100);
                 
                 a:link,
                 a:visited{   
                     display: block;
-                    color: var(--white-100);
                     text-decoration: none;
+                    color: currentColor;
+                    
+                }
+                &:hover{
+                    color: whitesmoke !important;
+                    
                 }
 
+            }
+            :modal{
+                padding: 1rem;
+                margin: auto;
+                background-color: coral;
+                max-width: 50ch;
+                border-radius: 8px;
+                border: none;
+                
+                &::backdrop{
+                    background: black;
+                    opacity: .9;
+                }
+  
             }
         }
     }
@@ -129,10 +152,5 @@ section.about{
        flex-direction: column;
     }
 }
-
-
-
-
-
 
 

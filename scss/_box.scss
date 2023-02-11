@@ -20,8 +20,8 @@
         display: block;
         cursor: pointer;
         position: fixed;
+    }
         
-
     .burger{
         --burgerH: 4px;
         position: absolute;
@@ -64,7 +64,6 @@
             transform-origin: right top;
             transform: rotate(0deg) translate(0, calc(var(--burgerH)*2.5));
         }
-
     }
 
     .x {

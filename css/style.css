@@ -56,7 +56,6 @@ body {
   grid-auto-flow: row;
   grid-template-rows: 100vh 1fr !important;
   justify-items: center;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -87,7 +86,6 @@ footer h2, footer p {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -132,7 +130,6 @@ footer h2, footer p {
     display: block;
     cursor: pointer;
     position: fixed;
-    padding: 1rem;
   }
   .burger {
     --burgerH: 4px;
@@ -224,7 +221,6 @@ nav {
   padding-inline: 1rem;
 }
 .nav-list .nav-item .icons {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   display: flex;
@@ -337,28 +333,14 @@ nav {
     transform: translateX(30%);
   }
   .nav-list.list-opened .nav-item {
-    -webkit-animation-name: animateIn;
-            animation-name: animateIn;
-    -webkit-animation-duration: 250ms;
-            animation-duration: 250ms;
-    -webkit-animation-delay: calc(var(--animation-order) * 150ms);
-            animation-delay: calc(var(--animation-order) * 150ms);
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out;
+    animation-name: animateIn;
+    animation-duration: 250ms;
+    animation-delay: calc(var(--animation-order) * 150ms);
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
   }
 }
 /**** Animations ****/
-@-webkit-keyframes animateIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-30%);
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes animateIn {
   0% {
     opacity: 0;
@@ -421,14 +403,10 @@ header .brand {
   background-position-x: right;
   opacity: 0;
   transform: translateY(1rem);
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 0.35s;
-          animation-duration: 0.35s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  animation-name: fadeIn;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
   z-index: 5;
 }
 
@@ -441,41 +419,16 @@ header .brand {
   background-position-x: right;
   opacity: 0;
   transform: translateY(-1rem);
-  -webkit-animation-name: slideIn;
-          animation-name: slideIn;
-  -webkit-animation-duration: 0.35s;
-          animation-duration: 0.35s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation-name: slideIn;
+  animation-duration: 0.35s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
     transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@-webkit-keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-1rem);
   }
   100% {
     opacity: 1;
@@ -705,7 +658,6 @@ blockquote {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -751,7 +703,6 @@ section.about .section-main-title {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin: auto;
@@ -782,7 +733,6 @@ section.about .section-main-title hr {
 }
 
 .card {
-  min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
   justify-self: start;
@@ -811,17 +761,34 @@ section.about .section-main-title hr {
           padding-block-end: 0.3rem;
 }
 .card .card-info .card-info-diploma .btn-link {
-  background-color: var(--blue-100);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--blue-100);
   border-radius: 5px;
-  padding-block: 0.2rem;
-  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
   text-align: center;
+  transition: all 0.25s ease;
+  color: var(--blue-100);
 }
 .card .card-info .card-info-diploma .btn-link a:link,
 .card .card-info .card-info-diploma .btn-link a:visited {
   display: block;
-  color: var(--white-100);
   text-decoration: none;
+  color: currentColor;
+}
+.card .card-info .card-info-diploma .btn-link:hover {
+  color: whitesmoke !important;
+}
+.card .card-info .card-info-diploma :modal {
+  padding: 1rem;
+  margin: auto;
+  background-color: coral;
+  max-width: 50ch;
+  border-radius: 8px;
+  border: none;
+}
+.card .card-info .card-info-diploma :modal::backdrop {
+  background: black;
+  opacity: 0.9;
 }
 
 @media (min-width: 540px) {
@@ -856,7 +823,6 @@ section.gallery .section-main-title {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin: auto;
@@ -902,7 +868,6 @@ section.gallery .gallery-items .vid-card video::-webkit-media-controls-mute-butt
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
   margin: auto;
