@@ -105,52 +105,59 @@ section.about{
 
             }
             :modal{
-                padding: 1rem;
                 margin: auto;
-                // background-color: var(--blue-100);
                 background-color: transparent;
                 max-width: 50ch;
-                border-radius: 8px;
                 border: none;
-                // border: 1px solid var(--blue-100);
-
-                picture{
-                    padding: 1rem;
-                    // background-color: #fff;
-                    img{
-                        border: 3px solid var(--blue-100);
-                        border-radius: 8px;
-                    }
-                }
 
                 button{
                     text-align: center;
-                    background-color: var(--orange-100);
+                    background: none;
                     border: none;
-                    border-radius: 3px;
-                    color: whitesmoke;
-                    padding-inline:.4rem;
-                    padding-block-end:.15rem;
-                    padding-block-start:0rem;
-                    margin: 0;
+                    cursor: pointer;
                 }
                 
                 &::backdrop{
                     background: black;
                     opacity: .9;
                 }
-
+                
                 .modal-header{
+                    padding-inline-start: 1rem;
                     display: flex;
-                    justify-content: space-between;
-                    align-items:flex-end;
-                    padding-inline: 1rem;
-                    color: var(--blue-100);
+                    #close-modal-1{
+                        color: transparent;
+                        width: 0;
+                        height: 0;
+                    }
+                    
+                    h2{
+                        color: var(--blue-100);
+                        align-self: center;
+                        font-size: var(--fs-regular);
+                    }
+                }
+                .modal-body{
+                    picture{
+                        padding: 1rem;
+                        img{
+                            border: 5px solid var(--blue-100);
+                            border-radius: 5px;
+                        }
+                    }   
                 }
                 .modal-footer{
+                    padding: 1rem;
                     display: flex;
                     justify-content: center;
-                    padding-inline: 1rem;
+                    #close-modal{
+                        background: var(--orange-100);
+                        padding-inline: 2rem;
+                        padding-block: .5rem;
+                        font-size: larger;
+                        color: whitesmoke;
+                        border-radius: 3px;
+                    }
                 }
   
             }
