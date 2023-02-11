@@ -898,14 +898,14 @@ section.gallery .gallery-items .vid-card video::-webkit-media-controls-mute-butt
   display: none !important;
 }
 
-.contact {
-  width: 100%;
+section.contact {
+  padding-block: 2rem !important;
+  margin: 1rem !important;
   background-color: rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding-inline: 1rem;
-  padding-block: 1.2rem;
+  padding-inline: 2rem;
 }
-.contact .section-main-title {
+section.contact .section-main-title {
   color: rgba(255, 255, 255, 0.4);
   text-align: center;
   font-weight: 300;
@@ -915,10 +915,10 @@ section.gallery .gallery-items .vid-card video::-webkit-media-controls-mute-butt
   max-width: max-content;
   margin: auto;
 }
-.contact .section-main-title p {
+section.contact .section-main-title p {
   margin-bottom: 1rem;
 }
-.contact .section-main-title hr {
+section.contact .section-main-title hr {
   align-self: center;
   width: 50%;
   border: 0;
@@ -928,6 +928,7 @@ section.gallery .gallery-items .vid-card video::-webkit-media-controls-mute-butt
 }
 
 .contact > .content {
+  padding-inline: 2rem;
   display: grid;
   gap: 1rem;
   grid-auto-flow: column;

@@ -1,5 +1,10 @@
-.contact{
-    @include section-mobile;
+section.contact{
+        padding-block: 2rem !important;
+        margin: 1rem !important;
+        background-color: rgba(0,0,0,.25);
+        border-radius: 8px;
+        
+        padding-inline: 2rem;
 
     .section-main-title{
 
@@ -25,10 +30,12 @@
 }
 
 .contact > .content {
+    padding-inline: 2rem;
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
     align-items: start;
+    
 }
 
 
