@@ -107,14 +107,50 @@ section.about{
             :modal{
                 padding: 1rem;
                 margin: auto;
-                background-color: coral;
+                // background-color: var(--blue-100);
+                background-color: transparent;
                 max-width: 50ch;
                 border-radius: 8px;
                 border: none;
+                // border: 1px solid var(--blue-100);
+
+                picture{
+                    padding: 1rem;
+                    // background-color: #fff;
+                    img{
+                        border: 3px solid var(--blue-100);
+                        border-radius: 8px;
+                    }
+                }
+
+                button{
+                    text-align: center;
+                    background-color: var(--orange-100);
+                    border: none;
+                    border-radius: 3px;
+                    color: whitesmoke;
+                    padding-inline:.4rem;
+                    padding-block-end:.15rem;
+                    padding-block-start:0rem;
+                    margin: 0;
+                }
                 
                 &::backdrop{
                     background: black;
                     opacity: .9;
+                }
+
+                .modal-header{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items:flex-end;
+                    padding-inline: 1rem;
+                    color: var(--blue-100);
+                }
+                .modal-footer{
+                    display: flex;
+                    justify-content: center;
+                    padding-inline: 1rem;
                 }
   
             }

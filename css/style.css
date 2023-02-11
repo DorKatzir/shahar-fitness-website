@@ -781,14 +781,46 @@ section.about .section-main-title hr {
 .card .card-info .card-info-diploma :modal {
   padding: 1rem;
   margin: auto;
-  background-color: coral;
+  background-color: transparent;
   max-width: 50ch;
   border-radius: 8px;
   border: none;
 }
+.card .card-info .card-info-diploma :modal picture {
+  padding: 1rem;
+}
+.card .card-info .card-info-diploma :modal picture img {
+  border: 3px solid var(--blue-100);
+  border-radius: 8px;
+}
+.card .card-info .card-info-diploma :modal button {
+  text-align: center;
+  background-color: var(--orange-100);
+  border: none;
+  border-radius: 3px;
+  color: whitesmoke;
+  padding-inline: 0.4rem;
+  -webkit-padding-after: 0.15rem;
+          padding-block-end: 0.15rem;
+  -webkit-padding-before: 0rem;
+          padding-block-start: 0rem;
+  margin: 0;
+}
 .card .card-info .card-info-diploma :modal::backdrop {
   background: black;
   opacity: 0.9;
+}
+.card .card-info .card-info-diploma :modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-inline: 1rem;
+  color: var(--blue-100);
+}
+.card .card-info .card-info-diploma :modal .modal-footer {
+  display: flex;
+  justify-content: center;
+  padding-inline: 1rem;
 }
 
 @media (min-width: 540px) {
