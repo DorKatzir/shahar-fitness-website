@@ -154,6 +154,19 @@ section.about{
                 }
   
             }
+            dialog[open]{
+                animation: fadein 0.5s forwards;
+            }
+
+            @keyframes fadein {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
         }
     }
 

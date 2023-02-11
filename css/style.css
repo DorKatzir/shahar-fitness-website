@@ -822,6 +822,17 @@ section.about .section-main-title hr {
   justify-content: center;
   padding-inline: 1rem;
 }
+.card .card-info .card-info-diploma dialog[open] {
+  animation: fadein 0.5s forwards;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 @media (min-width: 540px) {
   .card {
