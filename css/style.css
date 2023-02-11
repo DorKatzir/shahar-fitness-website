@@ -60,6 +60,27 @@ body {
   height: fit-content;
 }
 
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--blue-100) var(--orange-75);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--black-100);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--orange-75);
+  border-radius: 20px;
+  border: 3px solid var(--black-100);
+}
+
 footer {
   margin-top: 3rem;
 }
