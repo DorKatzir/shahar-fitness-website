@@ -955,6 +955,50 @@ section.contact .section-main-title hr {
   border-radius: 3px;
   margin-bottom: 1.6rem;
 }
+section.contact .cta {
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 50px max-content 1fr;
+  align-items: center;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+section.contact .cta span.talk {
+  grid-column: 1/span 2;
+  grid-row: 1/1;
+  color: var(--blue-100);
+  font-weight: bolder;
+  background-color: var(--white-100);
+  -webkit-padding-start: 2.6rem;
+          padding-inline-start: 2.6rem;
+  -webkit-padding-end: 0.5rem;
+          padding-inline-end: 0.5rem;
+  padding-block: 0.2rem;
+  border-radius: 10px;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+  z-index: -1;
+}
+section.contact .cta span.talk2 {
+  color: var(--white-100);
+  font-size: bigger;
+}
+section.contact .cta svg {
+  grid-column: 1/span 2;
+  grid-row: 1/1;
+  fill: rgb(37, 211, 102);
+  width: 45px;
+  aspect-ratio: 1;
+  z-index: 1;
+}
+section.contact .cta p {
+  grid-column: 3/4;
+  grid-row: 2/2;
+  color: var(--blue-100);
+}
+section.contact .cta p span.hours {
+  font-size: smaller;
+}
 
 .contact > .content {
   padding-inline: 2rem;

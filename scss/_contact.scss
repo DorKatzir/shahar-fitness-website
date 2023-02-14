@@ -27,6 +27,52 @@ section.contact{
             margin-bottom: 1.6rem;
         }
     }
+
+    .cta{
+        isolation: isolate;
+        // max-width: 200px;
+        display: grid;
+        grid-template-columns: 50px max-content 1fr;
+        align-items: center;
+        column-gap: .5rem;
+        ;
+        span.talk{
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+
+            color: var(--blue-100);
+            font-weight: bolder;
+            background-color: var(--white-100);
+            padding-inline-start: 2.6rem;
+            padding-inline-end: .5rem;
+            padding-block: .2rem;
+            border-radius: 10px;
+            margin-inline-start: .5rem;
+            z-index: -1; 
+        }
+        span.talk2{
+            color: var(--white-100);
+            font-size: bigger;
+        }
+        svg{
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+
+            fill: rgb(37,211,102);
+            width: 45px;
+            aspect-ratio: 1;
+            z-index: 1;
+        }
+        p{
+            grid-column: 3 / 4;
+            grid-row: 2 / 2;
+            color: var(--blue-100);
+            // color: rgb(37,211,102);
+            span.hours{
+                font-size: smaller;
+            }
+        }
+    }
 }
 
 .contact > .content {
@@ -56,6 +102,8 @@ section.contact{
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
+
+
 
 
 @media (max-width: 960px){
