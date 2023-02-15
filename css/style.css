@@ -956,47 +956,59 @@ section.contact .section-main-title hr {
   margin-bottom: 1.6rem;
 }
 section.contact .cta {
-  isolation: isolate;
   display: grid;
-  grid-template-columns: 50px max-content 1fr;
+  grid-template-columns: repeat(5, max-content);
   align-items: center;
-  -moz-column-gap: 0.5rem;
-       column-gap: 0.5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  isolation: isolate;
 }
-section.contact .cta span.talk {
-  grid-column: 1/span 2;
-  grid-row: 1/1;
+section.contact .cta svg.cta-svg {
+  grid-column: 1/span 4;
+  grid-row: 1/-1;
+  -webkit-margin-after: -2rem;
+          margin-block-end: -2rem;
+  width: 35px;
+  max-height: 35px;
+  fill: rgb(37, 211, 102);
+  z-index: 3;
+}
+section.contact .cta .cta-white-circle {
+  grid-column: 1/span 4;
+  grid-row: 1/-1;
+  -webkit-margin-after: -2rem;
+          margin-block-end: -2rem;
+  width: 30px;
+  aspect-ratio: 1;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  z-index: 2;
+}
+section.contact .cta span.cta-btn {
+  grid-column: 1/span 4;
+  grid-row: 1/-1;
+  align-self: end;
   color: var(--blue-100);
-  font-weight: bolder;
-  background-color: var(--white-100);
-  -webkit-padding-start: 2.6rem;
-          padding-inline-start: 2.6rem;
-  -webkit-padding-end: 0.5rem;
-          padding-inline-end: 0.5rem;
+  text-align: left;
+  font-weight: 600;
+  background-color: whitesmoke;
+  padding-inline: 0.6rem;
   padding-block: 0.2rem;
   border-radius: 10px;
-  -webkit-margin-start: 0.5rem;
-          margin-inline-start: 0.5rem;
-  z-index: -1;
-}
-section.contact .cta span.talk2 {
-  color: var(--white-100);
-  font-size: bigger;
-}
-section.contact .cta svg {
-  grid-column: 1/span 2;
-  grid-row: 1/1;
-  fill: rgb(37, 211, 102);
-  width: 45px;
-  aspect-ratio: 1;
+  cursor: pointer;
   z-index: 1;
 }
-section.contact .cta p {
-  grid-column: 3/4;
-  grid-row: 2/2;
+section.contact .cta span.cta-title {
+  grid-column: 1/span 4;
+  grid-row: 1/-1;
+  align-self: start;
+  color: var(--blue-100);
+  font-size: bigger;
+}
+section.contact .cta p.cta-text {
   color: var(--blue-100);
 }
-section.contact .cta p span.hours {
+section.contact .cta p.cta-text span.hours {
   font-size: smaller;
 }
 
