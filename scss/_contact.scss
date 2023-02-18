@@ -54,7 +54,7 @@ section.contact{
             margin-block-end: -2rem;
 
             width: 30px;
-            aspect-ratio: 1;
+            aspect-ratio: 1 / 1;
             background-color: whitesmoke;
             border-radius: 50%;
             z-index: 2;
@@ -94,8 +94,11 @@ section.contact{
         p.cta-text{
             color: var(--blue-100);
             // color: rgb(37,211,102);
+            span.days{
+                font-size: 14px;
+            }
             span.hours{
-                font-size: smaller;
+                font-size: 12px;
             }
         }
     }

@@ -979,7 +979,7 @@ section.contact .cta .cta-white-circle {
   -webkit-margin-after: -2rem;
           margin-block-end: -2rem;
   width: 30px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   background-color: whitesmoke;
   border-radius: 50%;
   z-index: 2;
@@ -1012,8 +1012,11 @@ section.contact .cta span.cta-title {
 section.contact .cta p.cta-text {
   color: var(--blue-100);
 }
+section.contact .cta p.cta-text span.days {
+  font-size: 14px;
+}
 section.contact .cta p.cta-text span.hours {
-  font-size: smaller;
+  font-size: 12px;
 }
 
 .contact > .content {
