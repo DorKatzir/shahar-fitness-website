@@ -107,6 +107,8 @@ section.contact{
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     align-items: start;
+    
+
 }
 
 
@@ -116,17 +118,22 @@ section.contact{
     font-weight: 300;
 }
 
+
 .contact-social-icons{
     padding-block-start: .5rem;
     display: flex;
     gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+    span{
+        font-size: smaller;
+    }
     
     a:link, a:visited {
         display: flex;
         align-items: center;
         gap: .5rem;
-        
-        font-size: smaller;
+    
         text-decoration: none;
         color: currentColor;
     }
