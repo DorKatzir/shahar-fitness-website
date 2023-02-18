@@ -74,6 +74,11 @@ section.contact{
             border-radius: 10px;
             cursor: pointer;
             z-index: 1;
+
+            a:visited, a:link{
+                color: var(--blue-100);
+                text-decoration: none;
+            }
             
         }
         

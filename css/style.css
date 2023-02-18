@@ -998,6 +998,10 @@ section.contact .cta span.cta-btn {
   cursor: pointer;
   z-index: 1;
 }
+section.contact .cta span.cta-btn a:visited, section.contact .cta span.cta-btn a:link {
+  color: var(--blue-100);
+  text-decoration: none;
+}
 section.contact .cta span.cta-title {
   grid-column: 1/span 4;
   grid-row: 1/-1;
