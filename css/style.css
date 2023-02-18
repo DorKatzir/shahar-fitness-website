@@ -956,8 +956,13 @@ section.contact .section-main-title hr {
   margin-bottom: 1.6rem;
 }
 section.contact .cta {
+  -webkit-margin-before: 1.6rem;
+          margin-block-start: 1.6rem;
+  -webkit-margin-after: 0.6rem;
+          margin-block-end: 0.6rem;
+  min-height: 80px;
   display: grid;
-  grid-template-columns: repeat(4, max-content) auto;
+  grid-template-columns: repeat(4, minmax(15px, 15px)) auto;
   align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
@@ -966,8 +971,6 @@ section.contact .cta {
 section.contact .cta svg.cta-svg {
   grid-column: 1/span 4;
   grid-row: 1/-1;
-  -webkit-margin-after: -2rem;
-          margin-block-end: -2rem;
   width: 35px;
   max-height: 35px;
   fill: rgb(37, 211, 102);
@@ -976,8 +979,6 @@ section.contact .cta svg.cta-svg {
 section.contact .cta .cta-white-circle {
   grid-column: 1/span 4;
   grid-row: 1/-1;
-  -webkit-margin-after: -2rem;
-          margin-block-end: -2rem;
   width: 30px;
   aspect-ratio: 1/1;
   background-color: whitesmoke;
@@ -988,6 +989,8 @@ section.contact .cta span.cta-btn {
   grid-column: 1/span 4;
   grid-row: 1/-1;
   align-self: end;
+  -webkit-margin-after: 1.15rem;
+          margin-block-end: 1.15rem;
   color: var(--blue-100);
   text-align: left;
   font-weight: 600;
@@ -1007,10 +1010,15 @@ section.contact .cta span.cta-title {
   grid-row: 1/-1;
   align-self: start;
   color: var(--blue-100);
-  font-size: bigger;
+  white-space: nowrap !important;
 }
 section.contact .cta p.cta-text {
   color: var(--blue-100);
+  align-self: self-start;
+}
+section.contact .cta p.cta-text span.activity {
+  display: block;
+  padding-bottom: 0.5rem;
 }
 section.contact .cta p.cta-text span.days {
   font-size: 14px;
@@ -1034,8 +1042,8 @@ section.contact .cta p.cta-text span.hours {
 }
 
 .contact-social-icons {
-  -webkit-padding-before: 0.5rem;
-          padding-block-start: 0.5rem;
+  -webkit-margin-before: 1.6rem;
+          margin-block-start: 1.6rem;
   display: flex;
   gap: 1rem;
   justify-content: flex-end;
@@ -1043,6 +1051,11 @@ section.contact .cta p.cta-text span.hours {
 }
 .contact-social-icons span {
   font-size: smaller;
+}
+.contact-social-icons span.social-icons-follow {
+  color: var(--blue-100);
+  font-size: 1rem;
+  white-space: nowrap;
 }
 .contact-social-icons a:link, .contact-social-icons a:visited {
   display: flex;
@@ -1080,6 +1093,14 @@ section.contact .cta p.cta-text span.hours {
   .contact > .content .map img {
     min-width: 100%;
     aspect-ratio: 16/9;
+  }
+}
+@media (max-width: 360px) {
+  .contact-social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: space-between !important;
   }
 }
 @media (max-width: 790px) {

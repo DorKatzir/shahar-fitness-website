@@ -29,8 +29,11 @@ section.contact{
     }
 
     .cta{
+        margin-block-start: 1.6rem;
+        margin-block-end: .6rem;
+        min-height: 80px;
         display: grid;
-        grid-template-columns: repeat(4, max-content) auto;
+        grid-template-columns: repeat(4, minmax(15px, 15px)) auto;
         align-items: center;
         column-gap: 1rem;
         isolation: isolate;
@@ -38,8 +41,6 @@ section.contact{
         svg.cta-svg{
             grid-column: 1 / span 4;
             grid-row: 1 / -1;
-            
-            margin-block-end: -2rem;
             
             width: 35px;
             max-height: 35px;
@@ -50,8 +51,6 @@ section.contact{
         .cta-white-circle{
             grid-column: 1 / span 4;
             grid-row: 1 / -1;
-            
-            margin-block-end: -2rem;
 
             width: 30px;
             aspect-ratio: 1 / 1;
@@ -64,6 +63,7 @@ section.contact{
             grid-column: 1 / span 4;
             grid-row: 1 / -1;
             align-self: end;
+            margin-block-end: 1.15rem;
 
             color: var(--blue-100);
             text-align: left;
@@ -88,12 +88,18 @@ section.contact{
             align-self: start;
 
             color: var(--blue-100);
-            font-size: bigger;
+            // font-size: 14px;
+            white-space: nowrap !important;
         }
        
         p.cta-text{
             color: var(--blue-100);
-            // color: rgb(37,211,102);
+            align-self: self-start;
+
+            span.activity{
+                display: block;
+                padding-bottom: .5rem;
+            }
             span.days{
                 font-size: 14px;
             }
@@ -123,13 +129,19 @@ section.contact{
 
 
 .contact-social-icons{
-    padding-block-start: .5rem;
+    margin-block-start: 1.6rem;
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
     align-items: center;
+
     span{
         font-size: smaller;
+    }
+    span.social-icons-follow{
+        color: var(--blue-100);
+        font-size: 1rem;
+        white-space: nowrap;
     }
     
     a:link, a:visited {
@@ -187,4 +199,15 @@ section.contact{
         }
     }
 
+}
+
+@media(max-width: 360px){
+    .contact-social-icons{
+       
+        display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
+        justify-content: space-between !important;
+        
+    }
 }
