@@ -957,7 +957,7 @@ section.contact .section-main-title hr {
 }
 section.contact .cta {
   display: grid;
-  grid-template-columns: repeat(5, max-content);
+  grid-template-columns: repeat(4, max-content) auto;
   align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
