@@ -116,8 +116,25 @@ section.contact{
     font-weight: 300;
 }
 
-.text ul li{
-    list-style: none;
+.contact-social-icons{
+    padding-block-start: .5rem;
+    display: flex;
+    gap: 1rem;
+    
+    a:link, a:visited {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        
+        font-size: smaller;
+        text-decoration: none;
+        color: currentColor;
+    }
+
+    .fb-icon{
+        fill: #1877F2;
+    }
+
 }
 
 
