@@ -1,15 +1,9 @@
 .sitebg-video{
+    margin-block-start: 5rem;
     grid-column: 1 / -1;
     grid-row: 1 / 3 ;
-    width: 100%;
+    
     max-width: inherit;
-    justify-self: center;
-
-    display: grid;
-    place-content: start;
-    margin-block-start: -1rem;
-    
-    
 
     -webkit-mask-image: url(../images/home/brshStroke1.png);
     mask-image: url(../images/home/brshStroke1.png);
@@ -25,13 +19,13 @@
     .sitebg-vid{
         height: inherit;
         width: 100vw;
+        width: 100svw;
         max-width: inherit;
         min-height: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
         
         filter: contrast(110%) grayscale(100%) opacity(55%);
-        //filter: contrast(110%) grayscale(10%);
     }
 }
 
@@ -53,7 +47,7 @@
     .sitebg-video{
         -webkit-mask-image: none;
         mask-image:none;
-        margin-block-start: -7rem !important;
+        margin-block-start: -2rem !important;
     }
 
     .sitebg-vid{

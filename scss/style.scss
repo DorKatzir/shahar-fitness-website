@@ -50,9 +50,6 @@
     --padding: clamp(1.618rem, 3vw, 2.618rem);
 }
 
-body, html{
-  height: 100%;
-}
 
 
 body {
@@ -69,11 +66,11 @@ body {
   display: grid;
  
   grid-auto-flow: row;
-  grid-template-rows: 100vh 1fr !important;
+  //grid-template-rows: 100vh 1fr !important;
   justify-items: center;
   // justify-content: center;
 
-  height: fit-content;
+  // height: fit-content;
 }
 
 /* Works on Firefox */
@@ -110,6 +107,7 @@ footer{
 
 
 @import 'utilities';
+@import 'float-btn';
 @import 'box';
 @import 'nav';
 @import 'header';
