@@ -1,19 +1,65 @@
+
 .float-btn{
     position: fixed;
     z-index: 8 !important;
-    width: 50px;
+    width: 55px;
     height: 50px;
     padding: .5rem;
+    padding-inline-end: 1rem;
+    
     top: 25vh;
     top: 25svh;
-    left: 0;
+    left: -5px;
     display: grid;
     place-content: center;
     background-color: rgba(0,0,0,.25);
     border-radius: 0 50% 50% 0;
+    
+    animation-name: floatBtnShow;
+    animation-duration: 1s;  
+    animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    animation-fill-mode: forwards;
 
     svg{
         
         fill: rgba(37, 211, 102, 1);
     }
+}
+
+.float-btn.hide{
+    animation-name: floatBtnHide;
+    animation-duration: 1s;  
+    animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+    animation-fill-mode: forwards;
+}
+
+// .float-btn.show{
+//     animation-name: floatBtnShow;
+//     animation-duration: 1s;  
+//     animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
+//     animation-fill-mode: forwards;
+// }
+
+
+
+
+@media (min-width: 768px){
+    .float-btn{
+        display: none;
+    }       
+
+}
+
+@keyframes floatBtnHide {
+  0% {left: -5px; scale: 1; opacity: 100%;}
+  10% {left: 0px; scale: 1.05; opacity: 70%;}
+  50% {left: -50px; scale: .5; opacity: 20%;}
+  100% {left: -100px; scale: 0; opacity: 0%;}
+}
+
+@keyframes floatBtnShow {
+    0% {left: -100px; scale: 0; opacity: 0%;}
+    10% {left: -50px; scale: .5; opacity: 20%;}
+    50% {left: 0px; scale: 1.05; opacity: 70%;}
+    100% {left: -5px; scale: 1; opacity: 100%;}
 }
