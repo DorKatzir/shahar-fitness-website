@@ -143,6 +143,11 @@ footer h2, footer p {
   animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   animation-fill-mode: forwards;
 }
+.float-btn a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
 .float-btn svg {
   fill: rgb(37, 211, 102);
 }

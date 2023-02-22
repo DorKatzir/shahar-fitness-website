@@ -20,6 +20,11 @@
     animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);
     animation-fill-mode: forwards;
 
+    a{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
     svg{
         
         fill: rgba(37, 211, 102, 1);
