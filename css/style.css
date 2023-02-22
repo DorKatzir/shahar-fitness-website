@@ -125,6 +125,7 @@ footer h2, footer p {
 }
 
 .float-btn {
+  z-index: 88;
   position: fixed;
   width: 55px;
   height: 50px;
@@ -136,7 +137,7 @@ footer h2, footer p {
   left: -5px;
   display: grid;
   place-content: center;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.35);
   border-radius: 0 50% 50% 0;
   animation-name: floatBtnShow;
   animation-duration: 1s;
@@ -145,10 +146,12 @@ footer h2, footer p {
 }
 .float-btn a {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
 }
-.float-btn svg {
+.float-btn a svg {
+  width: inherit;
+  height: inherit;
   fill: rgb(37, 211, 102);
 }
 
