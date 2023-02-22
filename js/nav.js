@@ -9,19 +9,18 @@ toggleBox.addEventListener('mousedown', (e)=> {
     toggleBox.classList.toggle('x')
     navList.classList.toggle('list-opened')
     document.body.classList.toggle('stop-scrolling')
-    // isMenuOpen = true
-    console.log(isFloat)
+    //console.log(isFloat)
     floatBtnHandler(isFloat)
 })
 
 function floatBtnHandler(x){
     if(x === true){
         floatBtn.classList.toggle('hide')
-        console.log(x)
+        //console.log(x)
     } else {
         x === false
         floatBtn.classList.add('hide')
-        console.log(x)
+        //console.log(x)
     }
 
 
