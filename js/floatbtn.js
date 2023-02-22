@@ -2,7 +2,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
     // Viewport is less or equal to 768 pixels wide
 
     const sectionContact = document.getElementById('section-contact')
-    // const whatsupBtn = document.querySelector('.float-btn')
+    const whatsupBtn = document.querySelector('.float-btn')
 
     const sectionContactOptions = {
         root: null,
@@ -14,13 +14,12 @@ if (window.matchMedia('(max-width: 768px)').matches) {
     const contactObserver = new IntersectionObserver( entries => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) {
-                floatBtn.classList.remove('hide')
+                whatsupBtn.classList.remove('hide')
+                isFloat = true
                 //console.log('not')
             } else{
-                
-                floatBtn.classList.add('hide')
-                
-
+                whatsupBtn.classList.add('hide')
+                isFloat = false
                 //console.log('yes')
             }
         })

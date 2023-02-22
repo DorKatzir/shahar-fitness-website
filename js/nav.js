@@ -3,17 +3,28 @@ const toggleBox = document.querySelector('.box')
 const navList = document.querySelector('.nav-list')
 const floatBtn = document.querySelector('.float-btn')
 
-toggleBox.addEventListener('click', (e)=> {
+let isFloat
+
+toggleBox.addEventListener('mousedown', (e)=> {
     toggleBox.classList.toggle('x')
     navList.classList.toggle('list-opened')
     document.body.classList.toggle('stop-scrolling')
-    floatBtnHandler('nav')
+    // isMenuOpen = true
+    console.log(isFloat)
+    floatBtnHandler(isFloat)
 })
 
-function floatBtnHandler(string){
-    if(string == 'nav'){
+function floatBtnHandler(x){
+    if(x === true){
         floatBtn.classList.toggle('hide')
+        console.log(x)
+    } else {
+        x === false
+        floatBtn.classList.add('hide')
+        console.log(x)
     }
+
+
 }
 
 
