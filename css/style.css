@@ -1179,7 +1179,8 @@ section.contact .cta p.cta-text span.hours {
   width: 95%;
   padding: 1rem;
   color: var(--white-25) !important;
-  margin-top: 3rem;
+  -webkit-margin-before: clamp(0.3rem, 1vw + 3rem, 3rem);
+          margin-block-start: clamp(0.3rem, 1vw + 3rem, 3rem);
   font-size: var(--fs-small);
   text-align: center;
 }
