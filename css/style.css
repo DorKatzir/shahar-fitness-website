@@ -1184,12 +1184,18 @@ section.contact .cta p.cta-text span.hours {
   width: 95%;
   padding: 1rem;
   color: var(--white-25) !important;
-  -webkit-margin-before: clamp(0.3rem, 1vw + 3rem, 3rem);
-          margin-block-start: clamp(0.3rem, 1vw + 3rem, 3rem);
+  -webkit-margin-before: 3rem;
+          margin-block-start: 3rem;
   font-size: var(--fs-small);
   text-align: center;
 }
 
+@media (max-width: 630px) {
+  .footer {
+    -webkit-margin-before: 0.5rem;
+            margin-block-start: 0.5rem;
+  }
+}
 @media (max-width: 790px) {
   body {
     -webkit-padding-before: 1rem;

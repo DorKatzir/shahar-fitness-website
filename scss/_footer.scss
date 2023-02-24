@@ -2,7 +2,13 @@
   width: 95%;
   padding: 1rem;
   color: var(--white-25) !important;
-  margin-block-start: clamp(0.3rem, 1vw + 3rem, 3rem);
+  margin-block-start: 3rem;
   font-size: var(--fs-small);
   text-align: center;
+}
+@media (max-width: 630px ){
+  .footer{
+    margin-block-start: .5rem;
+
+  }
 }
