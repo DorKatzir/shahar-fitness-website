@@ -78,7 +78,7 @@
       </ul>
     </nav>
 
-    <header class="header-section">
+    <header id="header" class="header-section">
       <div class="brand">
         <h1 class="sr-only">מתחילים מחר עם שחר-פיטנס מאמן כושר אישי</h1>
         <div id="brandImage" class="slide-in-img"></div>       
@@ -647,9 +647,18 @@
 
     </script> -->
     <script>
+
+      const header = document.getElementById('header')
+      const el = document.documentElement
+      header.addEventListener( 'click', ()=>{
+        if (el.requestFullscreen) {
+          el.requestFullscreen()
+        }
+      })
+
       const year = document.getElementById('year')
       //Date().getFullYear()
-      let dateYear =  new Date().getFullYear();
+      let dateYear =  new Date().getFullYear()
       year.innerHTML = `${dateYear} &copy;`
     </script>
 
