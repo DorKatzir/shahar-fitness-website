@@ -657,7 +657,7 @@
       })
 
       const headerHeight = header.offsetHeight
-      el.style.setProperty('--scroll-padding', headerHeight + 'px')
+      el.style.setProperty('--scroll-padding', headerHeight - 16 + 'px')
 
       const year = document.getElementById('year')
       //Date().getFullYear()
