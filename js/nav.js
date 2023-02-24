@@ -7,17 +7,19 @@ const floatBtn = document.querySelector('.float-btn')
 let isFloat
 
 const links = navList.getElementsByTagName('li')
-for (link of links) {
+const newlinks = Array.from(links)
+newlinks.splice(0, 1)
+//console.log(newlinks)
+for (link of newlinks) {
+
     link.addEventListener('click', ()=>{
         if (window.matchMedia('(max-width: 768px)').matches) {
-            console.log('mobile link')
             toggleBox.classList.remove('x')
             navList.classList.remove('list-opened')
             document.body.classList.remove('stop-scrolling')
             floatBtnHandler(isFloat)
         }
         else{
-            console.log('desktop link')
             return    
         }
     })
