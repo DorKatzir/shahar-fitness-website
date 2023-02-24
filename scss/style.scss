@@ -95,17 +95,6 @@ body {
 }
 
 
-
-footer{
-  //background-color: rgba(191, 143, 151, 0.192);
-  margin-top: 3rem;
-  h2 ,p{
-    color: transparent;
-  }
-}
-
-
-
 @import 'utilities';
 @import 'float-btn';
 @import 'box';
@@ -118,6 +107,7 @@ footer{
 @import 'about';
 @import 'gallery';
 @import 'contact';
+@import 'footer';
 
 
 

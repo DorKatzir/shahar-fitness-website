@@ -74,13 +74,6 @@ body {
   border: 3px solid var(--black-100);
 }
 
-footer {
-  margin-top: 3rem;
-}
-footer h2, footer p {
-  color: transparent;
-}
-
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -1182,6 +1175,15 @@ section.contact .cta p.cta-text span.hours {
     justify-content: space-between !important;
   }
 }
+.footer {
+  width: 95%;
+  padding: 1rem;
+  color: var(--white-25) !important;
+  margin-top: 3rem;
+  font-size: var(--fs-small);
+  text-align: center;
+}
+
 @media (max-width: 790px) {
   body {
     -webkit-padding-before: 1rem;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
     
     <title> שחר פיטנס | מאמן כושר אישי </title>
   </head>
-  <body class="">
+  <body>
 
     <div class="float-btn">
      <a aria-label="Chat on WhatsApp" alt="דברו איתי בווצאפ" href="https://wa.me/972523769334" class="noSelect">
@@ -608,7 +608,7 @@
               <span> פייסבוק </span>
             </a>              
           
-            <a href="https://www.instagram.com/shahar_rs3_8y" class="noSelect" target="_blank">
+            <a href="https://www.instagram.com/shaharfitnees" class="noSelect" target="_blank">
               <svg class="ins-icon" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 30.849 30.849">
                 <defs>
                   <linearGradient id="grad1" x1="0%" y1="70%" x2="100%" y2="0%">
@@ -631,11 +631,9 @@
     </section>
 
 
-
-    <!-- <footer>
-      <h2>Footer Section</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nulla.</p>
-    </footer> -->
+    <footer class="footer full-bleed">
+      <p><span id="year"></span>  עיצוב וקוד: דור קציר</p>
+    </footer>
 
 
     <!-- <div id="app">שלום</div> -->
@@ -648,7 +646,14 @@
        });
 
     </script> -->
-  
+    <script>
+      const year = document.getElementById('year')
+      //Date().getFullYear()
+      let dateYear =  new Date().getFullYear();
+      year.innerHTML = `${dateYear} &copy;`
+    </script>
+
+
 
   </body>
 </html>
