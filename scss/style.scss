@@ -50,7 +50,10 @@
     --padding: clamp(1.618rem, 3vw, 2.618rem);
 }
 
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding);
+}
 
 body {
   font-family: var(--ff-body);

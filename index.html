@@ -101,7 +101,7 @@
         </h2>
 
         <div class="vid-link">
-        <a href="#" class="noSelect">סרטוני הדגמה</a>
+        <a href="#vids-gallery" class="noSelect">סרטוני הדגמה</a>
         </div>
 
       </div>
@@ -277,7 +277,7 @@
 
     </section>
 
-    <section class="gallery">
+    <section id="vids-gallery" class="gallery">
 
       <div class="section-main-title">
         <p>סרטוני הדגמה</p>
@@ -655,6 +655,9 @@
           el.requestFullscreen()
         }
       })
+
+      const headerHeight = header.offsetHeight
+      el.style.setProperty('--scroll-padding', headerHeight + 'px')
 
       const year = document.getElementById('year')
       //Date().getFullYear()
