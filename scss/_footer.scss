@@ -5,10 +5,26 @@
   margin-block-start: 3rem;
   font-size: var(--fs-small);
   text-align: center;
+
+  .footer-content{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  a:link, a:visited{
+    text-decoration: none;
+    color: var(--white-25);
+    transition: color .25s ease-in-out;
+  }
+  a:hover{
+    color: var(--white-75);
+  }
 }
+
+
 @media (max-width: 630px ){
   .footer{
     margin-block-start: .5rem;
-
   }
 }
