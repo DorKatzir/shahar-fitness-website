@@ -1,7 +1,7 @@
-if (window.matchMedia('(max-width: 768px)').matches) {
+if (window.matchMedia('(max-width: 790px)').matches) {
     // Viewport is less or equal to 768 pixels wide
 
-    const sectionContact = document.getElementById('section-contact')
+    const sectionContact = document.getElementById('contact')
     const whatsupBtn = document.querySelector('.float-btn')
 
     const sectionContactOptions = {

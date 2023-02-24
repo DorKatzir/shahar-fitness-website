@@ -14,7 +14,7 @@ for (link of links) {
             toggleBox.classList.remove('x')
             navList.classList.remove('list-opened')
             document.body.classList.remove('stop-scrolling')
-             floatBtnHandler(isFloat)
+            floatBtnHandler(isFloat)
         }
         else{
             console.log('desktop link')
