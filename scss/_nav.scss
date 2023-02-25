@@ -1,4 +1,6 @@
 nav{
+    width: 50%;
+    // max-width: inherit;
     top: 1.6rem;
     padding-inline-end: 1rem;
     justify-self: end;
@@ -12,12 +14,15 @@ nav{
     
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    // background-color: #fff;
 
     .nav-item{
-        border-left: 2px solid var(--orange-25);
-        &:last-child, &:nth-child(4){
+        border-left: 2px solid var(--white-15);
+        &:last-child{
             border-left: none;
         }
+        
         .nav-link{
             display: block;
             text-decoration: none;
@@ -28,6 +33,48 @@ nav{
             padding-inline: 1rem;
         }
 
+    }
+
+    .social-items{
+        padding-inline-start: 1rem;
+        .folow-txt{
+            display: none;
+        }
+        .icons{
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            .icon-link{
+                transition: all .25s ease-in-out;
+                svg{
+                    width: 26px;
+                    height: 26px;
+                }
+                &.icon-whatsup{
+                    svg{
+                        fill: #25D366;
+                    }
+                }
+                &.icon-facebook{
+                    svg{
+                        fill: #4267B2;
+                    }
+                }
+                &.icon-instagram{
+                    svg{
+                        fill: url(#grad1);
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .whatsup-item{
+        display: none;
     }
 
     .avatar{
@@ -77,10 +124,10 @@ nav{
                 border-bottom: none;
                 width: 100% !important;
                 max-width: 120px;
-                margin-block-end: clamp(0.16rem, 8vh, 1.618rem);
+                margin-block-end: clamp(0.16rem, 8vh, 4.618rem);
             }
             
-            &:nth-child(5), &:nth-child(4){
+            &:nth-child(5), &:nth-child(4), &:nth-child(6) {
                 border-bottom: none;
             }
 
@@ -89,12 +136,30 @@ nav{
                 text-decoration: none;
                 text-align: center;
                 white-space: nowrap;
-                color: var(--white-100);
+                color: whitesmoke;
                 font-size: 1.2rem;
-                padding-inline: var(--fs-small);
-                padding-block: var(--fs-small);
+                padding-block:.5rem;
             }
             
+        }
+        .social-items{
+            padding-inline-start: 0rem !important;
+            margin-block-start: 1rem;
+            
+
+            .folow-txt{
+                display: block;
+                font-size: var(--fs-small);
+                font-weight: var(--fw-bold);
+                text-align: center;
+                margin-block-end: .5rem;
+                color: whitesmoke;
+            }
+            .icons{
+                .icon-whatsup{
+                    display: none;
+                }
+            }
         }
 
         .avatar{
@@ -106,20 +171,24 @@ nav{
             }
        
         }
+        .whatsup-item{
+            display: block;
+        }
         .whats-nav{
-            margin-block-start: clamp(0.16rem, 8vh, 2.618rem);
+            margin-block-start: clamp(0.16rem, 8vh, 4.618rem);
             isolation: isolate;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: start;
             position: relative;
 
             .whats-nav-svg{
                 margin-block-end: -.5rem;
                 margin-inline-start: -5.5rem;
                 fill: rgb(37, 211, 102);
-                width: 35px;
-                height: 35px;
+                width: 40px !important;
+                height: 40px !important;
                 position: relative;
                 z-index: 1;
             }
@@ -128,8 +197,8 @@ nav{
                 background-color: whitesmoke;
                 margin-inline-start: -5.5rem;
                 margin-block-start: 5px;
-                width: 25px;
-                height: 25px;
+                width: 30px !important;
+                height: 30px !important;
                 border-radius: 50%;
                 z-index: 0;
             }
@@ -144,7 +213,7 @@ nav{
                 
                 a:link, a:visited{
                     font-size: 1.2rem;
-                    font-weight: var(--fw-bold);
+                    // font-weight: var(--fw-bold);
                     display: block;
                     text-decoration: none;
                     color: #128C7E;
