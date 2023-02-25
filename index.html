@@ -642,31 +642,20 @@
     </footer>
 
 
-    <!-- <div id="app">שלום</div> -->
-    <!-- <script type="module" src="/main.js"></script> -->
-    <!-- <script>
-      window.addEventListener('fullscreenchange', (event) => {
-        event.preventDefault();
-        event.cancelable = true;
-        console.log(event)
-       });
-
-    </script> -->
     <script>
 
       const header = document.getElementById('header')
       const el = document.documentElement
-      header.addEventListener( 'click', ()=>{
-        if (el.requestFullscreen) {
-          el.requestFullscreen()
-        }
-      })
+      // header.addEventListener( 'click', ()=>{
+      //   if (el.requestFullscreen) {
+      //     el.requestFullscreen()
+      //   }
+      // })
 
       const headerHeight = header.offsetHeight
       el.style.setProperty('--scroll-padding', headerHeight - 16 + 'px')
 
       const year = document.getElementById('year')
-      //Date().getFullYear()
       let dateYear =  new Date().getFullYear()
       year.innerHTML = dateYear
     </script>
