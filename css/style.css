@@ -252,7 +252,7 @@ body {
     border-radius: 3px;
     transition: all 0.3s linear;
     top: 0;
-    transform-origin: left top;
+    transform-origin: center;
     transform: rotate(0deg) translate(0, calc(var(--burgerH) * -2.5));
   }
   .burger::after {
@@ -266,16 +266,18 @@ body {
     border-radius: 3px;
     transition: all 0.3s linear;
     bottom: 0;
-    transform-origin: right top;
+    transform-origin: center;
     transform: rotate(0deg) translate(0, calc(var(--burgerH) * 2.5));
   }
   .x {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     position: fixed;
   }
   .x .burger {
+    width: 30px;
     height: 100%;
+    background-color: transparent;
     top: 0px;
   }
   .x .burger::before {
