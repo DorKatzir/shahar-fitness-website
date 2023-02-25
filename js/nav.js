@@ -26,6 +26,7 @@ for (link of newlinks) {
 }
 
 
+
 toggleBox.addEventListener('mousedown', (e)=> {
     toggleBox.classList.toggle('x')
     navList.classList.toggle('list-opened')

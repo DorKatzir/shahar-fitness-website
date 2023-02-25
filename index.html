@@ -663,11 +663,12 @@
 
       const header = document.getElementById('header')
       const el = document.documentElement
-      // header.addEventListener( 'click', ()=>{
-      //   if (el.requestFullscreen) {
-      //     el.requestFullscreen()
-      //   }
-      // })
+      
+      header.addEventListener( 'click', ()=>{
+        if (el.requestFullscreen) {
+          el.requestFullscreen()
+        }
+      })
 
       const headerHeight = header.offsetHeight
       el.style.setProperty('--scroll-padding', headerHeight - 16 + 'px')
