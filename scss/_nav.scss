@@ -37,10 +37,11 @@ nav{
 
     .social-items{
         padding-inline-start: 1rem;
-        .folow-txt{
-            display: none;
-        }
         .icons{
+
+            .follow-txt{
+                display: none;
+            }
             display: flex;
             gap: 1rem;
             align-items: center;
@@ -58,7 +59,7 @@ nav{
                 }
                 &.icon-facebook{
                     svg{
-                        fill: #4267B2;
+                        fill: #1877F2;
                     }
                 }
                 &.icon-instagram{
@@ -143,19 +144,40 @@ nav{
             
         }
         .social-items{
-            padding-inline-start: 0rem !important;
-            margin-block-start: 1rem;
-            
 
-            .folow-txt{
-                display: block;
-                font-size: var(--fs-small);
-                font-weight: var(--fw-bold);
-                text-align: center;
-                margin-block-end: .5rem;
-                color: whitesmoke;
-            }
+            padding-inline-start: 0rem !important;
+            min-height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            
             .icons{
+                width: 100%;
+                gap: .5rem;
+                justify-content: space-between;
+                filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, .5));
+
+                .follow-txt{
+                    display: block;
+                    font-size: var(--fs-small);
+                    color: whitesmoke;
+                }
+                .icon-link{
+                    &.icon-instagram{
+                        svg{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    &.icon-facebook{
+                        svg{
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
+                }
+
                 .icon-whatsup{
                     display: none;
                 }
@@ -185,7 +207,7 @@ nav{
 
             .whats-nav-svg{
                 margin-block-end: -.5rem;
-                margin-inline-start: -5.5rem;
+                margin-inline-start: -6.5rem;
                 fill: rgb(37, 211, 102);
                 width: 40px !important;
                 height: 40px !important;
@@ -195,7 +217,7 @@ nav{
             .whats-nav-white-circle{
                 position: absolute;
                 background-color: whitesmoke;
-                margin-inline-start: -5.5rem;
+                margin-inline-start: -6.5rem;
                 margin-block-start: 5px;
                 width: 30px !important;
                 height: 30px !important;
@@ -212,8 +234,7 @@ nav{
                 z-index: -1;
                 
                 a:link, a:visited{
-                    font-size: 1.2rem;
-                    // font-weight: var(--fw-bold);
+                    font-size: var(--fs-small);
                     display: block;
                     text-decoration: none;
                     color: #128C7E;
