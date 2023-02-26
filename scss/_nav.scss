@@ -128,7 +128,7 @@ nav{
                 margin-block-end: clamp(0.16rem, 8vh, 4.618rem);
             }
             
-            &:nth-child(5), &:nth-child(4), &:nth-child(6) {
+             &:nth-child(4), &:nth-child(6) {
                 border-bottom: none;
             }
 
@@ -146,11 +146,7 @@ nav{
         .social-items{
 
             padding-inline-start: 0rem !important;
-            min-height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-
+            margin-block-start: 1rem;
             
             .icons{
                 width: 100%;
@@ -161,7 +157,7 @@ nav{
                 .follow-txt{
                     display: block;
                     font-size: var(--fs-small);
-                    color: whitesmoke;
+                    color: var(--bg-dark);
                 }
                 .icon-link{
                     &.icon-instagram{
@@ -198,6 +194,7 @@ nav{
         }
         .whats-nav{
             margin-block-start: clamp(0.16rem, 8vh, 4.618rem);
+            padding-block-end: 1rem;
             isolation: isolate;
             display: flex;
             flex-direction: column;
@@ -206,8 +203,8 @@ nav{
             position: relative;
 
             .whats-nav-svg{
-                margin-block-end: -.5rem;
-                margin-inline-start: -6.5rem;
+                margin-block-end: -.4rem;
+                margin-inline-start: -7.5rem;
                 fill: rgb(37, 211, 102);
                 width: 40px !important;
                 height: 40px !important;
@@ -217,8 +214,8 @@ nav{
             .whats-nav-white-circle{
                 position: absolute;
                 background-color: whitesmoke;
-                margin-inline-start: -6.5rem;
-                margin-block-start: 5px;
+                margin-inline-start: -7.5rem;
+                margin-block-start: 4px;
                 width: 30px !important;
                 height: 30px !important;
                 border-radius: 50%;
@@ -226,9 +223,9 @@ nav{
             }
             .whats-nav-btn{
                 max-width:fit-content;
-                background-color: whitesmoke;
+                background-color: rgba(0,0,0, .4);
                 border-radius: 2rem;
-                padding-inline: 1rem;
+                padding-inline: .7rem;
                 padding-block-start: .35rem;
                 padding-block-end: .25rem;
                 z-index: -1;
@@ -237,7 +234,7 @@ nav{
                     font-size: var(--fs-small);
                     display: block;
                     text-decoration: none;
-                    color: #128C7E;
+                    color: whitesmoke;
                 }
             }
         }
