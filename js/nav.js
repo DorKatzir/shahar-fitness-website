@@ -6,13 +6,14 @@ const floatBtn = document.querySelector('.float-btn')
 
 let isFloat
 
-const links = navList.getElementsByTagName('li')
-const newlinks = Array.from(links)
-newlinks.splice(0, 1)
-//console.log(newlinks)
-for (link of newlinks) {
+const mobileLinks = navList.getElementsByTagName('a')
+console.log(mobileLinks)
+const links = Array.from(mobileLinks);
+console.log(links)
 
-    link.addEventListener('click', ()=>{
+for (link of links) {
+    link.addEventListener('mousedown', (event)=>{
+        event.stopPropagation()
         if (window.matchMedia('(max-width: 768px)').matches) {
             toggleBox.classList.remove('x')
             navList.classList.remove('list-opened')
